@@ -1,0 +1,6 @@
+framework module Pods_CKMnemonic {
+  umbrella header "Pods-CKMnemonic-umbrella.h"
+
+  export *
+  module * { export * }
+}
