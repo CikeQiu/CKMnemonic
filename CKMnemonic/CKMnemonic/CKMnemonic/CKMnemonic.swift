@@ -59,8 +59,42 @@ class CKMnemonic: NSObject {
 		return mnemonic.joined(separator: " ")
 	}
 	
-	static func deterministicSeedString(from mnemonicString: String, passphrase: String = "", language: CKMnemonicLanguageType) -> String {
-		return ""
+	static func deterministicSeedString(from mnemonic: String, passphrase: String = "", language: CKMnemonicLanguageType) -> String {
+		
+		func normalized(string: String) -> Data? {
+			guard let data = string.data(using: .utf8, allowLossyConversion: true) else {
+				return nil
+			}
+			
+			guard let dataString = String(data: data, encoding: .utf8) else {
+				return nil
+			}
+			
+			guard let normalizedData = dataString.data(using: .utf8, allowLossyConversion: false) else {
+				return nil
+			}
+			return normalizedData
+		}
+		
+		guard let normalizedData = normalized(string: mnemonic) else {
+			return ""
+		}
+		
+		guard let saltData = normalized(string: "mnemonic" + passphrase) else {
+			return ""
+		}
+		
+		let password = normalizedData.bytes
+		let salt = saltData.bytes
+		
+		do {
+			let bytes = try PKCS5.PBKDF2(password: password, salt: salt, iterations: 2048, variant: .sha512).calculate()
+			
+			return bytes.toHexString()
+		} catch {
+			print(error)
+			return ""
+		}
 	}
 	
 	static func generateMnemonic(strength: Int, language: CKMnemonicLanguageType) throws -> String {

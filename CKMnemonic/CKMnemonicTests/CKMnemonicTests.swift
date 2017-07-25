@@ -39,6 +39,8 @@ class CKMnemonicTests: XCTestCase {
 					let selfM = try CKMnemonic.mnemonicString(from: test[0], language: .english)
 					let m = test[1]
 					XCTAssertTrue(selfM == m, "计算出的助记词没有通过测试")
+					
+//					let seed = CKMnemonic.deterministicSeedString(from: selfM, language: .english)
 				}
 			}
 		} catch {
