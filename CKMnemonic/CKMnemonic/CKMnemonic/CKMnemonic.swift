@@ -29,7 +29,7 @@ enum CKMnemonicError: Error
 }
 
 public class CKMnemonic: NSObject {
-	static func mnemonicString(from hexString: String, language: CKMnemonicLanguageType) throws -> String {
+	public static func mnemonicString(from hexString: String, language: CKMnemonicLanguageType) throws -> String {
 		let seedData = hexString.ck_mnemonicData()
 		print("\(hexString.characters.count)\t\(seedData.count)")
 		let hashData = seedData.sha256()
@@ -59,7 +59,7 @@ public class CKMnemonic: NSObject {
 		return mnemonic.joined(separator: " ")
 	}
 	
-	static func deterministicSeedString(from mnemonic: String, passphrase: String = "", language: CKMnemonicLanguageType) -> String {
+	public static func deterministicSeedString(from mnemonic: String, passphrase: String = "", language: CKMnemonicLanguageType) -> String {
 		
 		func normalized(string: String) -> Data? {
 			guard let data = string.data(using: .utf8, allowLossyConversion: true) else {
@@ -97,7 +97,7 @@ public class CKMnemonic: NSObject {
 		}
 	}
 	
-	static func generateMnemonic(strength: Int, language: CKMnemonicLanguageType) throws -> String {
+	public static func generateMnemonic(strength: Int, language: CKMnemonicLanguageType) throws -> String {
 		guard strength % 32 == 0 else {
 			throw CKMnemonicError.invalidStrength
 		}
