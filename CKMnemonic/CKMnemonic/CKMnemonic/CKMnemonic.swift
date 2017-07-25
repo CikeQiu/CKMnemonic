@@ -10,7 +10,7 @@ import UIKit
 import CryptoSwift
 import Security
 
-enum CKMnemonicLanguageType {
+public enum CKMnemonicLanguageType {
 	case english
 	
 	func words() -> [String] {
@@ -28,7 +28,7 @@ enum CKMnemonicError: Error
 	case unableToCreateSeedData
 }
 
-class CKMnemonic: NSObject {
+public class CKMnemonic: NSObject {
 	static func mnemonicString(from hexString: String, language: CKMnemonicLanguageType) throws -> String {
 		let seedData = hexString.ck_mnemonicData()
 		print("\(hexString.characters.count)\t\(seedData.count)")

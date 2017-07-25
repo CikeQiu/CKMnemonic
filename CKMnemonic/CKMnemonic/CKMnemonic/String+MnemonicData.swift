@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String
+public extension String
 {
 	func ck_mnemonicData() -> Data {
 		let length = characters.count
