@@ -14,13 +14,18 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		do {
-//			let mnemonic = try CKMnemonic.generateMnemonic(strength: 128, language: .english)
-			let mnemonic = try CKMnemonic.mnemonicString(from: "994fe657cc35757e7256812ff2791249", language: .english)
-			let seed = CKMnemonic.deterministicSeedString(from: mnemonic, passphrase: "Test", language: .english)
-			let seedNoSec = CKMnemonic.deterministicSeedString(from: mnemonic, language: .english)
-			print(seed)
-			print(seedNoSec)
-			print(mnemonic)
+			let language: CKMnemonicLanguageType = .chinese
+//			let mnemonic = try CKMnemonic.generateMnemonic(strength: 128, language: language)
+			let mnemonicC = try CKMnemonic.mnemonicString(from: "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f", language: language)
+			let mnemonicE = try CKMnemonic.mnemonicString(from: "7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f", language: .english)
+			let seedC = try CKMnemonic.deterministicSeedString(from: mnemonicC, passphrase: "Test", language: language)
+			let seedE = try CKMnemonic.deterministicSeedString(from: mnemonicE, passphrase: "Test", language: .english)
+//			let seedNoSec = try CKMnemonic.deterministicSeedString(from: mnemonic, language: language)
+//			print(seedNoSec)
+			print(mnemonicC)
+			print(mnemonicE)
+			print(seedC)
+			print(seedE)
 		} catch {
 			print(error)
 		}

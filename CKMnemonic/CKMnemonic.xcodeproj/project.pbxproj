@@ -21,6 +21,7 @@
 		CC2F87FA1F2710C700117966 /* String+MnemonicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F87F91F2710C700117966 /* String+MnemonicData.swift */; };
 		CC2F87FC1F27111A00117966 /* vectors.json in Resources */ = {isa = PBXBuildFile; fileRef = CC2F87FB1F27111A00117966 /* vectors.json */; };
 		CC2F87FD1F2712EF00117966 /* vectors.json in Resources */ = {isa = PBXBuildFile; fileRef = CC2F87FB1F27111A00117966 /* vectors.json */; };
+		CC2F87FF1F28333D00117966 /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F87FE1F28333D00117966 /* Chinese.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CC2F87F71F26ECDA00117966 /* Data+CKBitArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+CKBitArray.swift"; sourceTree = "<group>"; };
 		CC2F87F91F2710C700117966 /* String+MnemonicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MnemonicData.swift"; sourceTree = "<group>"; };
 		CC2F87FB1F27111A00117966 /* vectors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vectors.json; sourceTree = "<group>"; };
+		CC2F87FE1F28333D00117966 /* Chinese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chinese.swift; sourceTree = "<group>"; };
 		D4B98688A08AA24F605695C6 /* Pods-CKMnemonic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKMnemonic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CKMnemonic/Pods-CKMnemonic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CC2F87F41F26DCE600117966 /* English.swift */,
+				CC2F87FE1F28333D00117966 /* Chinese.swift */,
 			);
 			path = Language;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2F87F81F26ECDA00117966 /* Data+CKBitArray.swift in Sources */,
+				CC2F87FF1F28333D00117966 /* Chinese.swift in Sources */,
 				CC2F87F51F26DCE600117966 /* CKMnemonic.swift in Sources */,
 				CC2F87FA1F2710C700117966 /* String+MnemonicData.swift in Sources */,
 				CC2F87D41F26DCB300117966 /* ViewController.swift in Sources */,

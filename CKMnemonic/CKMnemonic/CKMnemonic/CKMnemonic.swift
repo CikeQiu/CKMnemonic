@@ -13,10 +13,14 @@ import Security
 public enum CKMnemonicLanguageType {
 	case english
 	
+	case chinese
+	
 	func words() -> [String] {
 		switch self {
 		case .english:
-			return String.englishs
+			return String.englishMnemonics
+		case .chinese:
+			return String.chineseMnemonics
 		}
 	}
 }
@@ -31,11 +35,11 @@ enum CKMnemonicError: Error
 public class CKMnemonic: NSObject {
 	public static func mnemonicString(from hexString: String, language: CKMnemonicLanguageType) throws -> String {
 		let seedData = hexString.ck_mnemonicData()
-		print("\(hexString.characters.count)\t\(seedData.count)")
+		// print("\(hexString.characters.count)\t\(seedData.count)")
 		let hashData = seedData.sha256()
-		print(hashData.toHexString())
+		// print(hashData.toHexString())
 		let checkSum = hashData.ck_toBitArray()
-		print(checkSum)
+		// print(checkSum)
 		var seedBits = seedData.ck_toBitArray()
 		
 		for i in 0..<seedBits.count / 32 {
@@ -51,7 +55,7 @@ public class CKMnemonic: NSObject {
 			let startIndex = i * length
 			let subArray = seedBits[startIndex..<startIndex + length]
 			let subString = subArray.joined(separator: "")
-			print(subString)
+			// print(subString)
 			
 			let index = Int(strtoul(subString, nil, 2))
 			mnemonic.append(words[index])
@@ -59,7 +63,7 @@ public class CKMnemonic: NSObject {
 		return mnemonic.joined(separator: " ")
 	}
 	
-	public static func deterministicSeedString(from mnemonic: String, passphrase: String = "", language: CKMnemonicLanguageType) -> String {
+	public static func deterministicSeedString(from mnemonic: String, passphrase: String = "", language: CKMnemonicLanguageType) throws -> String {
 		
 		func normalized(string: String) -> Data? {
 			guard let data = string.data(using: .utf8, allowLossyConversion: true) else {
@@ -92,8 +96,8 @@ public class CKMnemonic: NSObject {
 			
 			return bytes.toHexString()
 		} catch {
-			print(error)
-			return ""
+			// print(error)
+			throw error
 		}
 	}
 	
@@ -105,11 +109,11 @@ public class CKMnemonic: NSObject {
 		let count = strength / 8
 		let bytes = Array<UInt8>(repeating: 0, count: count)
 		let status = SecRandomCopyBytes(kSecRandomDefault, count, UnsafeMutablePointer<UInt8>(mutating: bytes))
-		print(status)
+		// print(status)
 		if status != -1 {
 			let data = Data(bytes: bytes)
 			let hexString = data.toHexString()
-			print(hexString)
+			// print(hexString)
 			
 			return try mnemonicString(from: hexString, language: language)
 		}
