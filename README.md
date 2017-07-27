@@ -14,13 +14,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ```Swift
 do {
-	let language: CKMnemonicLanguageType = .chinese
-	let mnemonic = try CKMnemonic.generateMnemonic(strength: 128, language: language)
-	print(mnemonic)
-	let seed = try CKMnemonic.deterministicSeedString(from: mnemonic, passphrase: "Test", language: language)
-	print(seed)
+    let language: CKMnemonicLanguageType = .chinese
+    let mnemonic = try CKMnemonic.generateMnemonic(strength: 128, language: language)
+    print(mnemonic)
+    let seed = try CKMnemonic.deterministicSeedString(from: mnemonic, passphrase: "Test", language: language)
+    print(seed)
 } catch {
-	print(error)
+    print(error)
 }
 ```
 
