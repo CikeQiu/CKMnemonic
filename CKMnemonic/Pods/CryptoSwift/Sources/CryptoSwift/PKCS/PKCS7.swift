@@ -1,5 +1,5 @@
 //
-//  BlockCipher.swift
+//  PKCS7.swift
 //  CryptoSwift
 //
 //  Copyright (C) 2014-2017 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
@@ -14,6 +14,6 @@
 //  - This notice may not be removed or altered from any source or binary distribution.
 //
 
-protocol BlockCipher: Cipher {
-    static var blockSize: Int { get }
+public enum PKCS7 {
+    typealias Padding = PKCS7Padding
 }

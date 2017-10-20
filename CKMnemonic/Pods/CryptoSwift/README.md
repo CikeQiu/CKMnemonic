@@ -1,12 +1,20 @@
+[![Platform](https://img.shields.io/badge/Platforms-ios%20%7C%20macos%20%7C%20watchos%20%7C%20tvos%20%7C%20linux-4E4E4E.svg?colorA=EF5138)](http://cocoadocs.org/docsets/CryptoSwift)
+[![Swift support](https://img.shields.io/badge/Swift-3.1%20%7C%203.2%20%7C%204.0-lightgrey.svg?colorA=EF5138&colorB=4E4E4E)](#swift-versions-support)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CryptoSwift.svg?style=flat&label=CocoaPods)](https://cocoapods.org/pods/CryptoSwift)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat&colorB=64A5DE)](https://github.com/apple/swift-package-manager)
+[![Swift Package Manager compatible](https://img.shields.io/badge/SPM-compatible-brightgreen.svg?style=flat&colorB=64A5DE)](https://github.com/apple/swift-package-manager)
+[![Twitter](https://img.shields.io/badge/twitter-@krzyzanowskim-blue.svg?style=flat&colorB=64A5DE&label=Twitter)](http://twitter.com/krzyzanowskim)
+
 # CryptoSwift
 
-Crypto related functions and helpers for [Swift](https://developer.apple.com/swift/) implemented in Swift. ([#PureSwift](https://twitter.com/hashtag/pureswift))
+Crypto related functions and helpers for [Swift](https://swift.org) implemented in Swift. ([#PureSwift](https://twitter.com/hashtag/pureswift)) 
 
 # Table of Contents
 - [Requirements](#requirements)
 - [Features](#features)
 - [Contribution](#contribution)
 - [Installation](#installation)
+- [Swift versions](#swift-versions-support)
 - [Usage](#usage)
 - [Author](#author)
 - [License](#license)
@@ -58,9 +66,10 @@ Good mood
 - [PBKDF2](http://tools.ietf.org/html/rfc2898#section-5.2) (Password-Based Key Derivation Function 2)
 
 #### Data padding
+- PKCS#5
 - [PKCS#7](http://tools.ietf.org/html/rfc5652#section-6.3)
 - [Zero padding](https://en.wikipedia.org/wiki/Padding_(cryptography)#Zero_padding)
-- NoPadding
+- No padding
 
 ## Why
 [Why?](https://github.com/krzyzanowskim/CryptoSwift/issues/5) [Because I can](https://github.com/krzyzanowskim/CryptoSwift/issues/5#issuecomment-53379391).
@@ -96,11 +105,14 @@ Sometimes "embedded framework" option is not available. In that case, you have t
 In the project, you'll find [single scheme](http://promisekit.org/news/2016/08/Multiplatform-Single-Scheme-Xcode-Projects/) for all platforms:
 - CryptoSwift
 
-#### Older Swift versions
+#### Swift versions support
 
 - Swift 1.2: branch [swift12](https://github.com/krzyzanowskim/CryptoSwift/tree/swift12) version <= 0.0.13
 - Swift 2.1: branch [swift21](https://github.com/krzyzanowskim/CryptoSwift/tree/swift21) version <= 0.2.3
 - Swift 2.2, 2.3: branch [swift2](https://github.com/krzyzanowskim/CryptoSwift/tree/swift2) version <= 0.5.2
+- Swift 3.1, branch [swift3](https://github.com/krzyzanowskim/CryptoSwift/tree/swift3) version <= 0.6.9
+- Swift 3.2, branch [swift32](https://github.com/krzyzanowskim/CryptoSwift/tree/swift32) version = 0.7.0
+- Swift 4.0, branch [master](https://github.com/krzyzanowskim/CryptoSwift/tree/master) version >= 0.7.1
 
 #### CocoaPods
 
@@ -136,8 +148,19 @@ Run `carthage` to build the framework and drag the built CryptoSwift.framework i
 #### Swift Package Manager
 
 You can use [Swift Package Manager](https://swift.org/package-manager/) and specify dependency in `Package.swift` by adding this:
+
+```swift
+dependencies: [
+    .Package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", majorVersion: 0)
+]
 ```
-.Package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", majorVersion: 0)
+
+or more strict
+
+```swift
+dependencies: [
+    .Package(url: "ttps://github.com/krzyzanowskim/CryptoSwift.git", "0.7.2"),
+]
 ```
 
 See: [Package.swift - manual](http://blog.krzyzanowskim.com/2016/08/09/package-swift-manual/)
@@ -146,7 +169,7 @@ See: [Package.swift - manual](http://blog.krzyzanowskim.com/2016/08/09/package-s
 
 * [Basics (data types, conversion, ...)](#basics)
 * [Digest (MD5, SHA...)](#calculate-digest)
-* [Message authenticators (HMAC...)](#message-authenticators)
+* [Message authenticators (HMAC...)](#message-authenticators-1)
 * [Password-Based Key Derivation Function (PBKDF2, ...)](#password-based-key-derivation-functions)
 * [Data Padding](#data-padding)
 * [ChaCha20](#chacha20)
@@ -266,10 +289,10 @@ try PKCS5.PBKDF2(password: password, salt: salt, iterations: 4096, variant: .sha
 
 ##### Data Padding
     
-Some content-encryption algorithms assume the input length is a multiple of k octets, where k is greater than one. For such algorithms, the input shall be padded.
+Some content-encryption algorithms assume the input length is a multiple of `k` octets, where `k` is greater than one. For such algorithms, the input shall be padded.
 
 ```swift
-PKCS7().add(to: bytes, blockSize: AES.blockSize)
+Padding.pkcs7.add(to: bytes, blockSize: AES.blockSize)
 ```
 
 #### Working with Ciphers
@@ -289,8 +312,8 @@ let decrypted = try Rabbit(key: key, iv: iv).decrypt(encrypted)
 ##### Blowfish
 
 ```swift
-let encrypted = try Blowfish(key: key, iv: iv, blockMode: .CBC, padding: PKCS7()).encrypt(message)
-let decrypted = try Blowfish(key: key, iv: iv, blockMode: .CBC, padding: PKCS7()).decrypt(encrypted)
+let encrypted = try Blowfish(key: key, iv: iv, blockMode: .CBC, padding: .pkcs7).encrypt(message)
+let decrypted = try Blowfish(key: key, iv: iv, blockMode: .CBC, padding: .pkcs7).decrypt(encrypted)
 ```
 
 ##### AES
@@ -305,7 +328,7 @@ Variant of AES encryption (AES-128, AES-192, AES-256) depends on given key lengt
 
 AES-256 example
 ```swift
-try AES(key: [1,2,3,...,32], iv: [1,2,3,...,16], blockMode: .CBC, padding: PKCS7())
+try AES(key: [1,2,3,...,32], iv: [1,2,3,...,16], blockMode: .CBC, padding: .pkcs7)
 ```
  
 ###### All at once
@@ -348,8 +371,8 @@ let key: Array<UInt8> = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
 let iv: Array<UInt8> = AES.randomIV(AES.blockSize)
 
 do {
-    let encrypted = try AES(key: key, iv: iv, blockMode: .CBC, padding: PKCS7()).encrypt(input)
-    let decrypted = try AES(key: key, iv: iv, blockMode: .CBC, padding: PKCS7()).decrypt(encrypted)
+    let encrypted = try AES(key: key, iv: iv, blockMode: .CBC, padding: .pkcs7).encrypt(input)
+    let decrypted = try AES(key: key, iv: iv, blockMode: .CBC, padding: .pkcs7).decrypt(encrypted)
 } catch {
     print(error)
 }    
@@ -359,7 +382,7 @@ AES without data padding
 
 ```swift
 let input: Array<UInt8> = [0,1,2,3,4,5,6,7,8,9]
-let encrypted: Array<UInt8> = try! AES(key: "secret0key000000", iv:"0123456789012345", blockMode: .CBC, padding: NoPadding()).encrypt(input)
+let encrypted: Array<UInt8> = try! AES(key: "secret0key000000", iv:"0123456789012345", blockMode: .CBC, padding: .noPadding).encrypt(input)
 ```
 
 Using convenience extensions
@@ -378,7 +401,7 @@ You can follow me on Twitter at [@krzyzanowskim](http://twitter.com/krzyzanowski
 
 ## License
 
-Copyright (C) 2014-2016 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
+Copyright (C) 2014-2017 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
 This software is provided 'as-is', without any express or implied warranty. 
 
 In no event will the authors be held liable for any damages arising from the use of this software. 

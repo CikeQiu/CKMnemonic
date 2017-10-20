@@ -2,20 +2,28 @@
 //  Utils.swift
 //  CryptoSwift
 //
-//  Created by Marcin Krzyzanowski on 26/08/14.
-//  Copyright (c) 2014 Marcin Krzyzanowski. All rights reserved.
+//  Copyright (C) 2014-2017 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
+//  This software is provided 'as-is', without any express or implied warranty.
+//
+//  In no event will the authors be held liable for any damages arising from the use of this software.
+//
+//  Permission is granted to anyone to use this software for any purpose,including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
+//
+//  - The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation is required.
+//  - Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
+//  - This notice may not be removed or altered from any source or binary distribution.
 //
 
 func rotateLeft(_ value: UInt8, by: UInt8) -> UInt8 {
-    return ((value << by) & 0xFF) | (value >> (8 - by))
+    return ((value << by) & 0xff) | (value >> (8 - by))
 }
 
 func rotateLeft(_ value: UInt16, by: UInt16) -> UInt16 {
-    return ((value << by) & 0xFFFF) | (value >> (16 - by))
+    return ((value << by) & 0xffff) | (value >> (16 - by))
 }
 
 func rotateLeft(_ value: UInt32, by: UInt32) -> UInt32 {
-    return ((value << by) & 0xFFFFFFFF) | (value >> (32 - by))
+    return ((value << by) & 0xffffffff) | (value >> (32 - by))
 }
 
 func rotateLeft(_ value: UInt64, by: UInt64) -> UInt64 {
@@ -36,9 +44,9 @@ func rotateRight(_ value: UInt64, by: UInt64) -> UInt64 {
 
 func reversed(_ uint8: UInt8) -> UInt8 {
     var v = uint8
-    v = (v & 0xF0) >> 4 | (v & 0x0F) << 4
-    v = (v & 0xCC) >> 2 | (v & 0x33) << 2
-    v = (v & 0xAA) >> 1 | (v & 0x55) << 1
+    v = (v & 0xf0) >> 4 | (v & 0x0f) << 4
+    v = (v & 0xcc) >> 2 | (v & 0x33) << 2
+    v = (v & 0xaa) >> 1 | (v & 0x55) << 1
     return v
 }
 
@@ -66,12 +74,11 @@ func xor(_ a: ArraySlice<UInt8>, _ b: Array<UInt8>) -> Array<UInt8> {
 
 func xor(_ a: ArraySlice<UInt8>, _ b: ArraySlice<UInt8>) -> Array<UInt8> {
     var xored = Array<UInt8>(repeating: 0, count: min(a.count, b.count))
-    for i in 0 ..< xored.count {
+    for i in 0..<xored.count {
         xored[xored.startIndex.advanced(by: i)] = a[a.startIndex.advanced(by: i)] ^ b[b.startIndex.advanced(by: i)]
     }
     return xored
 }
-
 
 /**
  ISO/IEC 9797-1 Padding method 2.
