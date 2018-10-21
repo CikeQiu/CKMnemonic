@@ -21,6 +21,6 @@ let package = Package(
         .target(
             name: "CKMnemonic",
             dependencies: ["CryptoSwift"],
-            path: "CKMnemonic"),
+            path: "CKMnemonic/CKMnemonic/CKMnemonic"),
     ]
 )
