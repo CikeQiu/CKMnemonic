@@ -1,0 +1,6 @@
+module Pods_MnemonicKit {
+  umbrella header "Pods-MnemonicKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

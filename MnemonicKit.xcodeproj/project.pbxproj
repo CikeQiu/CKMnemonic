@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A937DA646E0F6BB6E83EEA9 /* libPods-MnemonicKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */; };
 		778602AF2186370E0036843F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602AE2186370E0036843F /* AppDelegate.swift */; };
 		778602B12186370E0036843F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602B02186370E0036843F /* ViewController.swift */; };
 		778602B42186370E0036843F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778602B22186370E0036843F /* Main.storyboard */; };
@@ -15,10 +16,10 @@
 		778602C6218638FB0036843F /* String+MnemonicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C2218638FB0036843F /* String+MnemonicData.swift */; };
 		778602C7218638FB0036843F /* CKMnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C3218638FB0036843F /* CKMnemonic.swift */; };
 		778602C8218638FB0036843F /* Data+CKBitArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C4218638FB0036843F /* Data+CKBitArray.swift */; };
-		778602C9218638FB0036843F /* Language in Resources */ = {isa = PBXBuildFile; fileRef = 778602C5218638FB0036843F /* Language */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03282044CA56B90979A64A9D /* Pods-MnemonicKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit.debug.xcconfig"; sourceTree = "<group>"; };
 		778602AB2186370E0036843F /* MnemonicKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MnemonicKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778602AE2186370E0036843F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778602B02186370E0036843F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +30,8 @@
 		778602C2218638FB0036843F /* String+MnemonicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MnemonicData.swift"; sourceTree = "<group>"; };
 		778602C3218638FB0036843F /* CKMnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKMnemonic.swift; sourceTree = "<group>"; };
 		778602C4218638FB0036843F /* Data+CKBitArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+CKBitArray.swift"; sourceTree = "<group>"; };
-		778602C5218638FB0036843F /* Language */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Language; sourceTree = "<group>"; };
+		AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit.release.xcconfig"; sourceTree = "<group>"; };
+		AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MnemonicKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A937DA646E0F6BB6E83EEA9 /* libPods-MnemonicKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		487474B4EF0B93DF80EF5CE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		778602A22186370E0036843F = {
 			isa = PBXGroup;
 			children = (
 				778602AD2186370E0036843F /* Sources */,
 				778602AC2186370E0036843F /* Products */,
+				87A5B7EFFE163689F8880593 /* Pods */,
+				487474B4EF0B93DF80EF5CE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,10 +99,18 @@
 			children = (
 				778602C3218638FB0036843F /* CKMnemonic.swift */,
 				778602C4218638FB0036843F /* Data+CKBitArray.swift */,
-				778602C5218638FB0036843F /* Language */,
 				778602C2218638FB0036843F /* String+MnemonicData.swift */,
 			);
 			path = MnemonicKit;
+			sourceTree = "<group>";
+		};
+		87A5B7EFFE163689F8880593 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03282044CA56B90979A64A9D /* Pods-MnemonicKit.debug.xcconfig */,
+				AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +120,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 778602BD2186370F0036843F /* Build configuration list for PBXNativeTarget "MnemonicKit" */;
 			buildPhases = (
+				C79E5827B2A830B6E069BB27 /* [CP] Check Pods Manifest.lock */,
 				778602A72186370E0036843F /* Sources */,
 				778602A82186370E0036843F /* Frameworks */,
 				778602A92186370E0036843F /* Resources */,
@@ -150,7 +172,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778602C9218638FB0036843F /* Language in Resources */,
 				778602B92186370F0036843F /* LaunchScreen.storyboard in Resources */,
 				778602B62186370F0036843F /* Assets.xcassets in Resources */,
 				778602B42186370E0036843F /* Main.storyboard in Resources */,
@@ -158,6 +179,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C79E5827B2A830B6E069BB27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MnemonicKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		778602A72186370E0036843F /* Sources */ = {
@@ -312,6 +354,7 @@
 		};
 		778602BE2186370F0036843F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03282044CA56B90979A64A9D /* Pods-MnemonicKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +373,7 @@
 		};
 		778602BF2186370F0036843F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
