@@ -13,25 +13,42 @@ class MnemonicTests: XCTestCase {
   // Passphrase
   private let passphrase = "TREZOR"
 
-  func testCreateMnemonic() {
+  /**
+   * Test that MnemonicKit can generate mnemonic strings from hex representations.
+   */
+  func testGenerateMnemonicFromHex() {
     guard let vectors = MnemonicTests.dictionaryFromTestInputFile(),
-          let testCases = vectors[englishTestCases] as? Array<Array<String>> else {
-      XCTFail("Failed to parse input file.")
-      return
+      let testCases = vectors[englishTestCases] as? Array<Array<String>> else {
+        XCTFail("Failed to parse input file.")
+        return
     }
 
-    // TODO: Don't use a throwing API here.
     for testCase in testCases {
       let expectedMnemonicString = testCase[mnenomicStringIndex]
-      let expectedDeterministicSeedString = testCase[deterministicSeedStringIndex]
-
       let hexRepresentation = testCase[hexRepresentationIndex]
       let mnemonicString = try! Mnemonic.mnemonicString(from: hexRepresentation, language: .english)
+
+      XCTAssertEqual(mnemonicString, expectedMnemonicString)
+    }
+  }
+
+  /**
+   * Test that MnemonicKit can generate deterministic seed strings strings without a passphrase.
+   */
+  func testGenerateDeterministicSeedStringWithPassphrase() {
+    guard let vectors = MnemonicTests.dictionaryFromTestInputFile(),
+      let testCases = vectors[englishTestCases] as? Array<Array<String>> else {
+        XCTFail("Failed to parse input file.")
+        return
+    }
+
+    for testCase in testCases {
+      let mnemonicString = testCase[mnenomicStringIndex]
+      let expectedDeterministicSeedString = testCase[deterministicSeedStringIndex]
+
       let deterministicSeedString = try! Mnemonic.deterministicSeedString(from: mnemonicString,
                                                                           passphrase: passphrase,
                                                                           language: .english)
-
-      XCTAssertEqual(mnemonicString, expectedMnemonicString)
       XCTAssertEqual(deterministicSeedString, expectedDeterministicSeedString)
     }
   }
