@@ -1,4 +1,4 @@
-module MnemonicKit {
+framework module MnemonicKit {
   umbrella header "MnemonicKit-umbrella.h"
 
   export *

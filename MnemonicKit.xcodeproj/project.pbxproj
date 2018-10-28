@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A937DA646E0F6BB6E83EEA9 /* libPods-MnemonicKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */; };
 		778602AF2186370E0036843F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602AE2186370E0036843F /* AppDelegate.swift */; };
 		778602B12186370E0036843F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602B02186370E0036843F /* ViewController.swift */; };
 		778602B42186370E0036843F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778602B22186370E0036843F /* Main.storyboard */; };
@@ -19,7 +18,8 @@
 		778602CE21863B520036843F /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CC21863B520036843F /* English.swift */; };
 		778602CF21863B520036843F /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CD21863B520036843F /* Chinese.swift */; };
 		778602D721863BDD0036843F /* MnemonicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602D621863BDD0036843F /* MnemonicKitTests.swift */; };
-		C7B472CFFA1517627F8015D0 /* libPods-MnemonicKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B141D496D23DAF42BC747E42 /* libPods-MnemonicKitTests.a */; };
+		7D65076D170104DCC0F06371 /* Pods_MnemonicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */; };
+		DF2A5229DD32EBE04F377531 /* Pods_MnemonicKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E685D062235716F230D243C3 /* Pods_MnemonicKitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +49,11 @@
 		778602D421863BDD0036843F /* MnemonicKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MnemonicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		778602D621863BDD0036843F /* MnemonicKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicKitTests.swift; sourceTree = "<group>"; };
 		778602D821863BDD0036843F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit.release.xcconfig"; sourceTree = "<group>"; };
-		AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MnemonicKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B141D496D23DAF42BC747E42 /* libPods-MnemonicKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MnemonicKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22F0D96C2014429DA6247E3 /* Pods-MnemonicKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCDDA4A5652CB1771A37B4B5 /* Pods-MnemonicKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		E685D062235716F230D243C3 /* Pods_MnemonicKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A937DA646E0F6BB6E83EEA9 /* libPods-MnemonicKit.a in Frameworks */,
+				7D65076D170104DCC0F06371 /* Pods_MnemonicKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B472CFFA1517627F8015D0 /* libPods-MnemonicKitTests.a in Frameworks */,
+				DF2A5229DD32EBE04F377531 /* Pods_MnemonicKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,8 +79,8 @@
 		487474B4EF0B93DF80EF5CE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */,
-				B141D496D23DAF42BC747E42 /* libPods-MnemonicKitTests.a */,
+				77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */,
+				E685D062235716F230D243C3 /* Pods_MnemonicKitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,6 +178,7 @@
 				778602A72186370E0036843F /* Sources */,
 				778602A82186370E0036843F /* Frameworks */,
 				778602A92186370E0036843F /* Resources */,
+				774A1905EE36A21FD35513EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +267,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		774A1905EE36A21FD35513EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MnemonicKit/MnemonicKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MnemonicKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C79E5827B2A830B6E069BB27 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

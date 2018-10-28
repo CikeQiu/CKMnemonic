@@ -1,3 +1,6 @@
+use_modular_headers!
+use_frameworks!
+
 target 'MnemonicKit' do
 	pod "MnemonicKit", :git => 'https://github.com/keefertaylor/MnemonicKit.git'
 

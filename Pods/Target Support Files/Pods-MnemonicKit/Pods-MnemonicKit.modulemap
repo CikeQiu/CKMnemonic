@@ -1,4 +1,4 @@
-module Pods_MnemonicKit {
+framework module Pods_MnemonicKit {
   umbrella header "Pods-MnemonicKit-umbrella.h"
 
   export *
