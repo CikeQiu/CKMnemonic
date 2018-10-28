@@ -23,7 +23,6 @@ public extension Data {
 	public func toBitArray() -> [String] {
 		var toReturn = [String]()
 		for num: UInt8 in bytes {
-
 			toReturn.append(contentsOf: num.mnemonicBits())
 		}
 		return toReturn

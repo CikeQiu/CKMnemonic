@@ -73,7 +73,7 @@ class MnemonicTests: XCTestCase {
 
   /** Test mnemonic generation in english. */
   public func testGenerateMnemonic() {
-    let mnemonic = try! Mnemonic.generateMnemonic(strength: 32, language: .english)
+    let mnemonic = try! Mnemonic.generateMnemonic(strength: 32)
     XCTAssertNotNil(mnemonic)
   }
 
@@ -85,12 +85,12 @@ class MnemonicTests: XCTestCase {
 
   /** Test input strengths for mnemonic generation. */
   public func testMnemonicGenerationStrength() {
-    let mnemonic32 = try! Mnemonic.generateMnemonic(strength: 32, language: .english)
-    let mnemonic64 = try! Mnemonic.generateMnemonic(strength: 32, language: .english)
+    let mnemonic32 = try! Mnemonic.generateMnemonic(strength: 32)
+    let mnemonic64 = try! Mnemonic.generateMnemonic(strength: 32)
     XCTAssertNotNil(mnemonic32)
     XCTAssertNotNil(mnemonic64)
 
-    let mnemonic16 = try! Mnemonic.generateMnemonic(strength: 32, language: .english)
+    let mnemonic16 = try! Mnemonic.generateMnemonic(strength: 32)
     XCTAssertNotNil(mnemonic16)
   }
 }

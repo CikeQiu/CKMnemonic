@@ -86,7 +86,13 @@ public class Mnemonic: NSObject {
 		}
 	}
 
-	public static func generateMnemonic(strength: Int, language: MnemonicLanguageType) throws -> String {
+  /**
+   * Generate a mnemonic of the given strength and given language.
+   *
+   * @param strength The strength to use. This must be a multiple of 32.
+   * @param language The language to use. Default is english.
+   */
+	public static func generateMnemonic(strength: Int, language: MnemonicLanguageType = .english) throws -> String {
 		guard strength % 32 == 0 else {
 			throw MnemonicError.invalidStrength
 		}
