@@ -54,6 +54,14 @@
 		778602AD2186370E0036843F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				778602C0218637FB0036843F /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		778602C0218637FB0036843F /* App */ = {
+			isa = PBXGroup;
+			children = (
 				778602AE2186370E0036843F /* AppDelegate.swift */,
 				778602B02186370E0036843F /* ViewController.swift */,
 				778602B22186370E0036843F /* Main.storyboard */,
@@ -61,7 +69,7 @@
 				778602B72186370F0036843F /* LaunchScreen.storyboard */,
 				778602BA2186370F0036843F /* Info.plist */,
 			);
-			path = Sources;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F6VXZUKN5;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F6VXZUKN5;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
