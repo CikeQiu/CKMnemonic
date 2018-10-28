@@ -19,6 +19,7 @@
 		778602CE21863B520036843F /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CC21863B520036843F /* English.swift */; };
 		778602CF21863B520036843F /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CD21863B520036843F /* Chinese.swift */; };
 		778602D721863BDD0036843F /* MnemonicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602D621863BDD0036843F /* MnemonicKitTests.swift */; };
+		C7B472CFFA1517627F8015D0 /* libPods-MnemonicKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B141D496D23DAF42BC747E42 /* libPods-MnemonicKitTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,9 @@
 		778602D821863BDD0036843F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit.release.xcconfig"; sourceTree = "<group>"; };
 		AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MnemonicKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B141D496D23DAF42BC747E42 /* libPods-MnemonicKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MnemonicKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22F0D96C2014429DA6247E3 /* Pods-MnemonicKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCDDA4A5652CB1771A37B4B5 /* Pods-MnemonicKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B472CFFA1517627F8015D0 /* libPods-MnemonicKitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */,
+				B141D496D23DAF42BC747E42 /* libPods-MnemonicKitTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 			children = (
 				03282044CA56B90979A64A9D /* Pods-MnemonicKit.debug.xcconfig */,
 				AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */,
+				B22F0D96C2014429DA6247E3 /* Pods-MnemonicKitTests.debug.xcconfig */,
+				DCDDA4A5652CB1771A37B4B5 /* Pods-MnemonicKitTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 778602DB21863BDE0036843F /* Build configuration list for PBXNativeTarget "MnemonicKitTests" */;
 			buildPhases = (
+				F63A8A16C3BE522CCA0EBE51 /* [CP] Check Pods Manifest.lock */,
 				778602D021863BDD0036843F /* Sources */,
 				778602D121863BDD0036843F /* Frameworks */,
 				778602D221863BDD0036843F /* Resources */,
@@ -269,6 +278,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MnemonicKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F63A8A16C3BE522CCA0EBE51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MnemonicKitTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -486,6 +513,7 @@
 		};
 		778602DC21863BDE0036843F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22F0D96C2014429DA6247E3 /* Pods-MnemonicKitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +534,7 @@
 		};
 		778602DD21863BDE0036843F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCDDA4A5652CB1771A37B4B5 /* Pods-MnemonicKitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

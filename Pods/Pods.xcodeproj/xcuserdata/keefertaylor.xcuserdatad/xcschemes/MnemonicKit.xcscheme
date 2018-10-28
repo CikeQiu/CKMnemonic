@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C2FA39051AC5836332F06D6992A87A7"
-               BlueprintName = "Pods-MnemonicKit"
+               BlueprintIdentifier = "E1BEAD997FC0A7F53E75B02291A8261E"
+               BlueprintName = "MnemonicKit"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-MnemonicKit.a">
+               BuildableName = "libMnemonicKit.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
