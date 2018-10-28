@@ -1,4 +1,5 @@
 # List of ignore directories for code coverage.
 ignore:
- - "TezosKitTests"
+ - "MnemonicKitTests"
  - "Sources/App"
+ - "Pods/CryptoSwift"
