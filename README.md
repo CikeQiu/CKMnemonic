@@ -22,7 +22,7 @@ pod "MnemonicKit"
 ```
 
 
-### Generate a Mnemonic from a Hex Represetation
+### Generate a Mnemonic from a Hex Representation
 
 ```swift
   let hexRepresentation: String = ...
