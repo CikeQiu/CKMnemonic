@@ -67,22 +67,7 @@ public class Mnemonic: NSObject {
 	public static func deterministicSeedString(from mnemonic: String,
                                              passphrase: String = "",
                                              language: MnemonicLanguageType = .english) throws -> String {
-		func normalized(string: String) -> Data? {
-			guard let data = string.data(using: .utf8, allowLossyConversion: true) else {
-				return nil
-			}
-
-			guard let dataString = String(data: data, encoding: .utf8) else {
-				return nil
-			}
-
-			guard let normalizedData = dataString.data(using: .utf8, allowLossyConversion: false) else {
-				return nil
-			}
-			return normalizedData
-		}
-
-		guard let normalizedData = normalized(string: mnemonic) else {
+    guard let normalizedData = self.normalized(string: mnemonic) else {
 			return ""
 		}
 
@@ -121,10 +106,23 @@ public class Mnemonic: NSObject {
     }
     let data = Data(bytes: bytes)
     let hexString = data.toHexString()
+
     do {
       return try mnemonicString(from: hexString, language: language)
     } catch {
       return nil
     }
 	}
+
+  /**
+   * Change a string into data.
+   */
+  private static func normalized(string: String) -> Data? {
+    guard let data = string.data(using: .utf8, allowLossyConversion: true),
+          let dataString = String(data: data, encoding: .utf8),
+          let normalizedData = dataString.data(using: .utf8, allowLossyConversion: false) else {
+      return nil
+    }
+    return normalizedData
+  }
 }
