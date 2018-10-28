@@ -1,14 +1,12 @@
 import XCTest
 import MnemonicKit
 
-class CKMnemonicTests: XCTestCase {
+class MnemonicTests: XCTestCase {
 
-  func testMnemonicCreate() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-
-    guard let url = Bundle.main.url(forResource: "vectors", withExtension: "json") else {
-      XCTFail("获取测试文件路径失败")
+  func testCreateMnemonic() {
+    let testBundle = Bundle(for: type(of: self))
+    guard let url = testBundle.url(forResource: "vectors", withExtension: "json") else {
+      XCTFail("Unable to find test input file.")
       return
     }
 
@@ -28,7 +26,7 @@ class CKMnemonicTests: XCTestCase {
         }
       }
     } catch {
-      XCTFail("测试未通过，原因：\(error)")
+      XCTFail("Caught an unexpected exception: \(error)")
     }
 
   }
