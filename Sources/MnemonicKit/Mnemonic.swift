@@ -81,7 +81,7 @@ public class Mnemonic: NSObject {
                                    variant: .sha512).calculate()
 			return bytes.toHexString()
 		} catch {
-			throw nil
+			return nil
 		}
 	}
 
