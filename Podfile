@@ -1,5 +1,5 @@
 target 'MnemonicKit' do
-  pod 'CryptoSwift', '0.7.2'
+	pod "MnemonicKit", :git => 'https://github.com/keefertaylor/MnemonicKit.git'
 
  target 'MnemonicKitTests' do
    inherit! :search_paths
