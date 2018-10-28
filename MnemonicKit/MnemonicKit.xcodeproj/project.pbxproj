@@ -38,7 +38,7 @@
 		778602A22186370E0036843F = {
 			isa = PBXGroup;
 			children = (
-				778602AD2186370E0036843F /* MnemonicKit */,
+				778602AD2186370E0036843F /* Sources */,
 				778602AC2186370E0036843F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +51,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		778602AD2186370E0036843F /* MnemonicKit */ = {
+		778602AD2186370E0036843F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				778602AE2186370E0036843F /* AppDelegate.swift */,
@@ -61,7 +61,7 @@
 				778602B72186370F0036843F /* LaunchScreen.storyboard */,
 				778602BA2186370F0036843F /* Info.plist */,
 			);
-			path = MnemonicKit;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
