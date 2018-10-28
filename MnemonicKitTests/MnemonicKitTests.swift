@@ -26,7 +26,7 @@ class MnemonicTests: XCTestCase {
     for testCase in testCases {
       let expectedMnemonicString = testCase[mnenomicStringIndex]
       let hexRepresentation = testCase[hexRepresentationIndex]
-      let mnemonicString = try! Mnemonic.mnemonicString(from: hexRepresentation)
+      let mnemonicString = Mnemonic.mnemonicString(from: hexRepresentation)
 
       XCTAssertEqual(mnemonicString, expectedMnemonicString)
     }
