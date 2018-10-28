@@ -16,6 +16,8 @@
 		778602C6218638FB0036843F /* String+MnemonicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C2218638FB0036843F /* String+MnemonicData.swift */; };
 		778602C7218638FB0036843F /* CKMnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C3218638FB0036843F /* CKMnemonic.swift */; };
 		778602C8218638FB0036843F /* Data+CKBitArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C4218638FB0036843F /* Data+CKBitArray.swift */; };
+		778602CE21863B520036843F /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CC21863B520036843F /* English.swift */; };
+		778602CF21863B520036843F /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CD21863B520036843F /* Chinese.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		778602C2218638FB0036843F /* String+MnemonicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MnemonicData.swift"; sourceTree = "<group>"; };
 		778602C3218638FB0036843F /* CKMnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKMnemonic.swift; sourceTree = "<group>"; };
 		778602C4218638FB0036843F /* Data+CKBitArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+CKBitArray.swift"; sourceTree = "<group>"; };
+		778602CC21863B520036843F /* English.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = English.swift; sourceTree = "<group>"; };
+		778602CD21863B520036843F /* Chinese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chinese.swift; sourceTree = "<group>"; };
 		AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit.release.xcconfig"; sourceTree = "<group>"; };
 		AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MnemonicKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,11 +101,21 @@
 		778602C1218638BF0036843F /* MnemonicKit */ = {
 			isa = PBXGroup;
 			children = (
+				778602CB21863B350036843F /* Language */,
 				778602C3218638FB0036843F /* CKMnemonic.swift */,
 				778602C4218638FB0036843F /* Data+CKBitArray.swift */,
 				778602C2218638FB0036843F /* String+MnemonicData.swift */,
 			);
 			path = MnemonicKit;
+			sourceTree = "<group>";
+		};
+		778602CB21863B350036843F /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				778602CD21863B520036843F /* Chinese.swift */,
+				778602CC21863B520036843F /* English.swift */,
+			);
+			path = Language;
 			sourceTree = "<group>";
 		};
 		87A5B7EFFE163689F8880593 /* Pods */ = {
@@ -207,9 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				778602C8218638FB0036843F /* Data+CKBitArray.swift in Sources */,
+				778602CF21863B520036843F /* Chinese.swift in Sources */,
 				778602B12186370E0036843F /* ViewController.swift in Sources */,
 				778602AF2186370E0036843F /* AppDelegate.swift in Sources */,
 				778602C6218638FB0036843F /* String+MnemonicData.swift in Sources */,
+				778602CE21863B520036843F /* English.swift in Sources */,
 				778602C7218638FB0036843F /* CKMnemonic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
