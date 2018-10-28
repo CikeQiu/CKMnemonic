@@ -14,12 +14,11 @@
 		778602B62186370F0036843F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778602B52186370F0036843F /* Assets.xcassets */; };
 		778602B92186370F0036843F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778602B72186370F0036843F /* LaunchScreen.storyboard */; };
 		778602C6218638FB0036843F /* String+MnemonicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C2218638FB0036843F /* String+MnemonicData.swift */; };
-		778602C7218638FB0036843F /* CKMnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C3218638FB0036843F /* CKMnemonic.swift */; };
-		778602C8218638FB0036843F /* Data+CKBitArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C4218638FB0036843F /* Data+CKBitArray.swift */; };
+		778602C7218638FB0036843F /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C3218638FB0036843F /* Mnemonic.swift */; };
+		778602C8218638FB0036843F /* Data+BitArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C4218638FB0036843F /* Data+BitArray.swift */; };
 		778602CE21863B520036843F /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CC21863B520036843F /* English.swift */; };
 		778602CF21863B520036843F /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CD21863B520036843F /* Chinese.swift */; };
 		778602D721863BDD0036843F /* MnemonicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602D621863BDD0036843F /* MnemonicKitTests.swift */; };
-		84A053239F0CB600CF79B401 /* libPods-MnemonicKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A799B2DF26F4A7F1EFEDB142 /* libPods-MnemonicKitTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,18 +41,15 @@
 		778602B82186370F0036843F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		778602BA2186370F0036843F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778602C2218638FB0036843F /* String+MnemonicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MnemonicData.swift"; sourceTree = "<group>"; };
-		778602C3218638FB0036843F /* CKMnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKMnemonic.swift; sourceTree = "<group>"; };
-		778602C4218638FB0036843F /* Data+CKBitArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+CKBitArray.swift"; sourceTree = "<group>"; };
+		778602C3218638FB0036843F /* Mnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
+		778602C4218638FB0036843F /* Data+BitArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+BitArray.swift"; sourceTree = "<group>"; };
 		778602CC21863B520036843F /* English.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = English.swift; sourceTree = "<group>"; };
 		778602CD21863B520036843F /* Chinese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chinese.swift; sourceTree = "<group>"; };
 		778602D421863BDD0036843F /* MnemonicKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MnemonicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		778602D621863BDD0036843F /* MnemonicKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicKitTests.swift; sourceTree = "<group>"; };
 		778602D821863BDD0036843F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AA34E497330BA130F1BA506 /* Pods-MnemonicKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A799B2DF26F4A7F1EFEDB142 /* libPods-MnemonicKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MnemonicKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit.release.xcconfig"; sourceTree = "<group>"; };
 		AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MnemonicKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B811DFB08C63A25954C28102 /* Pods-MnemonicKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A053239F0CB600CF79B401 /* libPods-MnemonicKitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				AC14431DF06458889874DA89 /* libPods-MnemonicKit.a */,
-				A799B2DF26F4A7F1EFEDB142 /* libPods-MnemonicKitTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,8 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				778602CB21863B350036843F /* Language */,
-				778602C3218638FB0036843F /* CKMnemonic.swift */,
-				778602C4218638FB0036843F /* Data+CKBitArray.swift */,
+				778602C3218638FB0036843F /* Mnemonic.swift */,
+				778602C4218638FB0036843F /* Data+BitArray.swift */,
 				778602C2218638FB0036843F /* String+MnemonicData.swift */,
 			);
 			path = MnemonicKit;
@@ -161,8 +155,6 @@
 			children = (
 				03282044CA56B90979A64A9D /* Pods-MnemonicKit.debug.xcconfig */,
 				AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */,
-				9AA34E497330BA130F1BA506 /* Pods-MnemonicKitTests.debug.xcconfig */,
-				B811DFB08C63A25954C28102 /* Pods-MnemonicKitTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -192,7 +184,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 778602DB21863BDE0036843F /* Build configuration list for PBXNativeTarget "MnemonicKitTests" */;
 			buildPhases = (
-				594C5349098C23823A335EA6 /* [CP] Check Pods Manifest.lock */,
 				778602D021863BDD0036843F /* Sources */,
 				778602D121863BDD0036843F /* Frameworks */,
 				778602D221863BDD0036843F /* Resources */,
@@ -266,24 +257,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		594C5349098C23823A335EA6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MnemonicKitTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C79E5827B2A830B6E069BB27 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,13 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778602C8218638FB0036843F /* Data+CKBitArray.swift in Sources */,
+				778602C8218638FB0036843F /* Data+BitArray.swift in Sources */,
 				778602CF21863B520036843F /* Chinese.swift in Sources */,
 				778602B12186370E0036843F /* ViewController.swift in Sources */,
 				778602AF2186370E0036843F /* AppDelegate.swift in Sources */,
 				778602C6218638FB0036843F /* String+MnemonicData.swift in Sources */,
 				778602CE21863B520036843F /* English.swift in Sources */,
-				778602C7218638FB0036843F /* CKMnemonic.swift in Sources */,
+				778602C7218638FB0036843F /* Mnemonic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +486,6 @@
 		};
 		778602DC21863BDE0036843F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AA34E497330BA130F1BA506 /* Pods-MnemonicKitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -534,7 +506,6 @@
 		};
 		778602DD21863BDE0036843F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B811DFB08C63A25954C28102 /* Pods-MnemonicKitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
