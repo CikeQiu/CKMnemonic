@@ -14,7 +14,7 @@ public extension String
 		let length = characters.count
 		let dataLength = length / 2
 		var dataToReturn = Data(capacity: dataLength)
-		
+
 		var index = 0
 		var chars = ""
 		for char in characters {
@@ -26,7 +26,7 @@ public extension String
 			}
 			index += 1
 		}
-		
+
 		return dataToReturn
 	}
 }
