@@ -47,8 +47,7 @@ class MnemonicTests: XCTestCase {
       let expectedDeterministicSeedString = testCase[deterministicSeedStringIndex]
 
       let deterministicSeedString = try! Mnemonic.deterministicSeedString(from: mnemonicString,
-                                                                          passphrase: passphrase,
-                                                                          language: .english)
+                                                                          passphrase: passphrase)
       XCTAssertEqual(deterministicSeedString, expectedDeterministicSeedString)
     }
   }

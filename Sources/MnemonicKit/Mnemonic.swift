@@ -57,8 +57,16 @@ public class Mnemonic: NSObject {
 		return mnemonic.joined(separator: " ")
 	}
 
-	public static func deterministicSeedString(from mnemonic: String, passphrase: String = "", language: MnemonicLanguageType) throws -> String {
-
+  /**
+   * Generate a deterministic seed string from the given inputs.
+   *
+   * @param mnemonic The mnemonic to use.
+   * @param passphrase An optional passphrase. Default is the empty string.
+   * @param language The language to use. Default is english.
+   */
+	public static func deterministicSeedString(from mnemonic: String,
+                                             passphrase: String = "",
+                                             language: MnemonicLanguageType = .english) throws -> String {
 		func normalized(string: String) -> Data? {
 			guard let data = string.data(using: .utf8, allowLossyConversion: true) else {
 				return nil
