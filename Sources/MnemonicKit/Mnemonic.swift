@@ -29,9 +29,9 @@ public class Mnemonic: NSObject {
 		// print("\(hexString.characters.count)\t\(seedData.count)")
 		let hashData = seedData.sha256()
 		// print(hashData.toHexString())
-		let checkSum = hashData.ck_toBitArray()
+		let checkSum = hashData.toBitArray()
 		// print(checkSum)
-		var seedBits = seedData.ck_toBitArray()
+		var seedBits = seedData.toBitArray()
 
 		for i in 0..<seedBits.count / 32 {
 			seedBits.append(checkSum[i])

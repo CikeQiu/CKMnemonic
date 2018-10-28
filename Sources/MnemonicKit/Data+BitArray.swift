@@ -20,7 +20,7 @@ public extension UInt8 {
 }
 
 public extension Data {
-	public func ck_toBitArray() -> [String] {
+	public func toBitArray() -> [String] {
 		var toReturn = [String]()
 		for num: UInt8 in bytes {
 
