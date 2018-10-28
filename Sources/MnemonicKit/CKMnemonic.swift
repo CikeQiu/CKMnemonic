@@ -2,7 +2,7 @@ import Foundation
 import CryptoSwift
 import Security
 
-public enum CKMnemonicLanguageType {
+public enum MnemonicLanguageType {
 	case english
 
 	case chinese
@@ -17,15 +17,15 @@ public enum CKMnemonicLanguageType {
 	}
 }
 
-enum CKMnemonicError: Error {
+enum MnemonicError: Error {
 	case invalidStrength
 	case unableToGetRandomData
 	case unableToCreateSeedData
 }
 
-public class CKMnemonic: NSObject {
-	public static func mnemonicString(from hexString: String, language: CKMnemonicLanguageType) throws -> String {
-		let seedData = hexString.ck_mnemonicData()
+public class Mnemonic: NSObject {
+	public static func mnemonicString(from hexString: String, language: MnemonicLanguageType) throws -> String {
+		let seedData = hexString.mnemonicData()
 		// print("\(hexString.characters.count)\t\(seedData.count)")
 		let hashData = seedData.sha256()
 		// print(hashData.toHexString())
@@ -54,7 +54,7 @@ public class CKMnemonic: NSObject {
 		return mnemonic.joined(separator: " ")
 	}
 
-	public static func deterministicSeedString(from mnemonic: String, passphrase: String = "", language: CKMnemonicLanguageType) throws -> String {
+	public static func deterministicSeedString(from mnemonic: String, passphrase: String = "", language: MnemonicLanguageType) throws -> String {
 
 		func normalized(string: String) -> Data? {
 			guard let data = string.data(using: .utf8, allowLossyConversion: true) else {
@@ -92,9 +92,9 @@ public class CKMnemonic: NSObject {
 		}
 	}
 
-	public static func generateMnemonic(strength: Int, language: CKMnemonicLanguageType) throws -> String {
+	public static func generateMnemonic(strength: Int, language: MnemonicLanguageType) throws -> String {
 		guard strength % 32 == 0 else {
-			throw CKMnemonicError.invalidStrength
+			throw MnemonicError.invalidStrength
 		}
 
 		let count = strength / 8
@@ -108,6 +108,6 @@ public class CKMnemonic: NSObject {
 
 			return try mnemonicString(from: hexString, language: language)
 		}
-		throw CKMnemonicError.unableToGetRandomData
+		throw MnemonicError.unableToGetRandomData
 	}
 }

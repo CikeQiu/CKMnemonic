@@ -1,7 +1,7 @@
 import Foundation
 
 public extension String {
-	public func ck_mnemonicData() -> Data {
+	public func mnemonicData() -> Data {
 		let length = characters.count
 		let dataLength = length / 2
 		var dataToReturn = Data(capacity: dataLength)

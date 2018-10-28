@@ -34,11 +34,11 @@ class CKMnemonicTests: XCTestCase {
 
 			if let cases: Array<Array<String>> = vectors["english"] as? Array<Array<String>> {
 				for test in cases {
-					let selfM = try CKMnemonic.mnemonicString(from: test[0], language: .english)
+					let selfM = try Mnemonic.mnemonicString(from: test[0], language: .english)
 					let m = test[1]
 					XCTAssertTrue(selfM == m, "计算出的助记词没有通过测试")
 
-					let selfSeed = try CKMnemonic.deterministicSeedString(from: selfM, passphrase: "TREZOR", language: .english)
+					let selfSeed = try Mnemonic.deterministicSeedString(from: selfM, passphrase: "TREZOR", language: .english)
 					let seed = test[2]
 					XCTAssertTrue(selfSeed == seed, "计算出的 seed 没有通过测试")
 				}

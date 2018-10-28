@@ -2,7 +2,7 @@ import Foundation
 import CryptoSwift
 
 public extension UInt8 {
-	public func ck_bits() -> [String] {
+	public func mnemonicBits() -> [String] {
 		let totalBitsCount = MemoryLayout<UInt8>.size * 8
 
 		var bitsArray = [String](repeating: "0", count: totalBitsCount)
@@ -24,7 +24,7 @@ public extension Data {
 		var toReturn = [String]()
 		for num: UInt8 in bytes {
 
-			toReturn.append(contentsOf: num.ck_bits())
+			toReturn.append(contentsOf: num.mnemonicBits())
 		}
 		return toReturn
 	}
