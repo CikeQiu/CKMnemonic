@@ -105,11 +105,7 @@ public class Mnemonic: NSObject {
     let data = Data(bytes: bytes)
     let hexString = data.toHexString()
 
-    do {
-      return try mnemonicString(from: hexString, language: language)
-    } catch {
-      return nil
-    }
+    return mnemonicString(from: hexString, language: language)
 	}
 
   /**
