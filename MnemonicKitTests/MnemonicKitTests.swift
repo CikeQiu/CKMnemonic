@@ -14,24 +14,25 @@ class MnemonicTests: XCTestCase {
   private let passphrase = "TREZOR"
 
   func testCreateMnemonic() {
-    guard let vectors = MnemonicTests.dictionaryFromTestInputFile() else {
-      XCTFail("Failed to parse test input file.")
+    guard let vectors = MnemonicTests.dictionaryFromTestInputFile(),
+          let testCases = vectors[englishTestCases] as? Array<Array<String>> else {
+      XCTFail("Failed to parse input file.")
       return
     }
 
-    if let testCases: Array<Array<String>> = vectors[englishTestCases] as? Array<Array<String>> {
-      for test in testCases {
-        // TODO: Don't use a throwing API here.
-        let mnemonicString = try! Mnemonic.mnemonicString(from: test[hexRepresentationIndex], language: .english)
-        let expectedMnemonicString = test[mnenomicStringIndex]
-        XCTAssertEqual(mnemonicString, expectedMnemonicString)
+    // TODO: Don't use a throwing API here.
+    for testCase in testCases {
+      let expectedMnemonicString = testCase[mnenomicStringIndex]
+      let expectedDeterministicSeedString = testCase[deterministicSeedStringIndex]
 
-        let deterministicSeedString = try! Mnemonic.deterministicSeedString(from: mnemonicString,
-                                                                            passphrase: passphrase,
-                                                                            language: .english)
-        let expectedDeterministicSeedString = test[deterministicSeedStringIndex]
-        XCTAssertEqual(deterministicSeedString, expectedDeterministicSeedString)
-      }
+      let hexRepresentation = testCase[hexRepresentationIndex]
+      let mnemonicString = try! Mnemonic.mnemonicString(from: hexRepresentation, language: .english)
+      let deterministicSeedString = try! Mnemonic.deterministicSeedString(from: mnemonicString,
+                                                                          passphrase: passphrase,
+                                                                          language: .english)
+
+      XCTAssertEqual(mnemonicString, expectedMnemonicString)
+      XCTAssertEqual(deterministicSeedString, expectedDeterministicSeedString)
     }
   }
 
