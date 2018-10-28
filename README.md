@@ -1,45 +1,24 @@
-# CKMnemonic
-An implementation of BIP39 used Swift
+# MnemonicKit  &nbsp;&nbsp;&nbsp; [![Build Status](https://travis-ci.org/keefertaylor/MnemonicKit.svg?branch=master)](https://travis-ci.org/keefertaylor/MnemonicKit) &nbsp;&nbsp;&nbsp;  [![codecov](https://codecov.io/gh/keefertaylor/MnemonicKit/branch/master/graph/badge.svg)](https://codecov.io/gh/keefertaylor/MnemonicKit)
+An implementation of BIP39 in Swift.
 
-<!--[![CI Status](http://img.shields.io/travis/work_cocody@hotmail.com/CKMnemonic.svg?style=flat)](https://travis-ci.org/work_cocody@hotmail.com/CKMnemonic)-->
-[![Version](https://img.shields.io/cocoapods/v/CKMnemonic.svg?style=flat)](http://cocoapods.org/pods/CKMnemonic)
-[![License](https://img.shields.io/cocoapods/l/CKMnemonic.svg?style=flat)](http://cocoapods.org/pods/CKMnemonic)
-[![Platform](https://img.shields.io/cocoapods/p/CKMnemonic.svg?style=flat)](http://cocoapods.org/pods/CKMnemonic)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Usage
-
-```Swift
-do {
-    let language: CKMnemonicLanguageType = .chinese
-    let mnemonic = try CKMnemonic.generateMnemonic(strength: 128, language: language)
-    print(mnemonic)
-    let seed = try CKMnemonic.deterministicSeedString(from: mnemonic, passphrase: "Test", language: language)
-    print(seed)
-} catch {
-    print(error)
-}
-```
-
-## Requirements
-Xcode 8.3.2 with Swift 3.0
+This library is originally forked from CKMnemonic: https://github.com/CikeQiu/CKMnemonic. Modifications are made for non-throwing APIs and support on OSX as well as iOS. Credit for most of this work is given to work_cocody@hotmail.com, qiuhongyang@askcoin.org.
 
 ## Installation
 
-CKMnemonic is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### CocoaPods
+TezosKit supports installation via CocoaPods. You can depened on MnemonicKit by adding the following to your Podfile:
 
-```ruby
-pod "CKMnemonic"
+```
+pod "MnemonicKit", :git => 'https://github.com/keefertaylor/MnemonicKit.git'
 ```
 
-## Author
+## Usage
+TODO: Write this
 
-work_cocody@hotmail.com, qiuhongyang@askcoin.org
+## Contributions
+
+I am happy to accept pull requests. If anyone is able to reach the original authors of CKMnemonic, I am happy to merge this library upstream with them.
 
 ## License
 
-CKMnemonic is available under the MIT license. See the LICENSE file for more info.
+MIT
