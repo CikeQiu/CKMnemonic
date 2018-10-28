@@ -2,6 +2,16 @@ import XCTest
 import MnemonicKit
 
 class MnemonicTests: XCTestCase {
+  // Indices in the input file.
+  private let hexRepresentationIndex = 0
+  private let mnenomicStringIndex = 1
+  private let deterministicSeedStringIndex = 2
+
+  // Named arrays in the test file
+  private let englishTestCases = "english"
+
+  // Passphrase
+  private let passphrase = "TREZOR"
 
   func testCreateMnemonic() {
     guard let vectors = MnemonicTests.dictionaryFromTestInputFile() else {
@@ -9,18 +19,18 @@ class MnemonicTests: XCTestCase {
       return
     }
 
-    if let cases: Array<Array<String>> = vectors["english"] as? Array<Array<String>> {
+    if let testCases: Array<Array<String>> = vectors[englishTestCases] as? Array<Array<String>> {
       for test in cases {
         // TODO: Don't use a throwing API here.
-        // TODO: Change errors to english
-        // TODO: Use named constants for test array rather than magic numbers
-        let selfM = try! Mnemonic.mnemonicString(from: test[0], language: .english)
-        let m = test[1]
-        XCTAssertTrue(selfM == m, "计算出的助记词没有通过测试")
+        let mnemonicString = try! Mnemonic.mnemonicString(from: test[hexRepresentationIndex], language: .english)
+        let expectedMnemonicString = test[mnenomicStringIndex]
+        XCTAssertEqual(mnemonicString, expectedMnemonicString)
 
-        let selfSeed = try! Mnemonic.deterministicSeedString(from: selfM, passphrase: "TREZOR", language: .english)
-        let seed = test[2]
-        XCTAssertTrue(selfSeed == seed, "计算出的 seed 没有通过测试")
+        let deterministicSeedString = try! Mnemonic.deterministicSeedString(from: mnemonicString,
+                                                                            passphrase: passphrase,
+                                                                            language: .english)
+        let expectedDeterministicSeedString = test[deterministicSeedStringIndex]
+        XCTAssertEqual(deterministicSeedString, expectedDeterministicSeedString)
       }
     }
   }
