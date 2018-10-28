@@ -67,20 +67,15 @@ public class Mnemonic: NSObject {
 	public static func deterministicSeedString(from mnemonic: String,
                                              passphrase: String = "",
                                              language: MnemonicLanguageType = .english) throws -> String {
-    guard let normalizedData = self.normalized(string: mnemonic) else {
+    guard let normalizedData = self.normalized(string: mnemonic),
+          let saltData = normalized(string: "mnemonic" + passphrase) else {
 			return ""
 		}
 
-		guard let saltData = normalized(string: "mnemonic" + passphrase) else {
-			return ""
-		}
-
-		let password = normalizedData.bytes
-		let salt = saltData.bytes
-
+		let passwordBytes = normalizedData.bytes
+		let saltBytes = saltData.bytes
 		do {
-			let bytes = try PKCS5.PBKDF2(password: password, salt: salt, iterations: 2048, variant: .sha512).calculate()
-
+			let bytes = try PKCS5.PBKDF2(password: passwordBytes, salt: saltBytes, iterations: 2048, variant: .sha512).calculate()
 			return bytes.toHexString()
 		} catch {
 			throw error
