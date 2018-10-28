@@ -1,0 +1,6 @@
+# .slather.yml
+
+coverage_service: cobertura_xml
+xcodeproj: MnemonicKit.xcodeproj
+scheme: MnemonicKitExampleApp
+workspace: MnemonicKit.xcworkspace

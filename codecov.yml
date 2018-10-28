@@ -1,0 +1,4 @@
+# List of ignore directories for code coverage.
+ignore:
+ - "TezosKitTests"
+ - "Sources/App"
