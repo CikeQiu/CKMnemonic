@@ -23,7 +23,13 @@ enum MnemonicError: Error {
 }
 
 public class Mnemonic: NSObject {
-	public static func mnemonicString(from hexString: String, language: MnemonicLanguageType) throws -> String {
+  /**
+   * Generate a mnemonic from the given hex string in the given language.
+   *
+   * @param hexString The hex string to generate a mnemonic from.
+   * @param language The language to use. Default is english.
+   */
+	public static func mnemonicString(from hexString: String, language: MnemonicLanguageType = .english) throws -> String {
 		let seedData = hexString.mnemonicData()
 		let hashData = seedData.sha256()
 		let checkSum = hashData.toBitArray()
