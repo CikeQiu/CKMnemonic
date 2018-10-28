@@ -4,7 +4,6 @@ import Security
 
 public enum MnemonicLanguageType {
 	case english
-
 	case chinese
 
 	func words() -> [String] {
@@ -26,11 +25,8 @@ enum MnemonicError: Error {
 public class Mnemonic: NSObject {
 	public static func mnemonicString(from hexString: String, language: MnemonicLanguageType) throws -> String {
 		let seedData = hexString.mnemonicData()
-		// print("\(hexString.characters.count)\t\(seedData.count)")
 		let hashData = seedData.sha256()
-		// print(hashData.toHexString())
 		let checkSum = hashData.toBitArray()
-		// print(checkSum)
 		var seedBits = seedData.toBitArray()
 
 		for i in 0..<seedBits.count / 32 {
@@ -46,7 +42,6 @@ public class Mnemonic: NSObject {
 			let startIndex = i * length
 			let subArray = seedBits[startIndex..<startIndex + length]
 			let subString = subArray.joined(separator: "")
-			// print(subString)
 
 			let index = Int(strtoul(subString, nil, 2))
 			mnemonic.append(words[index])
@@ -87,7 +82,6 @@ public class Mnemonic: NSObject {
 
 			return bytes.toHexString()
 		} catch {
-			// print(error)
 			throw error
 		}
 	}
@@ -100,12 +94,9 @@ public class Mnemonic: NSObject {
 		let count = strength / 8
 		let bytes = Array<UInt8>(repeating: 0, count: count)
 		let status = SecRandomCopyBytes(kSecRandomDefault, count, UnsafeMutablePointer<UInt8>(mutating: bytes))
-		// print(status)
 		if status != -1 {
 			let data = Data(bytes: bytes)
 			let hexString = data.toHexString()
-			// print(hexString)
-
 			return try mnemonicString(from: hexString, language: language)
 		}
 		throw MnemonicError.unableToGetRandomData
