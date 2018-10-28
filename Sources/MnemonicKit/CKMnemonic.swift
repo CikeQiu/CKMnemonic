@@ -1,11 +1,3 @@
-//
-//  CKMnemonic.swift
-//  Pods
-//
-//  Created by 仇弘扬 on 2017/7/24.
-//
-//
-
 import Foundation
 import CryptoSwift
 import Security
@@ -25,8 +17,7 @@ public enum CKMnemonicLanguageType {
 	}
 }
 
-enum CKMnemonicError: Error
-{
+enum CKMnemonicError: Error {
 	case invalidStrength
 	case unableToGetRandomData
 	case unableToCreateSeedData

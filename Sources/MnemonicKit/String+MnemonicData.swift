@@ -1,15 +1,6 @@
-//
-//  String+MnemonicData.swift
-//  CKMnemonic
-//
-//  Created by 仇弘扬 on 2017/7/25.
-//  Copyright © 2017年 askcoin. All rights reserved.
-//
-
 import Foundation
 
-public extension String
-{
+public extension String {
 	public func ck_mnemonicData() -> Data {
 		let length = characters.count
 		let dataLength = length / 2

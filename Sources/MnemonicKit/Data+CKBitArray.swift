@@ -1,11 +1,3 @@
-//
-//  Data+CKBitArray.swift
-//  CKMnemonic
-//
-//  Created by 仇弘扬 on 2017/7/25.
-//  Copyright © 2017年 askcoin. All rights reserved.
-//
-
 import Foundation
 import CryptoSwift
 
