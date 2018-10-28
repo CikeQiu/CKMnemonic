@@ -16,12 +16,6 @@ public enum MnemonicLanguageType {
 	}
 }
 
-enum MnemonicError: Error {
-	case invalidStrength
-	case unableToGetRandomData
-	case unableToCreateSeedData
-}
-
 public class Mnemonic: NSObject {
 
   /**
