@@ -20,7 +20,7 @@ class MnemonicTests: XCTestCase {
     }
 
     if let testCases: Array<Array<String>> = vectors[englishTestCases] as? Array<Array<String>> {
-      for test in cases {
+      for test in testCases {
         // TODO: Don't use a throwing API here.
         let mnemonicString = try! Mnemonic.mnemonicString(from: test[hexRepresentationIndex], language: .english)
         let expectedMnemonicString = test[mnenomicStringIndex]
