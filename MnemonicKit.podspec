@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/keefertaylor/MnemonicKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Keefer Taylor" => "keefer@keefertaylor.com" }
-  s.source       = { :git => "https://github.com/keefertaylor/MnemonicKit.git", :tag => "v1.0.1" }
+  s.source       = { :git => "https://github.com/keefertaylor/MnemonicKit.git", :tag => "1.0.1" }
   s.source_files  = "Sources/**/*.swift",
   s.exclude_files = "Sources/App/*.swift"
   s.swift_version = "4.2"
