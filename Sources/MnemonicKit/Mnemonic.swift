@@ -92,19 +92,23 @@ public class Mnemonic: NSObject {
    * @param strength The strength to use. This must be a multiple of 32.
    * @param language The language to use. Default is english.
    */
-	public static func generateMnemonic(strength: Int, language: MnemonicLanguageType = .english) throws -> String {
+	public static func generateMnemonic(strength: Int, language: MnemonicLanguageType = .english)
+      -> String? {
 		guard strength % 32 == 0 else {
-			throw MnemonicError.invalidStrength
-		}
+      return nil
+    }
 
 		let count = strength / 8
 		let bytes = Array<UInt8>(repeating: 0, count: count)
-		let status = SecRandomCopyBytes(kSecRandomDefault, count, UnsafeMutablePointer<UInt8>(mutating: bytes))
-		if status != -1 {
-			let data = Data(bytes: bytes)
-			let hexString = data.toHexString()
-			return try mnemonicString(from: hexString, language: language)
-		}
-		throw MnemonicError.unableToGetRandomData
+    guard SecRandomCopyBytes(kSecRandomDefault, count, UnsafeMutablePointer<UInt8>(mutating: bytes)) != -1 else {
+      return nil
+    }
+    let data = Data(bytes: bytes)
+    let hexString = data.toHexString()
+    do {
+      return try mnemonicString(from: hexString, language: language)
+    } catch {
+      return nil
+    }
 	}
 }
