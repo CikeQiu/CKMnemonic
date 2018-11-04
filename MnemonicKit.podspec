@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.exclude_files = "Sources/App/*.swift"
   s.swift_version = "4.2"
   s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.10"
+  # s.osx.deployment_target = "10.10"
 		
   s.dependency "CryptoSwift", "0.7.2"
 

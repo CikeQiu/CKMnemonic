@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A5EFF9D08C0A38BD359D33E34485382B"
+               BlueprintIdentifier = "8B5FA02B43CA43F5A1066A192DD8587A"
                BlueprintName = "MnemonicKit"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "MnemonicKit.framework">
