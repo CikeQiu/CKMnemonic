@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MnemonicKit"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "MnemonicKit provides a Swift implementation of BIP39"
   s.description  = <<-DESC
   MnemonicKit provides a Swift implementation of BIP39. 
