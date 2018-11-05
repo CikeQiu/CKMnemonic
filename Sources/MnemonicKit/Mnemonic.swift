@@ -16,7 +16,7 @@ public enum MnemonicLanguageType {
 	}
 }
 
-public class Mnemonic: NSObject {
+public class Mnemonic {
 
   /**
    * Generate a mnemonic from the given hex string in the given language.
@@ -144,5 +144,11 @@ public class Mnemonic: NSObject {
       return nil
     }
     return normalizedData
+  }
+
+  /** Please do not instantiate this static utility class. */
+  @available(*, unavailable)
+  public init() {
+    fatalError()
   }
 }
