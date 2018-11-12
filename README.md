@@ -1,7 +1,12 @@
 # MnemonicKit  &nbsp;&nbsp;&nbsp; [![Build Status](https://travis-ci.org/keefertaylor/MnemonicKit.svg?branch=master)](https://travis-ci.org/keefertaylor/MnemonicKit) &nbsp;&nbsp;&nbsp;  [![codecov](https://codecov.io/gh/keefertaylor/MnemonicKit/branch/master/graph/badge.svg)](https://codecov.io/gh/keefertaylor/MnemonicKit)
 An implementation of BIP39 in Swift. MnemonicKit supports both English and Chinese mnemonics.
 
-This library is originally forked from CKMnemonic: https://github.com/CikeQiu/CKMnemonic. Modifications are made for non-throwing APIs and support on OSX as well as iOS. Credit for most of this work is given to work_cocody@hotmail.com, qiuhongyang@askcoin.org.
+This library is a fork of (CKMnemonic)[https://github.com/CikeQiu/CKMnemonic]. This fork provides several conveniences over the original library, namely: 
+- Converting throwing APIs to non-throwing nullable APIs
+- Additional helper methods
+- Code clarity and documentation
+- Additional Testing
+- Support on OSX
 
 ## Installation
 
