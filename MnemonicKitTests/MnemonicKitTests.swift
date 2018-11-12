@@ -1,5 +1,7 @@
-import XCTest
+// Copyright Keefer Taylor, 2018
+
 import MnemonicKit
+import XCTest
 
 class MnemonicTests: XCTestCase {
   // Indices in the input file.
@@ -19,8 +21,8 @@ class MnemonicTests: XCTestCase {
   func testGenerateMnemonicFromHex() {
     guard let vectors = MnemonicTests.dictionaryFromTestInputFile(),
       let testCases = vectors[englishTestCases] as? Array<Array<String>> else {
-        XCTFail("Failed to parse input file.")
-        return
+      XCTFail("Failed to parse input file.")
+      return
     }
 
     for testCase in testCases {
@@ -38,8 +40,8 @@ class MnemonicTests: XCTestCase {
   func testGenerateDeterministicSeedStringWithPassphrase() {
     guard let vectors = MnemonicTests.dictionaryFromTestInputFile(),
       let testCases = vectors[englishTestCases] as? Array<Array<String>> else {
-        XCTFail("Failed to parse input file.")
-        return
+      XCTFail("Failed to parse input file.")
+      return
     }
 
     for testCase in testCases {
@@ -52,7 +54,7 @@ class MnemonicTests: XCTestCase {
     }
   }
 
-  private static func dictionaryFromTestInputFile() ->  [String: Any]? {
+  private static func dictionaryFromTestInputFile() -> [String: Any]? {
     let testBundle = Bundle(for: self)
     guard let url = testBundle.url(forResource: "vectors", withExtension: "json") else {
       return nil
@@ -61,8 +63,8 @@ class MnemonicTests: XCTestCase {
     do {
       let data = try Data(contentsOf: url)
       let parsedDictionary =
-          try JSONSerialization.jsonObject(with: data,
-                                           options: [.allowFragments, .mutableContainers, .mutableLeaves]) as! [String: Any]
+        try JSONSerialization.jsonObject(with: data,
+                                         options: [.allowFragments, .mutableContainers, .mutableLeaves]) as! [String: Any]
 
       return parsedDictionary
     } catch {
