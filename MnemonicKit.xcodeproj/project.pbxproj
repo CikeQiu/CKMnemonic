@@ -13,8 +13,6 @@
 		778602B42186370E0036843F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778602B22186370E0036843F /* Main.storyboard */; };
 		778602B62186370F0036843F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778602B52186370F0036843F /* Assets.xcassets */; };
 		778602B92186370F0036843F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778602B72186370F0036843F /* LaunchScreen.storyboard */; };
-		778602D721863BDD0036843F /* MnemonicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602D621863BDD0036843F /* MnemonicKitTests.swift */; };
-		778602DF2186426A0036843F /* vectors.json in Resources */ = {isa = PBXBuildFile; fileRef = 778602DE2186426A0036843F /* vectors.json */; settings = {ASSET_TAGS = (TestInput, ); }; };
 		77FE005521BD999C009C3CD1 /* MnemonicKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FE005421BD999C009C3CD1 /* MnemonicKit.swift */; };
 		77FE005D21BD9A3A009C3CD1 /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CD21863B520036843F /* Chinese.swift */; };
 		77FE005E21BD9A3A009C3CD1 /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CC21863B520036843F /* English.swift */; };
@@ -25,21 +23,11 @@
 		77FE007321BDA0CF009C3CD1 /* MnemonicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602D621863BDD0036843F /* MnemonicKitTests.swift */; };
 		77FE007421BDA2AF009C3CD1 /* vectors.json in Resources */ = {isa = PBXBuildFile; fileRef = 778602DE2186426A0036843F /* vectors.json */; };
 		7D65076D170104DCC0F06371 /* Pods_MnemonicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */; };
-		CD7226146C99BD246DEBEEB0 /* Pods_MnemonicKitExampleApp_MnemonicKit_MnemonicKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962C1D177644F9ED1DA0A779 /* Pods_MnemonicKitExampleApp_MnemonicKit_MnemonicKitTests.framework */; };
 		CDF9869E40CCE983FCEC0464 /* Pods_MnemonicKitTests2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1E9AE023E66AA4A6D6D898 /* Pods_MnemonicKitTests2.framework */; };
 		DD38D47E8C1DF5B5D20BAA0E /* Pods_MnemonicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */; };
-		DF2A5229DD32EBE04F377531 /* Pods_MnemonicKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E685D062235716F230D243C3 /* Pods_MnemonicKitTests.framework */; };
-		FE0DCEF06D426D6FD50DA23D /* Pods_MnemonicKit_MnemonicKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79383BCE9641354EAB0A9900 /* Pods_MnemonicKit_MnemonicKitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		77FE005B21BD9A25009C3CD1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 778602A32186370E0036843F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 77FE005121BD999C009C3CD1;
-			remoteInfo = MnemonicKit;
-		};
 		77FE006221BD9CCB009C3CD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 778602A32186370E0036843F /* Project object */;
@@ -86,7 +74,6 @@
 		778602C4218638FB0036843F /* Data+BitArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+BitArray.swift"; sourceTree = "<group>"; };
 		778602CC21863B520036843F /* English.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = English.swift; sourceTree = "<group>"; };
 		778602CD21863B520036843F /* Chinese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chinese.swift; sourceTree = "<group>"; };
-		778602D421863BDD0036843F /* MnemonicKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MnemonicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		778602D621863BDD0036843F /* MnemonicKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicKitTests.swift; sourceTree = "<group>"; };
 		778602D821863BDD0036843F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778602DE2186426A0036843F /* vectors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vectors.json; sourceTree = "<group>"; };
@@ -119,16 +106,6 @@
 			files = (
 				7D65076D170104DCC0F06371 /* Pods_MnemonicKit.framework in Frameworks */,
 				2333E78225639BC8BC9BC50A /* Pods_MnemonicKitExampleApp.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		778602D121863BDD0036843F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF2A5229DD32EBE04F377531 /* Pods_MnemonicKitTests.framework in Frameworks */,
-				FE0DCEF06D426D6FD50DA23D /* Pods_MnemonicKit_MnemonicKitTests.framework in Frameworks */,
-				CD7226146C99BD246DEBEEB0 /* Pods_MnemonicKitExampleApp_MnemonicKit_MnemonicKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				778602AB2186370E0036843F /* MnemonicKitExampleApp.app */,
-				778602D421863BDD0036843F /* MnemonicKitTests.xctest */,
 				77FE005221BD999C009C3CD1 /* libMnemonicKit.a */,
 				77FE006821BDA092009C3CD1 /* MnemonicKitTests2.xctest */,
 			);
@@ -302,26 +278,6 @@
 			productReference = 778602AB2186370E0036843F /* MnemonicKitExampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		778602D321863BDD0036843F /* MnemonicKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 778602DB21863BDE0036843F /* Build configuration list for PBXNativeTarget "MnemonicKitTests" */;
-			buildPhases = (
-				F63A8A16C3BE522CCA0EBE51 /* [CP] Check Pods Manifest.lock */,
-				778602D021863BDD0036843F /* Sources */,
-				778602D121863BDD0036843F /* Frameworks */,
-				778602D221863BDD0036843F /* Resources */,
-				37E36B33373653B655F12FD1 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				77FE005C21BD9A25009C3CD1 /* PBXTargetDependency */,
-			);
-			name = MnemonicKitTests;
-			productName = MnemonicKitTests;
-			productReference = 778602D421863BDD0036843F /* MnemonicKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		77FE005121BD999C009C3CD1 /* MnemonicKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77FE005621BD999C009C3CD1 /* Build configuration list for PBXNativeTarget "MnemonicKit" */;
@@ -376,10 +332,6 @@
 					778602AA2186370E0036843F = {
 						CreatedOnToolsVersion = 10.0;
 					};
-					778602D321863BDD0036843F = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 778602AA2186370E0036843F;
-					};
 					77FE005121BD999C009C3CD1 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -402,7 +354,6 @@
 			projectRoot = "";
 			targets = (
 				778602AA2186370E0036843F /* MnemonicKitExampleApp */,
-				778602D321863BDD0036843F /* MnemonicKitTests */,
 				77FE005121BD999C009C3CD1 /* MnemonicKit */,
 				77FE006721BDA092009C3CD1 /* MnemonicKitTests2 */,
 			);
@@ -417,14 +368,6 @@
 				778602B92186370F0036843F /* LaunchScreen.storyboard in Resources */,
 				778602B62186370F0036843F /* Assets.xcassets in Resources */,
 				778602B42186370E0036843F /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		778602D221863BDD0036843F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				778602DF2186426A0036843F /* vectors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,28 +448,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MnemonicKitTests2/Pods-MnemonicKitTests2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		37E36B33373653B655F12FD1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C79E5827B2A830B6E069BB27 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -567,24 +488,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F63A8A16C3BE522CCA0EBE51 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MnemonicKitTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -594,14 +497,6 @@
 			files = (
 				778602B12186370E0036843F /* ViewController.swift in Sources */,
 				778602AF2186370E0036843F /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		778602D021863BDD0036843F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				778602D721863BDD0036843F /* MnemonicKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,11 +524,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		77FE005C21BD9A25009C3CD1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 77FE005121BD999C009C3CD1 /* MnemonicKit */;
-			targetProxy = 77FE005B21BD9A25009C3CD1 /* PBXContainerItemProxy */;
-		};
 		77FE006321BD9CCB009C3CD1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 77FE005121BD999C009C3CD1 /* MnemonicKit */;
@@ -820,48 +710,6 @@
 			};
 			name = Release;
 		};
-		778602DC21863BDE0036843F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B22F0D96C2014429DA6247E3 /* Pods-MnemonicKitTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F6VXZUKN5;
-				INFOPLIST_FILE = MnemonicKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MnemonicKitExampleApp.app/MnemonicKitExampleApp";
-			};
-			name = Debug;
-		};
-		778602DD21863BDE0036843F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCDDA4A5652CB1771A37B4B5 /* Pods-MnemonicKitTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F6VXZUKN5;
-				INFOPLIST_FILE = MnemonicKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MnemonicKitExampleApp.app/MnemonicKitExampleApp";
-			};
-			name = Release;
-		};
 		77FE005721BD999C009C3CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03282044CA56B90979A64A9D /* Pods-MnemonicKit.debug.xcconfig */;
@@ -951,15 +799,6 @@
 			buildConfigurations = (
 				778602BE2186370F0036843F /* Debug */,
 				778602BF2186370F0036843F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		778602DB21863BDE0036843F /* Build configuration list for PBXNativeTarget "MnemonicKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				778602DC21863BDE0036843F /* Debug */,
-				778602DD21863BDE0036843F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

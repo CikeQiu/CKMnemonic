@@ -11,8 +11,8 @@ target 'MnemonicKit' do
 end
 
 # TODO: Erase?
-target 'MnemonicKitTests' do
-end
+# target 'MnemonicKitTests' do
+# end
 
 target 'MnemonicKitTests2' do
 end
