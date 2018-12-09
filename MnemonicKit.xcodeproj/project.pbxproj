@@ -182,6 +182,7 @@
 				778602A82186370E0036843F /* Frameworks */,
 				778602A92186370E0036843F /* Resources */,
 				774A1905EE36A21FD35513EC /* [CP] Embed Pods Frameworks */,
+				77FE004B21BD76F7009C3CD1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -293,6 +294,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		77FE004B21BD76F7009C3CD1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		C79E5827B2A830B6E069BB27 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -93,7 +93,7 @@ public class Mnemonic {
     }
 
     let count = strength / 8
-    let bytes = Array<UInt8>(repeating: 0, count: count)
+    let bytes = [UInt8](repeating: 0, count: count)
     guard SecRandomCopyBytes(kSecRandomDefault, count, UnsafeMutablePointer<UInt8>(mutating: bytes)) != -1 else {
       return nil
     }
@@ -109,7 +109,7 @@ public class Mnemonic {
   public static func validate(mnemonic: String) -> Bool {
     let normalizedMnemonic = mnemonic.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
     let mnemonicComponents = normalizedMnemonic.components(separatedBy: " ")
-    guard mnemonicComponents.count > 0 else {
+    guard !mnemonicComponents.isEmpty else {
       return false
     }
 
