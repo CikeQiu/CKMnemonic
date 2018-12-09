@@ -22,8 +22,8 @@ public class Mnemonic {
   /**
    * Generate a mnemonic from the given hex string in the given language.
    *
-   * @param hexString The hex string to generate a mnemonic from.
-   * @param language The language to use. Default is english.
+   * Parameter hexString: The hex string to generate a mnemonic from.
+   * Parameter language: The language to use. Default is english.
    */
   public static func mnemonicString(from hexString: String,
                                     language: MnemonicLanguageType = .english) -> String? {
@@ -55,9 +55,9 @@ public class Mnemonic {
   /**
    * Generate a deterministic seed string from the given inputs.
    *
-   * @param mnemonic The mnemonic to use.
-   * @param passphrase An optional passphrase. Default is the empty string.
-   * @param language The language to use. Default is english.
+   * Parameter mnemonic: The mnemonic to use.
+   * Parameter passphrase: An optional passphrase. Default is the empty string.
+   * Parameter language: The language to use. Default is english.
    */
   public static func deterministicSeedString(from mnemonic: String,
                                              passphrase: String = "",
@@ -83,8 +83,8 @@ public class Mnemonic {
   /**
    * Generate a mnemonic of the given strength and given language.
    *
-   * @param strength The strength to use. This must be a multiple of 32.
-   * @param language The language to use. Default is english.
+   * Parameter strength: The strength to use. This must be a multiple of 32.
+   * Parameter language: The language to use. Default is english.
    */
   public static func generateMnemonic(strength: Int, language: MnemonicLanguageType = .english)
     -> String? {
@@ -93,7 +93,7 @@ public class Mnemonic {
     }
 
     let count = strength / 8
-    let bytes = Array<UInt8>(repeating: 0, count: count)
+    let bytes = [UInt8](repeating: 0, count: count)
     guard SecRandomCopyBytes(kSecRandomDefault, count, UnsafeMutablePointer<UInt8>(mutating: bytes)) != -1 else {
       return nil
     }
@@ -109,7 +109,7 @@ public class Mnemonic {
   public static func validate(mnemonic: String) -> Bool {
     let normalizedMnemonic = mnemonic.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
     let mnemonicComponents = normalizedMnemonic.components(separatedBy: " ")
-    guard mnemonicComponents.count > 0 else {
+    guard !mnemonicComponents.isEmpty else {
       return false
     }
 

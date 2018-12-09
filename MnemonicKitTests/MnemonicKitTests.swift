@@ -4,15 +4,15 @@ import MnemonicKit
 import XCTest
 
 class MnemonicTests: XCTestCase {
-  // Indices in the input file.
+  /// Indices in the input file.
   private let hexRepresentationIndex = 0
   private let mnenomicStringIndex = 1
   private let deterministicSeedStringIndex = 2
 
-  // Named arrays in the test file
+  /// Named arrays in the test file
   private let englishTestCases = "english"
 
-  // Passphrase
+  /// Passphrase
   private let passphrase = "TREZOR"
 
   /**
@@ -20,7 +20,7 @@ class MnemonicTests: XCTestCase {
    */
   func testGenerateMnemonicFromHex() {
     guard let vectors = MnemonicTests.dictionaryFromTestInputFile(),
-      let testCases = vectors[englishTestCases] as? Array<Array<String>> else {
+      let testCases = vectors[englishTestCases] as? [[String]] else {
       XCTFail("Failed to parse input file.")
       return
     }
@@ -39,7 +39,7 @@ class MnemonicTests: XCTestCase {
    */
   func testGenerateDeterministicSeedStringWithPassphrase() {
     guard let vectors = MnemonicTests.dictionaryFromTestInputFile(),
-      let testCases = vectors[englishTestCases] as? Array<Array<String>> else {
+      let testCases = vectors[englishTestCases] as? [[String]] else {
       XCTFail("Failed to parse input file.")
       return
     }
@@ -62,10 +62,12 @@ class MnemonicTests: XCTestCase {
 
     do {
       let data = try Data(contentsOf: url)
-      let parsedDictionary =
+      let options: JSONSerialization.ReadingOptions =  [.allowFragments, .mutableContainers, .mutableLeaves]
+      guard let parsedDictionary =
         try JSONSerialization.jsonObject(with: data,
-                                         options: [.allowFragments, .mutableContainers, .mutableLeaves]) as! [String: Any]
-
+                                         options: options) as? [String: Any] else {
+        return nil
+      }
       return parsedDictionary
     } catch {
       return nil
@@ -97,7 +99,8 @@ class MnemonicTests: XCTestCase {
 
   /** Test valid chinese and english mnemonics are determined to be valid. */
   public func testValidEnglishAndChineseMnemonics() {
-    let englishMnemonic = "pear peasant pelican pen pear peasant pelican pen pear peasant pelican pen pear peasant pelican pen"
+    let englishMnemonic =
+        "pear peasant pelican pen pear peasant pelican pen pear peasant pelican pen pear peasant pelican pen"
     let chineseMnemonic = "路 级 少 图 路 级 少 图 路 级 少 图 路 级 少 图"
 
     XCTAssertTrue(Mnemonic.validate(mnemonic: englishMnemonic))
@@ -120,7 +123,8 @@ class MnemonicTests: XCTestCase {
 
   /** Test that strings in an unknown language are determined to be invalid. */
   public func testUnknownLanguageValidation() {
-    let spanishMnemonic = "pera campesina pelican pen pera campesina pelican pen pera campesina pelican pen pera campesina pelican pen"
+    let spanishMnemonic =
+        "pera campesina pelican pen pera campesina pelican pen pera campesina pelican pen pera campesina pelican pen"
     XCTAssertFalse(Mnemonic.validate(mnemonic: spanishMnemonic))
   }
 
