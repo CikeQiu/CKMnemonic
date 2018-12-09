@@ -181,8 +181,7 @@
 				778602A72186370E0036843F /* Sources */,
 				778602A82186370E0036843F /* Frameworks */,
 				778602A92186370E0036843F /* Resources */,
-				774A1905EE36A21FD35513EC /* [CP] Embed Pods Frameworks */,
-				77FE004B21BD76F7009C3CD1 /* ShellScript */,
+				77958B4B50265A3DF740689D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,27 +274,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		774A1905EE36A21FD35513EC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/MnemonicKit/MnemonicKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MnemonicKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77FE004B21BD76F7009C3CD1 /* ShellScript */ = {
+		77958B4B50265A3DF740689D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,14 +282,19 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 			);
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		C79E5827B2A830B6E069BB27 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

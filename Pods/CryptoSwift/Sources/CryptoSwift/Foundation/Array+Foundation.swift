@@ -1,5 +1,4 @@
 //
-//  CSArrayType+Foundation.swift
 //  CryptoSwift
 //
 //  Copyright (C) 2014-2017 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
@@ -16,14 +15,9 @@
 
 import Foundation
 
-public extension CSArrayType where Iterator.Element == UInt8 {
-
+public extension Array where Element == UInt8 {
     public func toBase64() -> String? {
-        guard let bytesArray = self as? Array<UInt8> else {
-            return nil
-        }
-
-        return Data(bytes: bytesArray).base64EncodedString()
+        return Data(bytes: self).base64EncodedString()
     }
 
     public init(base64: String) {

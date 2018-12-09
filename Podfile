@@ -1,8 +1,10 @@
 use_modular_headers!
 use_frameworks!
 
+platform :ios, '12.0'
+
 target 'MnemonicKit' do
-	pod "MnemonicKit", :git => 'https://github.com/keefertaylor/MnemonicKit.git'
+  pod "CryptoSwift"
 
  target 'MnemonicKitTests' do
    inherit! :search_paths
