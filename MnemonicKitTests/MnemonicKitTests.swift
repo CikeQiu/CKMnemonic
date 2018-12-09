@@ -4,15 +4,15 @@ import MnemonicKit
 import XCTest
 
 class MnemonicTests: XCTestCase {
-  // Indices in the input file.
+  /// Indices in the input file.
   private let hexRepresentationIndex = 0
   private let mnenomicStringIndex = 1
   private let deterministicSeedStringIndex = 2
 
-  // Named arrays in the test file
+  /// Named arrays in the test file
   private let englishTestCases = "english"
 
-  // Passphrase
+  /// Passphrase
   private let passphrase = "TREZOR"
 
   /**
