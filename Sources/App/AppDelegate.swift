@@ -1,6 +1,7 @@
 // Copyright Keefer Taylor, 2018
 
 import UIKit
+import MnemonicKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -3,10 +3,18 @@ use_frameworks!
 
 platform :ios, '12.0'
 
-target 'MnemonicKit' do
-  pod "CryptoSwift"
-
- target 'MnemonicKitTests' do
-   inherit! :search_paths
- end
+target 'MnemonicKitExampleApp' do
 end
+
+target 'MnemonicKit' do
+    pod "CryptoSwift"
+end
+
+# TODO: Erase?
+target 'MnemonicKitTests' do
+end
+
+target 'MnemonicKitTests2' do
+end
+
+
