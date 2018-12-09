@@ -1,7 +1,7 @@
 // Copyright Keefer Taylor, 2018
 
-import MnemonicKit
 import XCTest
+import MnemonicKit
 
 class MnemonicTests: XCTestCase {
   /// Indices in the input file.
