@@ -1,4 +1,4 @@
-// Copyright Keefer Taylor, 2018
+// Copyright Keefer Taylor, 2011
 
 import CryptoSwift
 import Foundation
