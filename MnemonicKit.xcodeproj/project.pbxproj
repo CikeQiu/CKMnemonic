@@ -80,7 +80,7 @@
 		77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FE005221BD999C009C3CD1 /* libMnemonicKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMnemonicKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FE005421BD999C009C3CD1 /* MnemonicKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicKit.swift; sourceTree = "<group>"; };
-		77FE006821BDA092009C3CD1 /* MnemonicKitTests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MnemonicKitTests2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77FE006821BDA092009C3CD1 /* MnemonicKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MnemonicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FE006C21BDA092009C3CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78CE7F69C0FC1539A1964724 /* Pods-MnemonicKit-MnemonicKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit-MnemonicKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit-MnemonicKitTests/Pods-MnemonicKit-MnemonicKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		79383BCE9641354EAB0A9900 /* Pods_MnemonicKit_MnemonicKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKit_MnemonicKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +161,7 @@
 			children = (
 				778602AB2186370E0036843F /* MnemonicKitExampleApp.app */,
 				77FE005221BD999C009C3CD1 /* libMnemonicKit.a */,
-				77FE006821BDA092009C3CD1 /* MnemonicKitTests2.xctest */,
+				77FE006821BDA092009C3CD1 /* MnemonicKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,9 +296,9 @@
 			productReference = 77FE005221BD999C009C3CD1 /* libMnemonicKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		77FE006721BDA092009C3CD1 /* MnemonicKitTests2 */ = {
+		77FE006721BDA092009C3CD1 /* MnemonicKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77FE007221BDA092009C3CD1 /* Build configuration list for PBXNativeTarget "MnemonicKitTests2" */;
+			buildConfigurationList = 77FE007221BDA092009C3CD1 /* Build configuration list for PBXNativeTarget "MnemonicKitTests" */;
 			buildPhases = (
 				0F647D9909440E9611D7A0B0 /* [CP] Check Pods Manifest.lock */,
 				77FE006421BDA092009C3CD1 /* Sources */,
@@ -311,9 +311,9 @@
 			dependencies = (
 				77FE006F21BDA092009C3CD1 /* PBXTargetDependency */,
 			);
-			name = MnemonicKitTests2;
+			name = MnemonicKitTests;
 			productName = MnemonicKitTests2;
-			productReference = 77FE006821BDA092009C3CD1 /* MnemonicKitTests2.xctest */;
+			productReference = 77FE006821BDA092009C3CD1 /* MnemonicKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -355,7 +355,7 @@
 			targets = (
 				778602AA2186370E0036843F /* MnemonicKitExampleApp */,
 				77FE005121BD999C009C3CD1 /* MnemonicKit */,
-				77FE006721BDA092009C3CD1 /* MnemonicKitTests2 */,
+				77FE006721BDA092009C3CD1 /* MnemonicKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -812,7 +812,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77FE007221BDA092009C3CD1 /* Build configuration list for PBXNativeTarget "MnemonicKitTests2" */ = {
+		77FE007221BDA092009C3CD1 /* Build configuration list for PBXNativeTarget "MnemonicKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77FE007021BDA092009C3CD1 /* Debug */,

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05C7EE98D33175BE68ECA9283DE0879D /* Pods-MnemonicKitTests2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 988CF1565B8D01AA7B7941302862CF7A /* Pods-MnemonicKitTests2-dummy.m */; };
+		05C7EE98D33175BE68ECA9283DE0879D /* Pods-MnemonicKitTests2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4731534028D8C45EC7327752FF9F1087 /* Pods-MnemonicKitTests2-dummy.m */; };
 		0627DC84943C9B21BBFFD77F73ECE3AA /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A611D762D0825BEC50D404286F97790 /* HMAC.swift */; };
 		07CB80647C63863F46097ECFE0E2852C /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D546C6AB19101A66EA4B9860F58909D6 /* UInt64+Extension.swift */; };
 		08BBE3B0A2885A94DE68FEEA9FBCD256 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B394D5C8240880B04CF92252CF973AC /* Array+Foundation.swift */; };
@@ -21,7 +21,7 @@
 		168831EA2809233CFD6E98640D126804 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F529B0309A5C7264AFDAC66D2D6F1 /* Operators.swift */; };
 		169B55A24D3FDC159B797D85588C8A34 /* CompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E8117F7F9F363213F9E9309E8EC893 /* CompactMap.swift */; };
 		18704C29935E06F5FB353933C7B93897 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64942E3A55E18B7A9730680702B3865 /* MD5.swift */; };
-		18BDB8911D147FEEC43D8A7859A3564F /* Pods-MnemonicKitExampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7ED99C31404751D66E1276BAD1EA971 /* Pods-MnemonicKitExampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18BDB8911D147FEEC43D8A7859A3564F /* Pods-MnemonicKitExampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44CA13453E6900EB93828BA1509D67BF /* Pods-MnemonicKitExampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19E3C652740F5C0028A51BFC81E0F117 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		1A3CA564761B01FC3D99DFD8EBD833DE /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A78CA92F7AE91F1CA4F7331A971B7E /* BlockModeOptions.swift */; };
 		23916C64C98204C928896ABA4BE1DAE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
@@ -37,26 +37,24 @@
 		3A73C66F10621ABDDA6DA99B83737FD1 /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5325CC5BDA6D4EC907F9C58323831600 /* ChaCha20+Foundation.swift */; };
 		3E4F34CF3A56C3BCA61A15667B8911CC /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134C5512B3688B7D9B090D350C3B2826 /* SecureBytes.swift */; };
 		3E531578FF1145393154092B38E896E6 /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5DF5E4593C22C15D58E698EF6A07A /* ChaCha20.swift */; };
-		3E8DB58F726697E15588F0CE80754501 /* Pods-MnemonicKitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B814EAD164E225BF354E23C24B7A5D /* Pods-MnemonicKitTests-dummy.m */; };
 		47F09AB386ECB4F06DC94B5D84B829E3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F98858A307B352B91D81F99B76C6E07 /* Utils.swift */; };
 		48AEAA9AEFB46AF33C359BAB88AEC324 /* BatchedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD5FC23FC28E48DFED72974775BE54 /* BatchedCollection.swift */; };
 		4BD49C6CEF3E4405132B4AF8CA0DE003 /* BlockEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA528504123ACCAE7A08C8F7B1C9D1D /* BlockEncryptor.swift */; };
 		4C2FA74837ADF9282EC82AAEA3344905 /* Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAB1790ED7DED2CD10F455A27150AE /* Cryptors.swift */; };
-		4E22405E3EB82307F98C6F54AC75E2FD /* Pods-MnemonicKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C69AF981381ADFE001574EDEE86EFF7 /* Pods-MnemonicKit-dummy.m */; };
+		4E22405E3EB82307F98C6F54AC75E2FD /* Pods-MnemonicKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A7A0DBD859683854E308D62BA6FB31 /* Pods-MnemonicKit-dummy.m */; };
 		4F448640DE2AB108DE676C77DEF2E571 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E384B8D3A947BEF1167B19552484621A /* String+Extension.swift */; };
 		4FC6E380F4930D2C46796EB787BDFF53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		505CA5BFBA1D9ADF951C40E1EA125BD2 /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51C0BB9959D6516D91688384EB3A04 /* BlockCipher.swift */; };
 		514821AC03DEAB80E61FD438FC0CF126 /* DigestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D3990B3B5C9E33DF4C923A14B3F7EC /* DigestType.swift */; };
 		5211E62A23DC79810DF988EBD96EFC32 /* CFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E97510644CCBCEFC57CB2454B880BF /* CFB.swift */; };
 		58D378DF3FF9C2C523F72714F028BC18 /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07A2650BBE5845413F3654A38E5320 /* Utils+Foundation.swift */; };
-		5A18CE168B1621C44C0855BE07D17A85 /* Pods-MnemonicKitExampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB62E03B2852657E897A15F381C0F6DA /* Pods-MnemonicKitExampleApp-dummy.m */; };
+		5A18CE168B1621C44C0855BE07D17A85 /* Pods-MnemonicKitExampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4950D9630C78F93E4F54CB30DE841D3 /* Pods-MnemonicKitExampleApp-dummy.m */; };
 		5B5A1021C78EDC5EB1216C03C6B3A3E3 /* AEADChaCha20Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F2F94310A92058C4B0DDC45580C46E /* AEADChaCha20Poly1305.swift */; };
-		5EEA677917E27F8DADCC2761067459E7 /* Pods-MnemonicKitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1CF28BA43C4FE23EB64B1CEB6873032 /* Pods-MnemonicKitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FCE918F81777C227E72A6C620FE0E9B /* StreamDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9D7CE61CE706F1B026DE68927910C /* StreamDecryptor.swift */; };
 		65D4A5CFCCD7ABBBCA0E9E2CEE10CA62 /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FEEC923BC26A3FC3E560CE11286A61 /* CBC.swift */; };
 		66FCC04FCEB5CC2EA4BFF087187158B8 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E7AA08F78BA4FF1FE859A5C1A367C /* Array+Extension.swift */; };
 		72541048B150E29F22A0CBD388ED2ABD /* HMAC+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCDCE8BA16852E35E92E6FCBFA499B /* HMAC+Foundation.swift */; };
-		72C769BF6082BC36F66F3F54DF27DA18 /* Pods-MnemonicKitTests2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E2F9C815ACA7088047C6F79DAF91E4B /* Pods-MnemonicKitTests2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72C769BF6082BC36F66F3F54DF27DA18 /* Pods-MnemonicKitTests2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5492297FC4BCF35406E08C72450FE5BD /* Pods-MnemonicKitTests2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7950CDCD0730EC4DE69E4452A2117CB4 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2C22F19244BDEA536C55054C29AF6 /* Int+Extension.swift */; };
 		7B50A0E57C8C0F860C0E2D3E2DF889C5 /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF95F97EBF8F1DD7CC1E05E395781350 /* OFB.swift */; };
 		83B5BC56560C7D387AA427415CEAE05C /* BlockDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF694EA54E2250AC2100719CCA30A4C /* BlockDecryptor.swift */; };
@@ -66,7 +64,6 @@
 		90BB63BE1A3F2906186D961714165CD7 /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3F0A52821E8DE198269F11B3F0FA8 /* PKCS5.swift */; };
 		938239477B6A9C665CB93642E1DFD0EB /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F22DA8BC29077F6BFC55CD386AA59 /* UInt128.swift */; };
 		948C38948743D31A8E07ECF1278C0438 /* PBKDF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C3C8981F2616BA1849C0A10834D281 /* PBKDF1.swift */; };
-		970F2F395724D6CD723A2B43FA280484 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		97D85307763F8B8299524EEFD059729E /* StreamEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEE4651D7A0853005D59D324AB83D0 /* StreamEncryptor.swift */; };
 		98DA224F5999FBB83A4D2090F9CFBCFC /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFF939EB4CD34BC2E024D98152CB25 /* AES.swift */; };
 		9979250510F331D6F6C4BF5F8A07234C /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E339113A37F3A4E83DFE59662FEB79D7 /* Rabbit+Foundation.swift */; };
@@ -91,7 +88,7 @@
 		EDCBAD6FE0DC05519BE87FA79D6ECCD1 /* RandomBytesSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B832C358579C3E645F1F4579BF952 /* RandomBytesSequence.swift */; };
 		EF2D257F439AB4E0C37E407B20DF41BC /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3492682FD5084550AF9345CD4443368 /* Cryptor.swift */; };
 		EFB38A3AC0C79689874458BE12601515 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23757B7F5EA2BF0AE40C4401221DE82 /* Data+Extension.swift */; };
-		F283F210EA1D1F40F812C7140B773491 /* Pods-MnemonicKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20138C5332F8F2911454D3772CA2016E /* Pods-MnemonicKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F283F210EA1D1F40F812C7140B773491 /* Pods-MnemonicKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F72A6BD07C802502617D107212E831E3 /* Pods-MnemonicKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5BCE1E730F746F620A9DB13EE2C1B60 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792084E8CA5B5E7D57492E886DB1B107 /* Generics.swift */; };
 		F6666F3FE8D03AFE4FDEE4421D50B914 /* GCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B0D91AED51231C400DCEADD01B6D35 /* GCM.swift */; };
 		F68103A274867FC3D714744E8A1E1A27 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545010A83E241D22D0A87AF497B7602D /* Bit.swift */; };
@@ -99,13 +96,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4BC0D832C44F7BC0665E494BD5F00E1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F5F8CED7C3379A0404E745819F8B311;
-			remoteInfo = CryptoSwift;
-		};
 		6E60E62DAE71C96B2BFD7E32B77FB255 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -131,58 +121,57 @@
 
 /* Begin PBXFileReference section */
 		07F66DC662E882839CC6855E75EAFCE2 /* CTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTR.swift; path = Sources/CryptoSwift/BlockMode/CTR.swift; sourceTree = "<group>"; };
+		08D78CB1D56901F82D4DD226883D6B10 /* Pods-MnemonicKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKit-Info.plist"; sourceTree = "<group>"; };
 		0A07A2650BBE5845413F3654A38E5320 /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
-		0C08D1B4B70983E6AF636B1502F3511A /* Pods-MnemonicKitExampleApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKitExampleApp-Info.plist"; sourceTree = "<group>"; };
 		0D656DB62017B1129748D8FC1DD1FEA2 /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS/PKCS7.swift; sourceTree = "<group>"; };
 		0EA528504123ACCAE7A08C8F7B1C9D1D /* BlockEncryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockEncryptor.swift; path = Sources/CryptoSwift/BlockEncryptor.swift; sourceTree = "<group>"; };
-		1092D18A16F07B682E33879ED3EDAD27 /* Pods-MnemonicKitExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKitExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		10B42827723C3B26F9DB13A7091ACDCE /* Pods-MnemonicKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MnemonicKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		11E2C40F9D808F74087BFEB7A12F4668 /* Pods-MnemonicKitTests2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKitTests2.debug.xcconfig"; sourceTree = "<group>"; };
 		134C5512B3688B7D9B090D350C3B2826 /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
 		13A3F1E24AF9A3BE90E1C633C76DC2A7 /* AEAD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEAD.swift; path = Sources/CryptoSwift/AEAD/AEAD.swift; sourceTree = "<group>"; };
+		13B26D0485B6BF5AAC4F9237FCBDCCC8 /* Pods-MnemonicKitTests2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MnemonicKitTests2-frameworks.sh"; sourceTree = "<group>"; };
+		140E3AA8083B6ED472CC0DDD5E125C06 /* Pods-MnemonicKitExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKitExampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		17CE93ED567459FB88C6328DE8884D4E /* BlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockMode.swift; path = Sources/CryptoSwift/BlockMode/BlockMode.swift; sourceTree = "<group>"; };
-		18182C7156F45D1793C666B2585C2110 /* Pods-MnemonicKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKit.release.xcconfig"; sourceTree = "<group>"; };
-		1C962EF30A22313E8C16BA3B34CE57F9 /* Pods-MnemonicKitTests2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MnemonicKitTests2.modulemap"; sourceTree = "<group>"; };
-		1D6B0C38ECD8424775CD853FF8BEAD07 /* Pods-MnemonicKitTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MnemonicKitTests-frameworks.sh"; sourceTree = "<group>"; };
+		18816506C863FEA3C8ED6C14C170E593 /* Pods-MnemonicKitExampleApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKitExampleApp-Info.plist"; sourceTree = "<group>"; };
+		19A69BB1203098A70F04D477B52207C3 /* Pods-MnemonicKitTests2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKitTests2-acknowledgements.plist"; sourceTree = "<group>"; };
 		1DA55752C75508AF5FF30B45F584F3E1 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
 		20029330625B884F44AFF33E3B16B5B8 /* UInt8+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt8+Extension.swift"; path = "Sources/CryptoSwift/UInt8+Extension.swift"; sourceTree = "<group>"; };
-		20138C5332F8F2911454D3772CA2016E /* Pods-MnemonicKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MnemonicKit-umbrella.h"; sourceTree = "<group>"; };
-		207BC34717314F099E5D516AA87EBB7E /* Pods-MnemonicKitTests2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKitTests2.release.xcconfig"; sourceTree = "<group>"; };
-		20E671D88D004C79620D507952F3CD1D /* Pods-MnemonicKitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKitTests-Info.plist"; sourceTree = "<group>"; };
 		21EB3ABAF12AE9535264B93574AB903B /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
 		22BFDCB03E4FD5254CC745C313516342 /* CBCMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBCMAC.swift; path = Sources/CryptoSwift/CBCMAC.swift; sourceTree = "<group>"; };
+		22F6804EF8DD30305AD525DAECA793B0 /* Pods-MnemonicKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKit.debug.xcconfig"; sourceTree = "<group>"; };
 		2576D3127C49BD0DA574DB88CC1C9A18 /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = Sources/CryptoSwift/Padding.swift; sourceTree = "<group>"; };
-		25C4FBBACFBB84256350791B9F200771 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E8117F7F9F363213F9E9309E8EC893 /* CompactMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompactMap.swift; path = Sources/CryptoSwift/CompactMap.swift; sourceTree = "<group>"; };
-		271A1CC8B4319B26FA4EAFA188490CE6 /* Pods-MnemonicKitTests2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKitTests2-Info.plist"; sourceTree = "<group>"; };
+		26D7D79C1FAF07C36A7F1D2EF124E1B8 /* Pods-MnemonicKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKit.release.xcconfig"; sourceTree = "<group>"; };
 		282B64D2844EA030D50C670056A34B14 /* CryptoSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CryptoSwift-Info.plist"; sourceTree = "<group>"; };
 		285F529B0309A5C7264AFDAC66D2D6F1 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/CryptoSwift/Operators.swift; sourceTree = "<group>"; };
-		28ED9E890E64780E1A5324616643A92F /* Pods-MnemonicKitExampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MnemonicKitExampleApp-frameworks.sh"; sourceTree = "<group>"; };
-		2AEB7D3CA2B7444DAC7507A3AA1F94EA /* Pods-MnemonicKitExampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKitExampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		2B02B9D9D9095E1461CD7CD7371335E0 /* Pods-MnemonicKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		2B394D5C8240880B04CF92252CF973AC /* Array+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Array+Foundation.swift"; sourceTree = "<group>"; };
 		2BDCA8F45CA266A58A752B68733F9EA4 /* PKCS7Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7Padding.swift; path = Sources/CryptoSwift/PKCS/PKCS7Padding.swift; sourceTree = "<group>"; };
 		2FAAB1790ED7DED2CD10F455A27150AE /* Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptors.swift; path = Sources/CryptoSwift/Cryptors.swift; sourceTree = "<group>"; };
 		3563B6F24C980E0E6CED5406EFD8AC49 /* CCM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CCM.swift; path = Sources/CryptoSwift/BlockMode/CCM.swift; sourceTree = "<group>"; };
-		38827100B85DFC5F7B18001F3A65ECF3 /* Pods-MnemonicKitExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKitExampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		38C65830762F886F81A2A8A59C11FD10 /* Pods-MnemonicKitTests2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MnemonicKitTests2-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3E947BF8C7503DCBEEA68102E4C75DF3 /* AES.Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.Cryptors.swift; path = Sources/CryptoSwift/AES.Cryptors.swift; sourceTree = "<group>"; };
 		3F98858A307B352B91D81F99B76C6E07 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
 		4252C09D2B89826F3C9E0ED104363D94 /* CipherModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherModeWorker.swift; path = Sources/CryptoSwift/BlockMode/CipherModeWorker.swift; sourceTree = "<group>"; };
 		44705D3DC87ADA30F1030EB1A044ABFA /* Collection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Extension.swift"; path = "Sources/CryptoSwift/Collection+Extension.swift"; sourceTree = "<group>"; };
+		44CA13453E6900EB93828BA1509D67BF /* Pods-MnemonicKitExampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MnemonicKitExampleApp-umbrella.h"; sourceTree = "<group>"; };
 		4671F3A542B966A19329975DF27B3405 /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
+		4731534028D8C45EC7327752FF9F1087 /* Pods-MnemonicKitTests2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MnemonicKitTests2-dummy.m"; sourceTree = "<group>"; };
 		4C74951A5F2E1CFFC4DF425FBB8FC2EA /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Sources/CryptoSwift/Updatable.swift; sourceTree = "<group>"; };
 		4CF694EA54E2250AC2100719CCA30A4C /* BlockDecryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockDecryptor.swift; path = Sources/CryptoSwift/BlockDecryptor.swift; sourceTree = "<group>"; };
 		4D3EF2F73EEA38778F456AA5B41AC44A /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
 		4F51C0BB9959D6516D91688384EB3A04 /* BlockCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCipher.swift; path = Sources/CryptoSwift/BlockCipher.swift; sourceTree = "<group>"; };
-		4F845CD21008075860EA1792277869E0 /* Pods-MnemonicKitExampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MnemonicKitExampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		50A78CA92F7AE91F1CA4F7331A971B7E /* BlockModeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeOptions.swift; path = Sources/CryptoSwift/BlockMode/BlockModeOptions.swift; sourceTree = "<group>"; };
 		51BFF939EB4CD34BC2E024D98152CB25 /* AES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.swift; path = Sources/CryptoSwift/AES.swift; sourceTree = "<group>"; };
 		5325CC5BDA6D4EC907F9C58323831600 /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChaCha20+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
 		545010A83E241D22D0A87AF497B7602D /* Bit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/CryptoSwift/Bit.swift; sourceTree = "<group>"; };
+		5492297FC4BCF35406E08C72450FE5BD /* Pods-MnemonicKitTests2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MnemonicKitTests2-umbrella.h"; sourceTree = "<group>"; };
 		5531FA48F5347059CFDAB78F1E61ED6D /* UInt16+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt16+Extension.swift"; path = "Sources/CryptoSwift/UInt16+Extension.swift"; sourceTree = "<group>"; };
+		558A5CD8EFBEE0809D3B0C163BE1A4E2 /* Pods-MnemonicKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MnemonicKit.modulemap"; sourceTree = "<group>"; };
 		56B0D91AED51231C400DCEADD01B6D35 /* GCM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCM.swift; path = Sources/CryptoSwift/BlockMode/GCM.swift; sourceTree = "<group>"; };
 		57E2C22F19244BDEA536C55054C29AF6 /* Int+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "Sources/CryptoSwift/Int+Extension.swift"; sourceTree = "<group>"; };
 		58416225A83D56BAD580282A45ECE03E /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
+		5BF872A0B99356949A8739157E4F4911 /* Pods-MnemonicKitExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKitExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5E070488567CC1C3C20F3D1695EF6DE1 /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Blowfish+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Blowfish+Foundation.swift"; sourceTree = "<group>"; };
+		5FBA4CDC63259F1178C4FDE79FCE922A /* Pods-MnemonicKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		5FCD5FC23FC28E48DFED72974775BE54 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
 		61DB2E3779E0E7BA342612A077CE31E5 /* ZeroPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroPadding.swift; path = Sources/CryptoSwift/ZeroPadding.swift; sourceTree = "<group>"; };
 		62D484CB8977A816AE3D267E2CE23FE4 /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
@@ -192,66 +181,57 @@
 		6BBCFAFF6F5F997AE78C6D09E12F1A98 /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
 		70565C73E93256F6F1E9E6465B8A1B28 /* Blowfish.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blowfish.swift; path = Sources/CryptoSwift/Blowfish.swift; sourceTree = "<group>"; };
 		70D3990B3B5C9E33DF4C923A14B3F7EC /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
+		7254E7522B4DA6B5730176FCE18A9C7B /* Pods-MnemonicKitTests2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKitTests2-Info.plist"; sourceTree = "<group>"; };
 		72DEA8402BDA9BB684C3E110407FF506 /* SHA3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA3.swift; path = Sources/CryptoSwift/SHA3.swift; sourceTree = "<group>"; };
+		75AA3AF2E185C2EE8D331CAA304FF0C9 /* Pods-MnemonicKitTests2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MnemonicKitTests2.modulemap"; sourceTree = "<group>"; };
 		77CEC6F278AC99CBB03C5F2183544A3F /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS/PBKDF2.swift; sourceTree = "<group>"; };
 		792084E8CA5B5E7D57492E886DB1B107 /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
-		7C69AF981381ADFE001574EDEE86EFF7 /* Pods-MnemonicKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MnemonicKit-dummy.m"; sourceTree = "<group>"; };
-		839762AE0F0ADE9ED3C156CDABA75806 /* Pods_MnemonicKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MnemonicKitTests.framework; path = "Pods-MnemonicKitTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		85A69B3BC299A81347095DA7CBE413FD /* Pods-MnemonicKitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKitTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7DB326332122E270F459B88C14488339 /* Pods_MnemonicKitExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MnemonicKitExampleApp.framework; path = "Pods-MnemonicKitExampleApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FAB1A3C1E3811A8CA8D674926856827 /* Pods_MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MnemonicKit.framework; path = "Pods-MnemonicKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B78A9973C4D589C509CFB77BF2EF5B /* Pods-MnemonicKitExampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MnemonicKitExampleApp-frameworks.sh"; sourceTree = "<group>"; };
 		85CD1AC8262CB7B7CD5C98A19964BFDE /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Sources/CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
 		85E97510644CCBCEFC57CB2454B880BF /* CFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CFB.swift; path = Sources/CryptoSwift/BlockMode/CFB.swift; sourceTree = "<group>"; };
 		8A611D762D0825BEC50D404286F97790 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
-		9088F2576FD2BB583C8A3E7EEA66EC0E /* Pods-MnemonicKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKit.debug.xcconfig"; sourceTree = "<group>"; };
-		988CF1565B8D01AA7B7941302862CF7A /* Pods-MnemonicKitTests2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MnemonicKitTests2-dummy.m"; sourceTree = "<group>"; };
-		9B6684F60E78C873AEA4C63EB4E1AB2A /* Pods-MnemonicKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MnemonicKit.modulemap"; sourceTree = "<group>"; };
-		9E2F9C815ACA7088047C6F79DAF91E4B /* Pods-MnemonicKitTests2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MnemonicKitTests2-umbrella.h"; sourceTree = "<group>"; };
+		937B4F5B82A25D0D8F67FB4694090960 /* Pods-MnemonicKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MnemonicKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9DD4E577548CD7E022FF78ABE481BB94 /* Pods-MnemonicKitExampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MnemonicKitExampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9E9F22DA8BC29077F6BFC55CD386AA59 /* UInt128.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt128.swift; path = Sources/CryptoSwift/UInt128.swift; sourceTree = "<group>"; };
-		A5B814EAD164E225BF354E23C24B7A5D /* Pods-MnemonicKitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MnemonicKitTests-dummy.m"; sourceTree = "<group>"; };
 		ADA5DF5E4593C22C15D58E698EF6A07A /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
 		AF8F529847FE0B73A8010ED326E0D66C /* Digest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Digest.swift; path = Sources/CryptoSwift/Digest.swift; sourceTree = "<group>"; };
-		B31B0A193DDC2005CB15567EF08851D1 /* Pods-MnemonicKitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MnemonicKitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B1A7A0DBD859683854E308D62BA6FB31 /* Pods-MnemonicKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MnemonicKit-dummy.m"; sourceTree = "<group>"; };
 		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B38DEFFA3B06AA8E782C8163894B3280 /* CMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMAC.swift; path = Sources/CryptoSwift/CMAC.swift; sourceTree = "<group>"; };
+		B48C1231B64C14476F039CB993C87F4F /* Pods-MnemonicKitExampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKitExampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		B5FEE4651D7A0853005D59D324AB83D0 /* StreamEncryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamEncryptor.swift; path = Sources/CryptoSwift/StreamEncryptor.swift; sourceTree = "<group>"; };
-		BB62E03B2852657E897A15F381C0F6DA /* Pods-MnemonicKitExampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MnemonicKitExampleApp-dummy.m"; sourceTree = "<group>"; };
-		BC478FD23CC2B36F41797F3CD9020814 /* Pods-MnemonicKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF95F97EBF8F1DD7CC1E05E395781350 /* OFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OFB.swift; path = Sources/CryptoSwift/BlockMode/OFB.swift; sourceTree = "<group>"; };
-		C08F60C64EC709B277F73DF4116FD935 /* Pods-MnemonicKitExampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MnemonicKitExampleApp.modulemap"; sourceTree = "<group>"; };
 		C0B054D96BF01BDBA22796617C098D33 /* String+FoundationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+FoundationExtension.swift"; path = "Sources/CryptoSwift/Foundation/String+FoundationExtension.swift"; sourceTree = "<group>"; };
 		C2E9D7CE61CE706F1B026DE68927910C /* StreamDecryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamDecryptor.swift; path = Sources/CryptoSwift/StreamDecryptor.swift; sourceTree = "<group>"; };
 		C3492682FD5084550AF9345CD4443368 /* Cryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptor.swift; path = Sources/CryptoSwift/Cryptor.swift; sourceTree = "<group>"; };
+		C4950D9630C78F93E4F54CB30DE841D3 /* Pods-MnemonicKitExampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MnemonicKitExampleApp-dummy.m"; sourceTree = "<group>"; };
 		C758A408B18A913B5F189679A390F6F7 /* HKDF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HKDF.swift; path = Sources/CryptoSwift/HKDF.swift; sourceTree = "<group>"; };
+		C86121E0B082B3EE942A77C69BB8D39E /* Pods-MnemonicKitTests2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKitTests2.release.xcconfig"; sourceTree = "<group>"; };
 		CAC9EE4127427109EC585630599C57CC /* Checksum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/CryptoSwift/Checksum.swift; sourceTree = "<group>"; };
 		CB9E7AA08F78BA4FF1FE859A5C1A367C /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
-		D00F70CAA3542C75EEF7B3B047F612CC /* Pods-MnemonicKitTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MnemonicKitTests.modulemap"; sourceTree = "<group>"; };
-		D1CF28BA43C4FE23EB64B1CEB6873032 /* Pods-MnemonicKitTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MnemonicKitTests-umbrella.h"; sourceTree = "<group>"; };
 		D23757B7F5EA2BF0AE40C4401221DE82 /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/CryptoSwift/Foundation/Data+Extension.swift"; sourceTree = "<group>"; };
 		D52667936FA84EC919A5AB509301A91B /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
 		D546C6AB19101A66EA4B9860F58909D6 /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "Sources/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D7FEEC923BC26A3FC3E560CE11286A61 /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
-		D8861DAD270AE967488DEED24FC9B5D4 /* Pods_MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MnemonicKit.framework; path = "Pods-MnemonicKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8E7DA5B0781753999B1D0703DCF995 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC42DDEA62252E680C9343C274ACBB6E /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
+		DECEA1814E810459EEA294F535FE5575 /* Pods-MnemonicKitExampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MnemonicKitExampleApp.modulemap"; sourceTree = "<group>"; };
 		DFB05932A866BE31FA0E2BECB73476B4 /* ECB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECB.swift; path = Sources/CryptoSwift/BlockMode/ECB.swift; sourceTree = "<group>"; };
 		E11D9367363761627505BCFCA3DB9CA9 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
-		E29BC1A2CCBE0D55103C148AD8D8031E /* Pods-MnemonicKitTests2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MnemonicKitTests2-frameworks.sh"; sourceTree = "<group>"; };
 		E2F2F94310A92058C4B0DDC45580C46E /* AEADChaCha20Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEADChaCha20Poly1305.swift; path = Sources/CryptoSwift/AEAD/AEADChaCha20Poly1305.swift; sourceTree = "<group>"; };
 		E339113A37F3A4E83DFE59662FEB79D7 /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Rabbit+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift"; sourceTree = "<group>"; };
 		E384B8D3A947BEF1167B19552484621A /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
 		E64942E3A55E18B7A9730680702B3865 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
-		E7D0758C5C392DC12CAD19AFD98E4BB8 /* Pods_MnemonicKitTests2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MnemonicKitTests2.framework; path = "Pods-MnemonicKitTests2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7ED99C31404751D66E1276BAD1EA971 /* Pods-MnemonicKitExampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MnemonicKitExampleApp-umbrella.h"; sourceTree = "<group>"; };
 		E936869B08E79490E8BF9B898A571B74 /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
 		EC7331758E229566C21470DEBF34B646 /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = Sources/CryptoSwift/Cipher.swift; sourceTree = "<group>"; };
-		EDD7E8F84A3EBF3C58464F500F676E88 /* Pods_MnemonicKitExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MnemonicKitExampleApp.framework; path = "Pods-MnemonicKitExampleApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFCDCE8BA16852E35E92E6FCBFA499B /* HMAC+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HMAC+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/HMAC+Foundation.swift"; sourceTree = "<group>"; };
 		F05B832C358579C3E645F1F4579BF952 /* RandomBytesSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomBytesSequence.swift; path = Sources/CryptoSwift/RandomBytesSequence.swift; sourceTree = "<group>"; };
-		F5F53D4E35DE067A39ABFFE07F505416 /* Pods-MnemonicKitTests2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKitTests2-acknowledgements.plist"; sourceTree = "<group>"; };
-		F79F21AADF443448F894DE8C4D75546C /* Pods-MnemonicKitTests2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKitTests2.debug.xcconfig"; sourceTree = "<group>"; };
-		F7CAA0C4EE772DC3914E24B89E10CF89 /* Pods-MnemonicKitTests2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MnemonicKitTests2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F1CA25BB1A097FA7A389F15FBF130CD6 /* Pods_MnemonicKitTests2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MnemonicKitTests2.framework; path = "Pods-MnemonicKitTests2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72A6BD07C802502617D107212E831E3 /* Pods-MnemonicKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MnemonicKit-umbrella.h"; sourceTree = "<group>"; };
 		FA23FCA3D72679B90FF7114F45147EB0 /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PCBC.swift; path = Sources/CryptoSwift/BlockMode/PCBC.swift; sourceTree = "<group>"; };
-		FC2134C4B0C5DC5F23D242BBC43E92EA /* Pods-MnemonicKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MnemonicKit-Info.plist"; sourceTree = "<group>"; };
-		FE9430BA7B5B16E2DF9B620B1C2564E1 /* Pods-MnemonicKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MnemonicKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,14 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19E3C652740F5C0028A51BFC81E0F117 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6EEAA9FED00C24A3BEC890AC3374924C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				970F2F395724D6CD723A2B43FA280484 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,23 +284,39 @@
 			path = "../Target Support Files/CryptoSwift";
 			sourceTree = "<group>";
 		};
+		1FB933B68849499A8B6B4B3033F8AB7D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A3778D2C67944FF1C867B67DFBD5A0A /* Pods-MnemonicKit */,
+				349F1E59D1696169D845B0B893201FDA /* Pods-MnemonicKitExampleApp */,
+				F5358D8505CEDB9D5D2C3925F4B1362E /* Pods-MnemonicKitTests2 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		349F1E59D1696169D845B0B893201FDA /* Pods-MnemonicKitExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				DECEA1814E810459EEA294F535FE5575 /* Pods-MnemonicKitExampleApp.modulemap */,
+				9DD4E577548CD7E022FF78ABE481BB94 /* Pods-MnemonicKitExampleApp-acknowledgements.markdown */,
+				B48C1231B64C14476F039CB993C87F4F /* Pods-MnemonicKitExampleApp-acknowledgements.plist */,
+				C4950D9630C78F93E4F54CB30DE841D3 /* Pods-MnemonicKitExampleApp-dummy.m */,
+				84B78A9973C4D589C509CFB77BF2EF5B /* Pods-MnemonicKitExampleApp-frameworks.sh */,
+				18816506C863FEA3C8ED6C14C170E593 /* Pods-MnemonicKitExampleApp-Info.plist */,
+				44CA13453E6900EB93828BA1509D67BF /* Pods-MnemonicKitExampleApp-umbrella.h */,
+				5BF872A0B99356949A8739157E4F4911 /* Pods-MnemonicKitExampleApp.debug.xcconfig */,
+				140E3AA8083B6ED472CC0DDD5E125C06 /* Pods-MnemonicKitExampleApp.release.xcconfig */,
+			);
+			name = "Pods-MnemonicKitExampleApp";
+			path = "Target Support Files/Pods-MnemonicKitExampleApp";
+			sourceTree = "<group>";
+		};
 		44D5347904CF754D6785B84253F2574A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		4706FC941C9FFC0DE9836FC87C792FC2 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE3300B03D00152EA7197999261ED21F /* Pods-MnemonicKit */,
-				D14EDE130D04C458720A4239E903E5F4 /* Pods-MnemonicKitExampleApp */,
-				C095118EF2FF936E5C7DF0700940F00D /* Pods-MnemonicKitTests */,
-				9D054A780F4390CBC21517F2F0B021C2 /* Pods-MnemonicKitTests2 */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		5789CAEFCDBC160CEF47A0E189273380 /* CryptoSwift */ = {
@@ -422,32 +410,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5961E3855F50A1F873EC712AD4D45E3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E7DA5B0781753999B1D0703DCF995 /* CryptoSwift.framework */,
+				7FAB1A3C1E3811A8CA8D674926856827 /* Pods_MnemonicKit.framework */,
+				7DB326332122E270F459B88C14488339 /* Pods_MnemonicKitExampleApp.framework */,
+				F1CA25BB1A097FA7A389F15FBF130CD6 /* Pods_MnemonicKitTests2.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A3778D2C67944FF1C867B67DFBD5A0A /* Pods-MnemonicKit */ = {
+			isa = PBXGroup;
+			children = (
+				558A5CD8EFBEE0809D3B0C163BE1A4E2 /* Pods-MnemonicKit.modulemap */,
+				937B4F5B82A25D0D8F67FB4694090960 /* Pods-MnemonicKit-acknowledgements.markdown */,
+				5FBA4CDC63259F1178C4FDE79FCE922A /* Pods-MnemonicKit-acknowledgements.plist */,
+				B1A7A0DBD859683854E308D62BA6FB31 /* Pods-MnemonicKit-dummy.m */,
+				08D78CB1D56901F82D4DD226883D6B10 /* Pods-MnemonicKit-Info.plist */,
+				F72A6BD07C802502617D107212E831E3 /* Pods-MnemonicKit-umbrella.h */,
+				22F6804EF8DD30305AD525DAECA793B0 /* Pods-MnemonicKit.debug.xcconfig */,
+				26D7D79C1FAF07C36A7F1D2EF124E1B8 /* Pods-MnemonicKit.release.xcconfig */,
+			);
+			name = "Pods-MnemonicKit";
+			path = "Target Support Files/Pods-MnemonicKit";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				591DE130A7F8407AF11DB4D23AEEE8A4 /* Pods */,
-				EB5C0F6FAC2163CB03D991A0DE770159 /* Products */,
-				4706FC941C9FFC0DE9836FC87C792FC2 /* Targets Support Files */,
+				5961E3855F50A1F873EC712AD4D45E3C /* Products */,
+				1FB933B68849499A8B6B4B3033F8AB7D /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		9D054A780F4390CBC21517F2F0B021C2 /* Pods-MnemonicKitTests2 */ = {
-			isa = PBXGroup;
-			children = (
-				1C962EF30A22313E8C16BA3B34CE57F9 /* Pods-MnemonicKitTests2.modulemap */,
-				F7CAA0C4EE772DC3914E24B89E10CF89 /* Pods-MnemonicKitTests2-acknowledgements.markdown */,
-				F5F53D4E35DE067A39ABFFE07F505416 /* Pods-MnemonicKitTests2-acknowledgements.plist */,
-				988CF1565B8D01AA7B7941302862CF7A /* Pods-MnemonicKitTests2-dummy.m */,
-				E29BC1A2CCBE0D55103C148AD8D8031E /* Pods-MnemonicKitTests2-frameworks.sh */,
-				271A1CC8B4319B26FA4EAFA188490CE6 /* Pods-MnemonicKitTests2-Info.plist */,
-				9E2F9C815ACA7088047C6F79DAF91E4B /* Pods-MnemonicKitTests2-umbrella.h */,
-				F79F21AADF443448F894DE8C4D75546C /* Pods-MnemonicKitTests2.debug.xcconfig */,
-				207BC34717314F099E5D516AA87EBB7E /* Pods-MnemonicKitTests2.release.xcconfig */,
-			);
-			name = "Pods-MnemonicKitTests2";
-			path = "Target Support Files/Pods-MnemonicKitTests2";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -458,79 +456,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C095118EF2FF936E5C7DF0700940F00D /* Pods-MnemonicKitTests */ = {
+		F5358D8505CEDB9D5D2C3925F4B1362E /* Pods-MnemonicKitTests2 */ = {
 			isa = PBXGroup;
 			children = (
-				D00F70CAA3542C75EEF7B3B047F612CC /* Pods-MnemonicKitTests.modulemap */,
-				B31B0A193DDC2005CB15567EF08851D1 /* Pods-MnemonicKitTests-acknowledgements.markdown */,
-				85A69B3BC299A81347095DA7CBE413FD /* Pods-MnemonicKitTests-acknowledgements.plist */,
-				A5B814EAD164E225BF354E23C24B7A5D /* Pods-MnemonicKitTests-dummy.m */,
-				1D6B0C38ECD8424775CD853FF8BEAD07 /* Pods-MnemonicKitTests-frameworks.sh */,
-				20E671D88D004C79620D507952F3CD1D /* Pods-MnemonicKitTests-Info.plist */,
-				D1CF28BA43C4FE23EB64B1CEB6873032 /* Pods-MnemonicKitTests-umbrella.h */,
-				FE9430BA7B5B16E2DF9B620B1C2564E1 /* Pods-MnemonicKitTests.debug.xcconfig */,
-				BC478FD23CC2B36F41797F3CD9020814 /* Pods-MnemonicKitTests.release.xcconfig */,
+				75AA3AF2E185C2EE8D331CAA304FF0C9 /* Pods-MnemonicKitTests2.modulemap */,
+				38C65830762F886F81A2A8A59C11FD10 /* Pods-MnemonicKitTests2-acknowledgements.markdown */,
+				19A69BB1203098A70F04D477B52207C3 /* Pods-MnemonicKitTests2-acknowledgements.plist */,
+				4731534028D8C45EC7327752FF9F1087 /* Pods-MnemonicKitTests2-dummy.m */,
+				13B26D0485B6BF5AAC4F9237FCBDCCC8 /* Pods-MnemonicKitTests2-frameworks.sh */,
+				7254E7522B4DA6B5730176FCE18A9C7B /* Pods-MnemonicKitTests2-Info.plist */,
+				5492297FC4BCF35406E08C72450FE5BD /* Pods-MnemonicKitTests2-umbrella.h */,
+				11E2C40F9D808F74087BFEB7A12F4668 /* Pods-MnemonicKitTests2.debug.xcconfig */,
+				C86121E0B082B3EE942A77C69BB8D39E /* Pods-MnemonicKitTests2.release.xcconfig */,
 			);
-			name = "Pods-MnemonicKitTests";
-			path = "Target Support Files/Pods-MnemonicKitTests";
-			sourceTree = "<group>";
-		};
-		CE3300B03D00152EA7197999261ED21F /* Pods-MnemonicKit */ = {
-			isa = PBXGroup;
-			children = (
-				9B6684F60E78C873AEA4C63EB4E1AB2A /* Pods-MnemonicKit.modulemap */,
-				10B42827723C3B26F9DB13A7091ACDCE /* Pods-MnemonicKit-acknowledgements.markdown */,
-				2B02B9D9D9095E1461CD7CD7371335E0 /* Pods-MnemonicKit-acknowledgements.plist */,
-				7C69AF981381ADFE001574EDEE86EFF7 /* Pods-MnemonicKit-dummy.m */,
-				FC2134C4B0C5DC5F23D242BBC43E92EA /* Pods-MnemonicKit-Info.plist */,
-				20138C5332F8F2911454D3772CA2016E /* Pods-MnemonicKit-umbrella.h */,
-				9088F2576FD2BB583C8A3E7EEA66EC0E /* Pods-MnemonicKit.debug.xcconfig */,
-				18182C7156F45D1793C666B2585C2110 /* Pods-MnemonicKit.release.xcconfig */,
-			);
-			name = "Pods-MnemonicKit";
-			path = "Target Support Files/Pods-MnemonicKit";
-			sourceTree = "<group>";
-		};
-		D14EDE130D04C458720A4239E903E5F4 /* Pods-MnemonicKitExampleApp */ = {
-			isa = PBXGroup;
-			children = (
-				C08F60C64EC709B277F73DF4116FD935 /* Pods-MnemonicKitExampleApp.modulemap */,
-				4F845CD21008075860EA1792277869E0 /* Pods-MnemonicKitExampleApp-acknowledgements.markdown */,
-				2AEB7D3CA2B7444DAC7507A3AA1F94EA /* Pods-MnemonicKitExampleApp-acknowledgements.plist */,
-				BB62E03B2852657E897A15F381C0F6DA /* Pods-MnemonicKitExampleApp-dummy.m */,
-				28ED9E890E64780E1A5324616643A92F /* Pods-MnemonicKitExampleApp-frameworks.sh */,
-				0C08D1B4B70983E6AF636B1502F3511A /* Pods-MnemonicKitExampleApp-Info.plist */,
-				E7ED99C31404751D66E1276BAD1EA971 /* Pods-MnemonicKitExampleApp-umbrella.h */,
-				1092D18A16F07B682E33879ED3EDAD27 /* Pods-MnemonicKitExampleApp.debug.xcconfig */,
-				38827100B85DFC5F7B18001F3A65ECF3 /* Pods-MnemonicKitExampleApp.release.xcconfig */,
-			);
-			name = "Pods-MnemonicKitExampleApp";
-			path = "Target Support Files/Pods-MnemonicKitExampleApp";
-			sourceTree = "<group>";
-		};
-		EB5C0F6FAC2163CB03D991A0DE770159 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				25C4FBBACFBB84256350791B9F200771 /* CryptoSwift.framework */,
-				D8861DAD270AE967488DEED24FC9B5D4 /* Pods_MnemonicKit.framework */,
-				EDD7E8F84A3EBF3C58464F500F676E88 /* Pods_MnemonicKitExampleApp.framework */,
-				839762AE0F0ADE9ED3C156CDABA75806 /* Pods_MnemonicKitTests.framework */,
-				E7D0758C5C392DC12CAD19AFD98E4BB8 /* Pods_MnemonicKitTests2.framework */,
-			);
-			name = Products;
+			name = "Pods-MnemonicKitTests2";
+			path = "Target Support Files/Pods-MnemonicKitTests2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3657AE380E71C827ED4930788B4347AC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EEA677917E27F8DADCC2761067459E7 /* Pods-MnemonicKitTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		47FEEECBD163D982B11680AED3E82161 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -581,7 +526,7 @@
 			);
 			name = CryptoSwift;
 			productName = CryptoSwift;
-			productReference = 25C4FBBACFBB84256350791B9F200771 /* CryptoSwift.framework */;
+			productReference = DA8E7DA5B0781753999B1D0703DCF995 /* CryptoSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6F773B45E6269513F211C8D6EA380007 /* Pods-MnemonicKit */ = {
@@ -600,7 +545,7 @@
 			);
 			name = "Pods-MnemonicKit";
 			productName = "Pods-MnemonicKit";
-			productReference = D8861DAD270AE967488DEED24FC9B5D4 /* Pods_MnemonicKit.framework */;
+			productReference = 7FAB1A3C1E3811A8CA8D674926856827 /* Pods_MnemonicKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7CCB8A9916B4B0025680808523ADE370 /* Pods-MnemonicKitTests2 */ = {
@@ -619,26 +564,7 @@
 			);
 			name = "Pods-MnemonicKitTests2";
 			productName = "Pods-MnemonicKitTests2";
-			productReference = E7D0758C5C392DC12CAD19AFD98E4BB8 /* Pods_MnemonicKitTests2.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D856FBD19E746FA82A1CE3151D895DE2 /* Pods-MnemonicKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A7A40C4D4061C9D1AC3D69A2D4B0A60E /* Build configuration list for PBXNativeTarget "Pods-MnemonicKitTests" */;
-			buildPhases = (
-				3657AE380E71C827ED4930788B4347AC /* Headers */,
-				779695E08B9192691576D900DB34FA12 /* Sources */,
-				6EEAA9FED00C24A3BEC890AC3374924C /* Frameworks */,
-				6B96E65A52E28D5FC167D6B9FE0EAE37 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1501B75DFDBDF1C7E1094849394F1018 /* PBXTargetDependency */,
-			);
-			name = "Pods-MnemonicKitTests";
-			productName = "Pods-MnemonicKitTests";
-			productReference = 839762AE0F0ADE9ED3C156CDABA75806 /* Pods_MnemonicKitTests.framework */;
+			productReference = F1CA25BB1A097FA7A389F15FBF130CD6 /* Pods_MnemonicKitTests2.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E6AE8F6338D5B8CEF058A164A1445871 /* Pods-MnemonicKitExampleApp */ = {
@@ -657,7 +583,7 @@
 			);
 			name = "Pods-MnemonicKitExampleApp";
 			productName = "Pods-MnemonicKitExampleApp";
-			productReference = EDD7E8F84A3EBF3C58464F500F676E88 /* Pods_MnemonicKitExampleApp.framework */;
+			productReference = 7DB326332122E270F459B88C14488339 /* Pods_MnemonicKitExampleApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -677,14 +603,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EB5C0F6FAC2163CB03D991A0DE770159 /* Products */;
+			productRefGroup = 5961E3855F50A1F873EC712AD4D45E3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6F5F8CED7C3379A0404E745819F8B311 /* CryptoSwift */,
 				6F773B45E6269513F211C8D6EA380007 /* Pods-MnemonicKit */,
 				E6AE8F6338D5B8CEF058A164A1445871 /* Pods-MnemonicKitExampleApp */,
-				D856FBD19E746FA82A1CE3151D895DE2 /* Pods-MnemonicKitTests */,
 				7CCB8A9916B4B0025680808523ADE370 /* Pods-MnemonicKitTests2 */,
 			);
 		};
@@ -692,13 +617,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		6ADC925C8C68EB05ABF9B0CE37DC2586 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B96E65A52E28D5FC167D6B9FE0EAE37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -729,14 +647,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		779695E08B9192691576D900DB34FA12 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E8DB58F726697E15588F0CE80754501 /* Pods-MnemonicKitTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B93D927DA7C4BDC3D04EC74BABE32733 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -846,12 +756,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1501B75DFDBDF1C7E1094849394F1018 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CryptoSwift;
-			target = 6F5F8CED7C3379A0404E745819F8B311 /* CryptoSwift */;
-			targetProxy = 4BC0D832C44F7BC0665E494BD5F00E1C /* PBXContainerItemProxy */;
-		};
 		4A37F03AC3D590294C8BEC8A04C1CBC5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CryptoSwift;
@@ -875,7 +779,7 @@
 /* Begin XCBuildConfiguration section */
 		038E2C40647590AAA5341CA86F7EA5E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18182C7156F45D1793C666B2585C2110 /* Pods-MnemonicKit.release.xcconfig */;
+			baseConfigurationReference = 26D7D79C1FAF07C36A7F1D2EF124E1B8 /* Pods-MnemonicKit.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -899,46 +803,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		13C22E7F8A066012DADB5C52A85EB95E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC478FD23CC2B36F41797F3CD9020814 /* Pods-MnemonicKitTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1092,7 +956,7 @@
 		};
 		87384E016CA632B0BBBD6741F613913A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38827100B85DFC5F7B18001F3A65ECF3 /* Pods-MnemonicKitExampleApp.release.xcconfig */;
+			baseConfigurationReference = 140E3AA8083B6ED472CC0DDD5E125C06 /* Pods-MnemonicKitExampleApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1132,7 +996,7 @@
 		};
 		96B089BFC9E74EEF10DFEC79BD88A98B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 207BC34717314F099E5D516AA87EBB7E /* Pods-MnemonicKitTests2.release.xcconfig */;
+			baseConfigurationReference = C86121E0B082B3EE942A77C69BB8D39E /* Pods-MnemonicKitTests2.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1232,7 +1096,7 @@
 		};
 		C1DF2ED8BC3A1352031342047ECA6C3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F79F21AADF443448F894DE8C4D75546C /* Pods-MnemonicKitTests2.debug.xcconfig */;
+			baseConfigurationReference = 11E2C40F9D808F74087BFEB7A12F4668 /* Pods-MnemonicKitTests2.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1271,7 +1135,7 @@
 		};
 		DC460F24E185B4D93EE94F4FED5D599E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9088F2576FD2BB583C8A3E7EEA66EC0E /* Pods-MnemonicKit.debug.xcconfig */;
+			baseConfigurationReference = 22F6804EF8DD30305AD525DAECA793B0 /* Pods-MnemonicKit.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1310,7 +1174,7 @@
 		};
 		EC9AE60DFCD8001780F309A50F1E4BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1092D18A16F07B682E33879ED3EDAD27 /* Pods-MnemonicKitExampleApp.debug.xcconfig */;
+			baseConfigurationReference = 5BF872A0B99356949A8739157E4F4911 /* Pods-MnemonicKitExampleApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1334,45 +1198,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MnemonicKitExampleApp/Pods-MnemonicKitExampleApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F5367D1EF19D9ECEC75602E9D1572968 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE9430BA7B5B16E2DF9B620B1C2564E1 /* Pods-MnemonicKitTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1421,15 +1246,6 @@
 			buildConfigurations = (
 				38D0BBEBD66C277235E2C4A022D6B80F /* Debug */,
 				228482FA51600928FE75712ABD5305D5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A7A40C4D4061C9D1AC3D69A2D4B0A60E /* Build configuration list for PBXNativeTarget "Pods-MnemonicKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F5367D1EF19D9ECEC75602E9D1572968 /* Debug */,
-				13C22E7F8A066012DADB5C52A85EB95E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
