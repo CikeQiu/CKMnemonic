@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_MnemonicKitTests2VersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MnemonicKitTests2VersionString[];
+FOUNDATION_EXPORT double Pods_MnemonicKitTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_MnemonicKitTestsVersionString[];
 
