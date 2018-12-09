@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2333E78225639BC8BC9BC50A /* Pods_MnemonicKitExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EAD434139D9C7850E3BB90 /* Pods_MnemonicKitExampleApp.framework */; };
 		778602AF2186370E0036843F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602AE2186370E0036843F /* AppDelegate.swift */; };
 		778602B12186370E0036843F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602B02186370E0036843F /* ViewController.swift */; };
 		778602B42186370E0036843F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778602B22186370E0036843F /* Main.storyboard */; };
@@ -22,7 +21,7 @@
 		77FE006D21BDA092009C3CD1 /* libMnemonicKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FE005221BD999C009C3CD1 /* libMnemonicKit.a */; };
 		77FE007321BDA0CF009C3CD1 /* MnemonicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602D621863BDD0036843F /* MnemonicKitTests.swift */; };
 		77FE007421BDA2AF009C3CD1 /* vectors.json in Resources */ = {isa = PBXBuildFile; fileRef = 778602DE2186426A0036843F /* vectors.json */; };
-		7D65076D170104DCC0F06371 /* Pods_MnemonicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */; };
+		77FE007521BDAB5F009C3CD1 /* libMnemonicKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FE005221BD999C009C3CD1 /* libMnemonicKit.a */; };
 		CDF9869E40CCE983FCEC0464 /* Pods_MnemonicKitTests2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1E9AE023E66AA4A6D6D898 /* Pods_MnemonicKitTests2.framework */; };
 		DD38D47E8C1DF5B5D20BAA0E /* Pods_MnemonicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */; };
 /* End PBXBuildFile section */
@@ -104,8 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D65076D170104DCC0F06371 /* Pods_MnemonicKit.framework in Frameworks */,
-				2333E78225639BC8BC9BC50A /* Pods_MnemonicKitExampleApp.framework in Frameworks */,
+				77FE007521BDAB5F009C3CD1 /* libMnemonicKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
