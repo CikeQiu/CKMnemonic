@@ -3,7 +3,7 @@ os: osx
 osx_image: xcode10
 
 script:
-  - xcodebuild -enableCodeCoverage=YES -scheme MnemonicKitTests -workspace MnemonicKit.xcworkspace -destination platform\=iOS\ Simulator,OS\=12.0,name\=iPhone\ X build test
+  - xcodebuild -enableCodeCoverage=YES -scheme MnemonicKitTests -workspace MnemonicKit.xcworkspace -destination platform\=iOS\ Simulator,OS\=12.0,name\=iPhone\ X test
   
 after_success:
   - slather
