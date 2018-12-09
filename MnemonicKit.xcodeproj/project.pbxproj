@@ -19,7 +19,6 @@
 		778602CF21863B520036843F /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CD21863B520036843F /* Chinese.swift */; };
 		778602D721863BDD0036843F /* MnemonicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602D621863BDD0036843F /* MnemonicKitTests.swift */; };
 		778602DF2186426A0036843F /* vectors.json in Resources */ = {isa = PBXBuildFile; fileRef = 778602DE2186426A0036843F /* vectors.json */; settings = {ASSET_TAGS = (TestInput, ); }; };
-		77FE004D21BD7829009C3CD1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 77FE004C21BD7829009C3CD1 /* .swiftlint.yml */; };
 		7D65076D170104DCC0F06371 /* Pods_MnemonicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */; };
 		DF2A5229DD32EBE04F377531 /* Pods_MnemonicKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E685D062235716F230D243C3 /* Pods_MnemonicKitTests.framework */; };
 /* End PBXBuildFile section */
@@ -53,7 +52,6 @@
 		778602D821863BDD0036843F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778602DE2186426A0036843F /* vectors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vectors.json; sourceTree = "<group>"; };
 		77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77FE004C21BD7829009C3CD1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit.release.xcconfig"; sourceTree = "<group>"; };
 		B22F0D96C2014429DA6247E3 /* Pods-MnemonicKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCDDA4A5652CB1771A37B4B5 /* Pods-MnemonicKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 		778602A22186370E0036843F = {
 			isa = PBXGroup;
 			children = (
-				77FE004C21BD7829009C3CD1 /* .swiftlint.yml */,
 				778602AD2186370E0036843F /* Sources */,
 				778602D521863BDD0036843F /* MnemonicKitTests */,
 				778602AC2186370E0036843F /* Products */,
@@ -261,7 +258,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77FE004D21BD7829009C3CD1 /* .swiftlint.yml in Resources */,
 				778602B92186370F0036843F /* LaunchScreen.storyboard in Resources */,
 				778602B62186370F0036843F /* Assets.xcassets in Resources */,
 				778602B42186370E0036843F /* Main.storyboard in Resources */,
