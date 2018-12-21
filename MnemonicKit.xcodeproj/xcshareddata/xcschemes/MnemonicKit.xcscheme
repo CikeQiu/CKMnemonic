@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "77FE005121BD999C009C3CD1"
-               BuildableName = "libMnemonicKit.a"
+               BlueprintIdentifier = "F8A8C55921CD4C86005684A3"
+               BuildableName = "MnemonicKit.framework"
                BlueprintName = "MnemonicKit"
                ReferencedContainer = "container:MnemonicKit.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "77FE005121BD999C009C3CD1"
-            BuildableName = "libMnemonicKit.a"
+            BlueprintIdentifier = "F8A8C55921CD4C86005684A3"
+            BuildableName = "MnemonicKit.framework"
             BlueprintName = "MnemonicKit"
             ReferencedContainer = "container:MnemonicKit.xcodeproj">
          </BuildableReference>
@@ -63,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "77FE005121BD999C009C3CD1"
-            BuildableName = "libMnemonicKit.a"
+            BlueprintIdentifier = "F8A8C55921CD4C86005684A3"
+            BuildableName = "MnemonicKit.framework"
             BlueprintName = "MnemonicKit"
             ReferencedContainer = "container:MnemonicKit.xcodeproj">
          </BuildableReference>
