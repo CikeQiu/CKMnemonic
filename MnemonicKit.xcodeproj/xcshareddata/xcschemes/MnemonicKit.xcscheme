@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "77FE006721BDA092009C3CD1"
+               BuildableName = "MnemonicKitTests.xctest"
+               BlueprintName = "MnemonicKitTests"
+               ReferencedContainer = "container:MnemonicKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F8A8C55921CD4C86005684A3"
+            BuildableName = "MnemonicKit.framework"
+            BlueprintName = "MnemonicKit"
+            ReferencedContainer = "container:MnemonicKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
