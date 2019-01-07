@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Keefer Taylor" => "keefer@keefertaylor.com" }
   s.source       = { :git => "https://github.com/keefertaylor/MnemonicKit.git", :tag => "1.2.0" }
-  s.source_files  = "Sources/**/*.swift",
+  s.source_files  = "MnemonicKit/**/*.swift",
   s.exclude_files = "Sources/App/*.swift"
   s.swift_version = "4.2"
   s.ios.deployment_target = "8.0"
