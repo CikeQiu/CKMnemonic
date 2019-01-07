@@ -12,7 +12,7 @@ This library is a fork of [CKMnemonic](https://github.com/CikeQiu/CKMnemonic). T
 - Additional helper methods
 - Code clarity and documentation
 - Additional Testing
-- Support on OSX
+- Support on OSX 
 
 ## Installation
 
