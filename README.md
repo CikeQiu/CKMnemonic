@@ -1,12 +1,18 @@
-# MnemonicKit  &nbsp;&nbsp;&nbsp; [![Build Status](https://travis-ci.org/keefertaylor/MnemonicKit.svg?branch=master)](https://travis-ci.org/keefertaylor/MnemonicKit) &nbsp;&nbsp;&nbsp;  [![codecov](https://codecov.io/gh/keefertaylor/MnemonicKit/branch/master/graph/badge.svg)](https://codecov.io/gh/keefertaylor/MnemonicKit)
+# MnemonicKit
+[![Build Status](https://travis-ci.org/keefertaylor/MnemonicKit.svg?branch=master)](https://travis-ci.org/keefertaylor/MnemonicKit)
+[![codecov](https://codecov.io/gh/keefertaylor/MnemonicKit/branch/master/graph/badge.svg)](https://codecov.io/gh/keefertaylor/MnemonicKit)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Version](https://img.shields.io/cocoapods/v/MnemonicKit.svg?style=flat)](http://cocoapods.org/pods/MnemonicKit)
+[![License](https://img.shields.io/cocoapods/l/MnemonicKit.svg?style=flat)](http://cocoapods.org/pods/MnemonicKit)
+
 An implementation of BIP39 in Swift. MnemonicKit supports both English and Chinese mnemonics.
 
-This library is a fork of (CKMnemonic)[https://github.com/CikeQiu/CKMnemonic]. This fork provides several conveniences over the original library, namely: 
+This library is a fork of [CKMnemonic](https://github.com/CikeQiu/CKMnemonic). This fork provides several conveniences over the original library, namely: 
 - Converting throwing APIs to non-throwing nullable APIs
 - Additional helper methods
 - Code clarity and documentation
 - Additional Testing
-- Support on OSX
+- Support on OSX 
 
 ## Installation
 
@@ -16,6 +22,18 @@ TezosKit supports installation via CocoaPods. You can depened on MnemonicKit by 
 ```
 pod "MnemonicKit"
 ```
+
+#### Carthage
+
+If you use [Carthage](https://github.com/Carthage/Carthage) to manage your dependencies, simply add
+MnemonicKit to your `Cartfile`:
+
+```
+github "keefertaylor/MnemonicKit"
+```
+
+If you use Carthage to build your dependencies, make sure you have added `CryptoSwift.framework` to the "_Linked Frameworks and Libraries_" section of your target, and have included them in your Carthage framework copying build phase.
+
 
 ## Usage
 

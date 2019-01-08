@@ -7,61 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65B288991B88FC19CC048D92 /* Pods_MnemonicKitExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EAD434139D9C7850E3BB90 /* Pods_MnemonicKitExampleApp.framework */; };
 		778602AF2186370E0036843F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602AE2186370E0036843F /* AppDelegate.swift */; };
 		778602B12186370E0036843F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602B02186370E0036843F /* ViewController.swift */; };
 		778602B42186370E0036843F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778602B22186370E0036843F /* Main.storyboard */; };
 		778602B62186370F0036843F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778602B52186370F0036843F /* Assets.xcassets */; };
 		778602B92186370F0036843F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778602B72186370F0036843F /* LaunchScreen.storyboard */; };
-		77FE005521BD999C009C3CD1 /* MnemonicKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FE005421BD999C009C3CD1 /* MnemonicKit.swift */; };
-		77FE005D21BD9A3A009C3CD1 /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CD21863B520036843F /* Chinese.swift */; };
-		77FE005E21BD9A3A009C3CD1 /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602CC21863B520036843F /* English.swift */; };
-		77FE005F21BD9A3A009C3CD1 /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C3218638FB0036843F /* Mnemonic.swift */; };
-		77FE006021BD9A3A009C3CD1 /* Data+BitArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C4218638FB0036843F /* Data+BitArray.swift */; };
-		77FE006121BD9A3A009C3CD1 /* String+MnemonicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602C2218638FB0036843F /* String+MnemonicData.swift */; };
-		77FE006D21BDA092009C3CD1 /* libMnemonicKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FE005221BD999C009C3CD1 /* libMnemonicKit.a */; };
 		77FE007321BDA0CF009C3CD1 /* MnemonicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778602D621863BDD0036843F /* MnemonicKitTests.swift */; };
 		77FE007421BDA2AF009C3CD1 /* vectors.json in Resources */ = {isa = PBXBuildFile; fileRef = 778602DE2186426A0036843F /* vectors.json */; };
-		77FE007521BDAB5F009C3CD1 /* libMnemonicKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FE005221BD999C009C3CD1 /* libMnemonicKit.a */; };
-		D5C372D913412FAAA19FA4AE /* Pods_MnemonicKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E685D062235716F230D243C3 /* Pods_MnemonicKitTests.framework */; };
-		DD38D47E8C1DF5B5D20BAA0E /* Pods_MnemonicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */; };
+		F8A8C56221CD4C86005684A3 /* MnemonicKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8A8C55A21CD4C86005684A3 /* MnemonicKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8A8C56721CD4CAA005684A3 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A8C54321CD490C005684A3 /* CryptoSwift.framework */; };
+		F8DA3F0721DE068F004B016E /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA3F0121DE068F004B016E /* Mnemonic.swift */; };
+		F8DA3F0821DE068F004B016E /* String+MnemonicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA3F0221DE068F004B016E /* String+MnemonicData.swift */; };
+		F8DA3F0921DE068F004B016E /* Chinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA3F0421DE068F004B016E /* Chinese.swift */; };
+		F8DA3F0A21DE068F004B016E /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA3F0521DE068F004B016E /* English.swift */; };
+		F8DA3F0B21DE068F004B016E /* Data+BitArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA3F0621DE068F004B016E /* Data+BitArray.swift */; };
+		F8DA3F1021DE07EF004B016E /* MnemonicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A8C55A21CD4C86005684A3 /* MnemonicKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		77FE006221BD9CCB009C3CD1 /* PBXContainerItemProxy */ = {
+		F8A8C55F21CD4C86005684A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 778602A32186370E0036843F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 77FE005121BD999C009C3CD1;
+			remoteGlobalIDString = F8A8C55921CD4C86005684A3;
 			remoteInfo = MnemonicKit;
 		};
-		77FE006E21BDA092009C3CD1 /* PBXContainerItemProxy */ = {
+		F8DA3F1521DE0932004B016E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 778602A32186370E0036843F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 77FE005121BD999C009C3CD1;
+			remoteGlobalIDString = 778602AA2186370E0036843F;
+			remoteInfo = MnemonicKitExampleApp;
+		};
+		F8DA3F1721DE0935004B016E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778602A32186370E0036843F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A8C55921CD4C86005684A3;
 			remoteInfo = MnemonicKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		77FE005021BD999C009C3CD1 /* CopyFiles */ = {
+		F8A8C56621CD4C86005684A3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
+				F8A8C56221CD4C86005684A3 /* MnemonicKit.framework in Embed Frameworks */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03282044CA56B90979A64A9D /* Pods-MnemonicKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit.debug.xcconfig"; sourceTree = "<group>"; };
-		0F03AE641020767316662ED4 /* Pods-MnemonicKit-MnemonicKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit-MnemonicKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit-MnemonicKitTests/Pods-MnemonicKit-MnemonicKitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B8A857A38E6553C1C6774CB /* Pods-MnemonicKitExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitExampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitExampleApp/Pods-MnemonicKitExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		602E93F11A296E105D39BDC0 /* Pods-MnemonicKitExampleApp-MnemonicKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitExampleApp-MnemonicKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitExampleApp-MnemonicKit/Pods-MnemonicKitExampleApp-MnemonicKit.release.xcconfig"; sourceTree = "<group>"; };
-		6A45CD34978FC8D4429CE5E8 /* Pods-MnemonicKitExampleApp-MnemonicKit-MnemonicKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitExampleApp-MnemonicKit-MnemonicKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitExampleApp-MnemonicKit-MnemonicKitTests/Pods-MnemonicKitExampleApp-MnemonicKit-MnemonicKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		778602AB2186370E0036843F /* MnemonicKitExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MnemonicKitExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778602AE2186370E0036843F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778602B02186370E0036843F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,32 +70,20 @@
 		778602B52186370F0036843F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		778602B82186370F0036843F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		778602BA2186370F0036843F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		778602C2218638FB0036843F /* String+MnemonicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MnemonicData.swift"; sourceTree = "<group>"; };
-		778602C3218638FB0036843F /* Mnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
-		778602C4218638FB0036843F /* Data+BitArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+BitArray.swift"; sourceTree = "<group>"; };
-		778602CC21863B520036843F /* English.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = English.swift; sourceTree = "<group>"; };
-		778602CD21863B520036843F /* Chinese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chinese.swift; sourceTree = "<group>"; };
 		778602D621863BDD0036843F /* MnemonicKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicKitTests.swift; sourceTree = "<group>"; };
 		778602D821863BDD0036843F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778602DE2186426A0036843F /* vectors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vectors.json; sourceTree = "<group>"; };
-		77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77FE005221BD999C009C3CD1 /* libMnemonicKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMnemonicKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		77FE005421BD999C009C3CD1 /* MnemonicKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicKit.swift; sourceTree = "<group>"; };
 		77FE006821BDA092009C3CD1 /* MnemonicKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MnemonicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		77FE006C21BDA092009C3CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78CE7F69C0FC1539A1964724 /* Pods-MnemonicKit-MnemonicKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit-MnemonicKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit-MnemonicKitTests/Pods-MnemonicKit-MnemonicKitTests.release.xcconfig"; sourceTree = "<group>"; };
-		79383BCE9641354EAB0A9900 /* Pods_MnemonicKit_MnemonicKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKit_MnemonicKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90566EC371CBC209F21DE282 /* Pods_MnemonicKitExampleApp_MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKitExampleApp_MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		962C1D177644F9ED1DA0A779 /* Pods_MnemonicKitExampleApp_MnemonicKit_MnemonicKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKitExampleApp_MnemonicKit_MnemonicKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ECC19D277FBB445E0FD7863 /* Pods-MnemonicKitExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitExampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitExampleApp/Pods-MnemonicKitExampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		A7EAD434139D9C7850E3BB90 /* Pods_MnemonicKitExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKitExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKit/Pods-MnemonicKit.release.xcconfig"; sourceTree = "<group>"; };
-		B22F0D96C2014429DA6247E3 /* Pods-MnemonicKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DBA9D32D2D2447DF04AE46AB /* Pods-MnemonicKitExampleApp-MnemonicKit-MnemonicKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitExampleApp-MnemonicKit-MnemonicKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitExampleApp-MnemonicKit-MnemonicKitTests/Pods-MnemonicKitExampleApp-MnemonicKit-MnemonicKitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DCDDA4A5652CB1771A37B4B5 /* Pods-MnemonicKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests.release.xcconfig"; sourceTree = "<group>"; };
-		E685D062235716F230D243C3 /* Pods_MnemonicKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE1E9AE023E66AA4A6D6D898 /* Pods_MnemonicKitTests2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicKitTests2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD2F780E90487CC44DEC6EAF /* Pods-MnemonicKitExampleApp-MnemonicKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicKitExampleApp-MnemonicKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MnemonicKitExampleApp-MnemonicKit/Pods-MnemonicKitExampleApp-MnemonicKit.debug.xcconfig"; sourceTree = "<group>"; };
+		F8A8C54321CD490C005684A3 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		F8A8C55A21CD4C86005684A3 /* MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A8C55C21CD4C86005684A3 /* MnemonicKit-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MnemonicKit-Swift.h"; sourceTree = "<group>"; };
+		F8A8C55D21CD4C86005684A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DA3F0121DE068F004B016E /* Mnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
+		F8DA3F0221DE068F004B016E /* String+MnemonicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MnemonicData.swift"; sourceTree = "<group>"; };
+		F8DA3F0421DE068F004B016E /* Chinese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chinese.swift; sourceTree = "<group>"; };
+		F8DA3F0521DE068F004B016E /* English.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = English.swift; sourceTree = "<group>"; };
+		F8DA3F0621DE068F004B016E /* Data+BitArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+BitArray.swift"; sourceTree = "<group>"; };
+		F8DA3F1121DE07F4004B016E /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,16 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77FE007521BDAB5F009C3CD1 /* libMnemonicKit.a in Frameworks */,
-				65B288991B88FC19CC048D92 /* Pods_MnemonicKitExampleApp.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77FE004F21BD999C009C3CD1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD38D47E8C1DF5B5D20BAA0E /* Pods_MnemonicKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +98,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77FE006D21BDA092009C3CD1 /* libMnemonicKit.a in Frameworks */,
-				D5C372D913412FAAA19FA4AE /* Pods_MnemonicKitTests.framework in Frameworks */,
+				F8DA3F1021DE07EF004B016E /* MnemonicKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A8C55721CD4C86005684A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A8C56721CD4CAA005684A3 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,13 +116,8 @@
 		487474B4EF0B93DF80EF5CE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				77AE17E45FDC465A9CED34D0 /* Pods_MnemonicKit.framework */,
-				E685D062235716F230D243C3 /* Pods_MnemonicKitTests.framework */,
-				A7EAD434139D9C7850E3BB90 /* Pods_MnemonicKitExampleApp.framework */,
-				90566EC371CBC209F21DE282 /* Pods_MnemonicKitExampleApp_MnemonicKit.framework */,
-				79383BCE9641354EAB0A9900 /* Pods_MnemonicKit_MnemonicKitTests.framework */,
-				962C1D177644F9ED1DA0A779 /* Pods_MnemonicKitExampleApp_MnemonicKit_MnemonicKitTests.framework */,
-				EE1E9AE023E66AA4A6D6D898 /* Pods_MnemonicKitTests2.framework */,
+				F8DA3F1121DE07F4004B016E /* CryptoSwift.framework */,
+				F8A8C54321CD490C005684A3 /* CryptoSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,10 +127,8 @@
 			children = (
 				778602AD2186370E0036843F /* Sources */,
 				778602D521863BDD0036843F /* MnemonicKitTests */,
-				77FE005321BD999C009C3CD1 /* MnemonicKit */,
-				77FE006921BDA092009C3CD1 /* MnemonicKitTests2 */,
+				F8A8C55B21CD4C86005684A3 /* MnemonicKit */,
 				778602AC2186370E0036843F /* Products */,
-				87A5B7EFFE163689F8880593 /* Pods */,
 				487474B4EF0B93DF80EF5CE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -158,8 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				778602AB2186370E0036843F /* MnemonicKitExampleApp.app */,
-				77FE005221BD999C009C3CD1 /* libMnemonicKit.a */,
 				77FE006821BDA092009C3CD1 /* MnemonicKitTests.xctest */,
+				F8A8C55A21CD4C86005684A3 /* MnemonicKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,7 +146,6 @@
 		778602AD2186370E0036843F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				778602C1218638BF0036843F /* MnemonicKit */,
 				778602C0218637FB0036843F /* App */,
 			);
 			path = Sources;
@@ -186,26 +164,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		778602C1218638BF0036843F /* MnemonicKit */ = {
-			isa = PBXGroup;
-			children = (
-				778602CB21863B350036843F /* Language */,
-				778602C3218638FB0036843F /* Mnemonic.swift */,
-				778602C4218638FB0036843F /* Data+BitArray.swift */,
-				778602C2218638FB0036843F /* String+MnemonicData.swift */,
-			);
-			path = MnemonicKit;
-			sourceTree = "<group>";
-		};
-		778602CB21863B350036843F /* Language */ = {
-			isa = PBXGroup;
-			children = (
-				778602CD21863B520036843F /* Chinese.swift */,
-				778602CC21863B520036843F /* English.swift */,
-			);
-			path = Language;
-			sourceTree = "<group>";
-		};
 		778602D521863BDD0036843F /* MnemonicKitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,72 +174,88 @@
 			path = MnemonicKitTests;
 			sourceTree = "<group>";
 		};
-		77FE005321BD999C009C3CD1 /* MnemonicKit */ = {
+		F8A8C55B21CD4C86005684A3 /* MnemonicKit */ = {
 			isa = PBXGroup;
 			children = (
-				77FE005421BD999C009C3CD1 /* MnemonicKit.swift */,
+				F8DA3F0621DE068F004B016E /* Data+BitArray.swift */,
+				F8DA3F0321DE068F004B016E /* Language */,
+				F8DA3F0121DE068F004B016E /* Mnemonic.swift */,
+				F8DA3F0221DE068F004B016E /* String+MnemonicData.swift */,
+				F8A8C55C21CD4C86005684A3 /* MnemonicKit-Swift.h */,
+				F8A8C55D21CD4C86005684A3 /* Info.plist */,
 			);
 			path = MnemonicKit;
 			sourceTree = "<group>";
 		};
-		77FE006921BDA092009C3CD1 /* MnemonicKitTests2 */ = {
+		F8DA3F0321DE068F004B016E /* Language */ = {
 			isa = PBXGroup;
 			children = (
-				77FE006C21BDA092009C3CD1 /* Info.plist */,
+				F8DA3F0421DE068F004B016E /* Chinese.swift */,
+				F8DA3F0521DE068F004B016E /* English.swift */,
 			);
-			path = MnemonicKitTests2;
-			sourceTree = "<group>";
-		};
-		87A5B7EFFE163689F8880593 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				03282044CA56B90979A64A9D /* Pods-MnemonicKit.debug.xcconfig */,
-				AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */,
-				B22F0D96C2014429DA6247E3 /* Pods-MnemonicKitTests.debug.xcconfig */,
-				DCDDA4A5652CB1771A37B4B5 /* Pods-MnemonicKitTests.release.xcconfig */,
-				FD2F780E90487CC44DEC6EAF /* Pods-MnemonicKitExampleApp-MnemonicKit.debug.xcconfig */,
-				602E93F11A296E105D39BDC0 /* Pods-MnemonicKitExampleApp-MnemonicKit.release.xcconfig */,
-				0F03AE641020767316662ED4 /* Pods-MnemonicKit-MnemonicKitTests.debug.xcconfig */,
-				78CE7F69C0FC1539A1964724 /* Pods-MnemonicKit-MnemonicKitTests.release.xcconfig */,
-				DBA9D32D2D2447DF04AE46AB /* Pods-MnemonicKitExampleApp-MnemonicKit-MnemonicKitTests.debug.xcconfig */,
-				6A45CD34978FC8D4429CE5E8 /* Pods-MnemonicKitExampleApp-MnemonicKit-MnemonicKitTests.release.xcconfig */,
-				3B8A857A38E6553C1C6774CB /* Pods-MnemonicKitExampleApp.debug.xcconfig */,
-				9ECC19D277FBB445E0FD7863 /* Pods-MnemonicKitExampleApp.release.xcconfig */,
-			);
-			name = Pods;
+			path = Language;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F8A8C55521CD4C86005684A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		778602AA2186370E0036843F /* MnemonicKitExampleApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 778602BD2186370F0036843F /* Build configuration list for PBXNativeTarget "MnemonicKitExampleApp" */;
 			buildPhases = (
-				ECA37D32C218C9905BC977D4 /* [CP] Check Pods Manifest.lock */,
 				778602A72186370E0036843F /* Sources */,
 				778602A82186370E0036843F /* Frameworks */,
 				778602A92186370E0036843F /* Resources */,
-				CAEE7620A6A25721A731E9FC /* [CP] Embed Pods Frameworks */,
+				F8A8C56621CD4C86005684A3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				77FE006321BD9CCB009C3CD1 /* PBXTargetDependency */,
+				F8A8C56021CD4C86005684A3 /* PBXTargetDependency */,
 			);
 			name = MnemonicKitExampleApp;
 			productName = MnemonicKit;
 			productReference = 778602AB2186370E0036843F /* MnemonicKitExampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		77FE005121BD999C009C3CD1 /* MnemonicKit */ = {
+		77FE006721BDA092009C3CD1 /* MnemonicKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77FE005621BD999C009C3CD1 /* Build configuration list for PBXNativeTarget "MnemonicKit" */;
+			buildConfigurationList = 77FE007221BDA092009C3CD1 /* Build configuration list for PBXNativeTarget "MnemonicKitTests" */;
 			buildPhases = (
-				C9AF4D31727F402B8FA40FBC /* [CP] Check Pods Manifest.lock */,
-				77FE004E21BD999C009C3CD1 /* Sources */,
-				77FE004F21BD999C009C3CD1 /* Frameworks */,
-				77FE005021BD999C009C3CD1 /* CopyFiles */,
+				77FE006421BDA092009C3CD1 /* Sources */,
+				77FE006521BDA092009C3CD1 /* Frameworks */,
+				77FE006621BDA092009C3CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8DA3F1821DE0935004B016E /* PBXTargetDependency */,
+				F8DA3F1621DE0932004B016E /* PBXTargetDependency */,
+			);
+			name = MnemonicKitTests;
+			productName = MnemonicKitTests2;
+			productReference = 77FE006821BDA092009C3CD1 /* MnemonicKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8A8C55921CD4C86005684A3 /* MnemonicKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A8C56321CD4C86005684A3 /* Build configuration list for PBXNativeTarget "MnemonicKit" */;
+			buildPhases = (
+				F8A8C55521CD4C86005684A3 /* Headers */,
+				F8A8C55621CD4C86005684A3 /* Sources */,
+				F8A8C55721CD4C86005684A3 /* Frameworks */,
+				F8A8C55821CD4C86005684A3 /* Resources */,
+				F8A8C57321CD4D6E005684A3 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -289,28 +263,8 @@
 			);
 			name = MnemonicKit;
 			productName = MnemonicKit;
-			productReference = 77FE005221BD999C009C3CD1 /* libMnemonicKit.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		77FE006721BDA092009C3CD1 /* MnemonicKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 77FE007221BDA092009C3CD1 /* Build configuration list for PBXNativeTarget "MnemonicKitTests" */;
-			buildPhases = (
-				D8A91A2B7E3390A457721BA0 /* [CP] Check Pods Manifest.lock */,
-				77FE006421BDA092009C3CD1 /* Sources */,
-				77FE006521BDA092009C3CD1 /* Frameworks */,
-				77FE006621BDA092009C3CD1 /* Resources */,
-				527667EF7C18AF592747A5D2 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				77FE006F21BDA092009C3CD1 /* PBXTargetDependency */,
-			);
-			name = MnemonicKitTests;
-			productName = MnemonicKitTests2;
-			productReference = 77FE006821BDA092009C3CD1 /* MnemonicKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = F8A8C55A21CD4C86005684A3 /* MnemonicKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -328,11 +282,12 @@
 					778602AA2186370E0036843F = {
 						CreatedOnToolsVersion = 10.0;
 					};
-					77FE005121BD999C009C3CD1 = {
-						CreatedOnToolsVersion = 10.1;
-					};
 					77FE006721BDA092009C3CD1 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					F8A8C55921CD4C86005684A3 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -350,7 +305,7 @@
 			projectRoot = "";
 			targets = (
 				778602AA2186370E0036843F /* MnemonicKitExampleApp */,
-				77FE005121BD999C009C3CD1 /* MnemonicKit */,
+				F8A8C55921CD4C86005684A3 /* MnemonicKit */,
 				77FE006721BDA092009C3CD1 /* MnemonicKitTests */,
 			);
 		};
@@ -375,10 +330,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8A8C55821CD4C86005684A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		527667EF7C18AF592747A5D2 /* [CP] Embed Pods Frameworks */ = {
+		F8A8C57321CD4D6E005684A3 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,107 +348,17 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = Carthage;
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CryptoSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MnemonicKitTests/Pods-MnemonicKitTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C9AF4D31727F402B8FA40FBC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MnemonicKit-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CAEE7620A6A25721A731E9FC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MnemonicKitExampleApp/Pods-MnemonicKitExampleApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MnemonicKitExampleApp/Pods-MnemonicKitExampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8A91A2B7E3390A457721BA0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MnemonicKitTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ECA37D32C218C9905BC977D4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MnemonicKitExampleApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -500,19 +372,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77FE004E21BD999C009C3CD1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77FE005D21BD9A3A009C3CD1 /* Chinese.swift in Sources */,
-				77FE005E21BD9A3A009C3CD1 /* English.swift in Sources */,
-				77FE005F21BD9A3A009C3CD1 /* Mnemonic.swift in Sources */,
-				77FE006021BD9A3A009C3CD1 /* Data+BitArray.swift in Sources */,
-				77FE006121BD9A3A009C3CD1 /* String+MnemonicData.swift in Sources */,
-				77FE005521BD999C009C3CD1 /* MnemonicKit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		77FE006421BDA092009C3CD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -521,18 +380,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8A8C55621CD4C86005684A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DA3F0B21DE068F004B016E /* Data+BitArray.swift in Sources */,
+				F8DA3F0821DE068F004B016E /* String+MnemonicData.swift in Sources */,
+				F8DA3F0721DE068F004B016E /* Mnemonic.swift in Sources */,
+				F8DA3F0A21DE068F004B016E /* English.swift in Sources */,
+				F8DA3F0921DE068F004B016E /* Chinese.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		77FE006321BD9CCB009C3CD1 /* PBXTargetDependency */ = {
+		F8A8C56021CD4C86005684A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 77FE005121BD999C009C3CD1 /* MnemonicKit */;
-			targetProxy = 77FE006221BD9CCB009C3CD1 /* PBXContainerItemProxy */;
+			target = F8A8C55921CD4C86005684A3 /* MnemonicKit */;
+			targetProxy = F8A8C55F21CD4C86005684A3 /* PBXContainerItemProxy */;
 		};
-		77FE006F21BDA092009C3CD1 /* PBXTargetDependency */ = {
+		F8DA3F1621DE0932004B016E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 77FE005121BD999C009C3CD1 /* MnemonicKit */;
-			targetProxy = 77FE006E21BDA092009C3CD1 /* PBXContainerItemProxy */;
+			target = 778602AA2186370E0036843F /* MnemonicKitExampleApp */;
+			targetProxy = F8DA3F1521DE0932004B016E /* PBXContainerItemProxy */;
+		};
+		F8DA3F1821DE0935004B016E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8A8C55921CD4C86005684A3 /* MnemonicKit */;
+			targetProxy = F8DA3F1721DE0935004B016E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -674,11 +550,15 @@
 		};
 		778602BE2186370F0036843F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B8A857A38E6553C1C6774CB /* Pods-MnemonicKitExampleApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F6VXZUKN5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -693,11 +573,15 @@
 		};
 		778602BF2186370F0036843F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9ECC19D277FBB445E0FD7863 /* Pods-MnemonicKitExampleApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F6VXZUKN5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -710,45 +594,16 @@
 			};
 			name = Release;
 		};
-		77FE005721BD999C009C3CD1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03282044CA56B90979A64A9D /* Pods-MnemonicKit.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F6VXZUKN5;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		77FE005821BD999C009C3CD1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB52E52A2A043D3F37FDC410 /* Pods-MnemonicKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F6VXZUKN5;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		77FE007021BDA092009C3CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B22F0D96C2014429DA6247E3 /* Pods-MnemonicKitTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F6VXZUKN5;
-				INFOPLIST_FILE = MnemonicKitTests2/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MnemonicKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -764,11 +619,14 @@
 		};
 		77FE007121BDA092009C3CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCDDA4A5652CB1771A37B4B5 /* Pods-MnemonicKitTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6F6VXZUKN5;
-				INFOPLIST_FILE = MnemonicKitTests2/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MnemonicKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -779,6 +637,79 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8A8C56421CD4C86005684A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6F6VXZUKN5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MnemonicKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = marekfort.MnemonicKit;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8A8C56521CD4C86005684A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6F6VXZUKN5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MnemonicKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = marekfort.MnemonicKit;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -803,20 +734,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77FE005621BD999C009C3CD1 /* Build configuration list for PBXNativeTarget "MnemonicKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				77FE005721BD999C009C3CD1 /* Debug */,
-				77FE005821BD999C009C3CD1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		77FE007221BDA092009C3CD1 /* Build configuration list for PBXNativeTarget "MnemonicKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77FE007021BDA092009C3CD1 /* Debug */,
 				77FE007121BDA092009C3CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A8C56321CD4C86005684A3 /* Build configuration list for PBXNativeTarget "MnemonicKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A8C56421CD4C86005684A3 /* Debug */,
+				F8A8C56521CD4C86005684A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
