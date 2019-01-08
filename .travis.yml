@@ -14,6 +14,8 @@ before_install:
 before_deploy:
 - carthage build --no-skip-current --platform iOS --cache-builds
 - carthage archive $FRAMEWORK_NAME
+after_deploy:
+- pod trunk push --skip-import-validation --skip-tests --allow-warnings
 script:
 - set -o pipefail && xcodebuild test -scheme MnemonicKit -destination 'platform=iOS
   Simulator,name=iPhone XS,OS=12.0' ONLY_ACTIVE_ARCH=YES | xcpretty
@@ -25,5 +27,7 @@ deploy:
   api_key:
     secure: LR2QILLIc4f3t7Eg9uZWGZp9sBQXN1wdQzzU75ZMqcBNIw+LBNd4CgsSY7YpeJg+Rsh3++CFThvYmOMAayfrv/DKkVP1LpM782++mjOh0k174gNe6thPPTc9NcdzYJj3Ij6Cej6+nMS5CQfs06YWBWbIwV0Yc/JHFJHa+5//Q2ayk+JSKalT3mbIDhPX3gYDoGw9qVLno3XzS5FRwjzf8aENLiTtKXG8WtGeXX3IbXgsZR1xgYwm1HAlDT8cZcL5xvYB02zIGYRIBtSODGlQ0XlSN3LPtKR9McZPOM1hlfkwnCcf9f1g+AmUeHF8Grh88tt2tjZAWK7z2b+XMNL/5MgW6jhRoGa2WUQOq6D6PPS5uJhJja3j8s8oZeKotwhCfgsf+yQXqfGjcf+coOPnvXCV6wHNFHabjXvpG65AJKmxWaLFM9nZfxt89a36BLAG6BcC8thiN40WK2Jid1kjeZ/mer+4vxKl8lHPWr6tLP98KIEeX4PeqYakRJe6j89FxkQb3AbWvqQIgOzxu3HidJayE7UQLH0UvuKmP5RZn3B/vVRXXfqIwn8clexEFXc8j0yfdP7fyypKLyzBpsfFwkkNqD6/JX20Ugq7gPaYDzWHeZe4OgwFo7xbp0x42dTvuoJoMRJJrTjI4remPnqKhpJgmkH1VasnFc8x5ZwU/1E=
   file: "$FRAMEWORK_NAME.framework.zip"
+  skip_cleanup: true
   on:
-    repo: keefertaylor/MnemonicKit
+    repo: AckeeCZ/TezosSwift
+    tags: true
