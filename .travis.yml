@@ -16,13 +16,6 @@ before_deploy:
 - carthage archive $FRAMEWORK_NAME
 script:
 - set -o pipefail && xcodebuild test -scheme MnemonicKit -destination 'platform=iOS Simulator,name=iPhone XS,OS=12.0' ONLY_ACTIVE_ARCH=YES | xcpretty
-deploy:
-  provider: releases
-  file: "$FRAMEWORK_NAME.framework.zip"
-  skip_cleanup: true
-  on:
-    repo: keefertaylor/MnemonicKit
-    tags: true
 after_success:
   - slather
   - bash <(curl -s https://codecov.io/bash)
