@@ -60,3 +60,7 @@ screenshots
 
 #build output
 /outputs
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
