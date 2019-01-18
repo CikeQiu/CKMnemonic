@@ -177,8 +177,8 @@
 		F8A8C55B21CD4C86005684A3 /* MnemonicKit */ = {
 			isa = PBXGroup;
 			children = (
-				F8DA3F0621DE068F004B016E /* Data+BitArray.swift */,
 				F8DA3F0321DE068F004B016E /* Language */,
+				F8DA3F0621DE068F004B016E /* Data+BitArray.swift */,
 				F8DA3F0121DE068F004B016E /* Mnemonic.swift */,
 				F8DA3F0221DE068F004B016E /* String+MnemonicData.swift */,
 				F8A8C55C21CD4C86005684A3 /* MnemonicKit-Swift.h */,
