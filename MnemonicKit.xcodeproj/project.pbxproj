@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				778602AD2186370E0036843F /* Sources */,
-				778602D521863BDD0036843F /* MnemonicKitTests */,
+				778602D521863BDD0036843F /* Tests */,
 				F8A8C55B21CD4C86005684A3 /* MnemonicKit */,
 				778602AC2186370E0036843F /* Products */,
 				487474B4EF0B93DF80EF5CE8 /* Frameworks */,
@@ -164,14 +164,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		778602D521863BDD0036843F /* MnemonicKitTests */ = {
+		778602D521863BDD0036843F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				778602DE2186426A0036843F /* vectors.json */,
 				778602D621863BDD0036843F /* MnemonicKitTests.swift */,
 				778602D821863BDD0036843F /* Info.plist */,
 			);
-			path = MnemonicKitTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		F8A8C55B21CD4C86005684A3 /* MnemonicKit */ = {
