@@ -73,6 +73,7 @@
 		778602D621863BDD0036843F /* MnemonicKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicKitTests.swift; sourceTree = "<group>"; };
 		778602D821863BDD0036843F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778602DE2186426A0036843F /* vectors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vectors.json; sourceTree = "<group>"; };
+		77CE32B121F16281006ADABA /* MnemonicKitExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MnemonicKitExample.playground; path = "New Group/MnemonicKitExample.playground"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		77FE006821BDA092009C3CD1 /* MnemonicKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MnemonicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A8C54321CD490C005684A3 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		F8A8C55A21CD4C86005684A3 /* MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +126,7 @@
 		778602A22186370E0036843F = {
 			isa = PBXGroup;
 			children = (
+				77CE32B221F162BA006ADABA /* Examples */,
 				778602AD2186370E0036843F /* Sources */,
 				778602D521863BDD0036843F /* Tests */,
 				F8A8C55B21CD4C86005684A3 /* MnemonicKit */,
@@ -172,6 +174,15 @@
 				778602D821863BDD0036843F /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		77CE32B221F162BA006ADABA /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				77CE32B121F16281006ADABA /* MnemonicKitExample.playground */,
+			);
+			name = Examples;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F8A8C55B21CD4C86005684A3 /* MnemonicKit */ = {
