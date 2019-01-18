@@ -603,14 +603,14 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MnemonicKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKitTests2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKit.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -626,14 +626,14 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MnemonicKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKitTests2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keefertaylor.MnemonicKit.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
