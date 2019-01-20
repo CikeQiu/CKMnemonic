@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.dependency "CryptoSwift", "~> 0.13.1"
 
   s.test_spec "Tests" do |test_spec|
-    test_spec.source_files = "MnemonicKitTests/*.swift"
-    test_spec.resources = ["MnemonicKitTests/*.json"]
+    test_spec.source_files = "Tests/*.swift"
+    test_spec.resources = ["Tests/*.json"]
   end  
 end
