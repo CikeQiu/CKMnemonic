@@ -13,7 +13,6 @@ Pod::Spec.new do |s|
   s.author             = { "Keefer Taylor" => "keefer@keefertaylor.com" }
   s.source       = { :git => "https://github.com/keefertaylor/MnemonicKit.git", :tag => "1.3.2" }
   s.source_files  = "MnemonicKit/**/*.swift",
-  s.exclude_files = "Sources/App/*.swift"
   s.swift_version = "4.2"
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.10"
@@ -21,7 +20,7 @@ Pod::Spec.new do |s|
   s.dependency "CryptoSwift", "~> 0.13.1"
 
   s.test_spec "Tests" do |test_spec|
-    test_spec.source_files = "MnemonicKitTests/*.swift"
-    test_spec.resources = ["MnemonicKitTests/*.json"]
+    test_spec.source_files = "Tests/*.swift"
+    test_spec.resources = ["Tests/*.json"]
   end  
 end
