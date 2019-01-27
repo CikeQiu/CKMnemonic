@@ -1,7 +1,7 @@
 // Copyright Keefer Taylor, 2018
 
-import XCTest
 import MnemonicKit
+import XCTest
 
 class MnemonicTests: XCTestCase {
   /// Indices in the input file.
@@ -48,8 +48,7 @@ class MnemonicTests: XCTestCase {
       let mnemonicString = testCase[mnenomicStringIndex]
       let expectedDeterministicSeedString = testCase[deterministicSeedStringIndex]
 
-      let deterministicSeedString = Mnemonic.deterministicSeedString(from: mnemonicString,
-                                                                     passphrase: passphrase)
+      let deterministicSeedString = Mnemonic.deterministicSeedString(from: mnemonicString, passphrase: passphrase)
       XCTAssertEqual(deterministicSeedString, expectedDeterministicSeedString)
     }
   }
@@ -64,8 +63,7 @@ class MnemonicTests: XCTestCase {
       let data = try Data(contentsOf: url)
       let options: JSONSerialization.ReadingOptions =  [.allowFragments, .mutableContainers, .mutableLeaves]
       guard let parsedDictionary =
-        try JSONSerialization.jsonObject(with: data,
-                                         options: options) as? [String: Any] else {
+        try JSONSerialization.jsonObject(with: data, options: options) as? [String: Any] else {
         return nil
       }
       return parsedDictionary

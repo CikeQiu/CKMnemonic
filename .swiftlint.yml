@@ -14,8 +14,7 @@ opt_in_rules:
   - explicit_init  
   - file_header
   - first_where
-# TODO: Fix force unwrapping in XCTests, then enable.
-#  - force_unwrapping
+  - force_unwrapping
   - implicitly_unwrapped_optional
   - literal_expression_end_indentation
   - multiline_arguments
@@ -24,7 +23,6 @@ opt_in_rules:
   - multiline_parameters
   - multiline_parameters_brackets
   - multiple_closures_with_trailing_closure
-  - no_extension_access_modifier
   - number_separator
   - object_literal
   - operator_usage_whitespace

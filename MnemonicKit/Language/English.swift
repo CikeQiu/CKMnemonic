@@ -1,7 +1,5 @@
 // Copyright Keefer Taylor, 2018
 
-// swiftlint:disable file_length
-
 import Foundation
 
 extension String {

@@ -1,10 +1,4 @@
-//
-//  MnemonicKit.h
-//  MnemonicKit
-//
-//  Created by Marek Fořt on 12/21/18.
-//  Copyright © 2018 Keefer Taylor. All rights reserved.
-//
+// Copyright Keefer Taylor, 2019
 
 #import <UIKit/UIKit.h>
 
