@@ -25,8 +25,7 @@ public class Mnemonic {
    * Parameter hexString: The hex string to generate a mnemonic from.
    * Parameter language: The language to use. Default is english.
    */
-  public static func mnemonicString(from hexString: String,
-                                    language: MnemonicLanguageType = .english) -> String? {
+  public static func mnemonicString(from hexString: String, language: MnemonicLanguageType = .english) -> String? {
     let seedData = hexString.mnemonicData()
     let hashData = seedData.sha256()
     let checkSum = hashData.toBitArray()
@@ -59,9 +58,11 @@ public class Mnemonic {
    * Parameter passphrase: An optional passphrase. Default is the empty string.
    * Parameter language: The language to use. Default is english.
    */
-  public static func deterministicSeedString(from mnemonic: String,
-                                             passphrase: String = "",
-                                             language _: MnemonicLanguageType = .english) -> String? {
+  public static func deterministicSeedString(
+    from mnemonic: String,
+    passphrase: String = "",
+    language _: MnemonicLanguageType = .english
+  ) -> String? {
     guard let normalizedData = self.normalized(string: mnemonic),
       let saltData = normalized(string: "mnemonic" + passphrase) else {
       return nil
@@ -70,10 +71,8 @@ public class Mnemonic {
     let passwordBytes = normalizedData.bytes
     let saltBytes = saltData.bytes
     do {
-      let bytes = try PKCS5.PBKDF2(password: passwordBytes,
-                                   salt: saltBytes,
-                                   iterations: 2048,
-                                   variant: .sha512).calculate()
+      let bytes =
+        try PKCS5.PBKDF2(password: passwordBytes, salt: saltBytes, iterations: 2_048, variant: .sha512).calculate()
       return bytes.toHexString()
     } catch {
       return nil

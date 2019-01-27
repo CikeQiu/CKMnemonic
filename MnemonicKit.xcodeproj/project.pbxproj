@@ -175,6 +175,7 @@
 				F8A8C55721CD4C86005684A3 /* Frameworks */,
 				F8A8C55821CD4C86005684A3 /* Resources */,
 				F8A8C57321CD4D6E005684A3 /* Carthage */,
+				7791E60E21FE346900957650 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -245,6 +246,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7791E60E21FE346900957650 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --strict\nelse\necho \"warning: SwiftLint not installed, run `brew install swiftlint`\"\nfi\n";
+		};
 		F8A8C57321CD4D6E005684A3 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,7 +504,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = marekfort.MnemonicKit;
+				PRODUCT_BUNDLE_IDENTIFIER = keefertaylor.MnemonicKit;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -522,7 +541,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = marekfort.MnemonicKit;
+				PRODUCT_BUNDLE_IDENTIFIER = keefertaylor.MnemonicKit;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
