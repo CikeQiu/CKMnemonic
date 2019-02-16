@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.10"
 		
-  s.dependency "CryptoSwift", "~> 0.13.1"
+  s.dependency "CryptoSwift", "~> 0.14.0"
 
   s.test_spec "Tests" do |test_spec|
     test_spec.source_files = "Tests/*.swift"
