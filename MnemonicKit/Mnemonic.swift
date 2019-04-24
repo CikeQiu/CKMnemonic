@@ -54,10 +54,12 @@ public enum Mnemonic {
   ///
   /// - Parameters:
   ///   - mnemonic: The mnemonic to use.
+  ///   - iterations: The iterations to perform in the PBKDF2 algorithm. Default is 2048.
   ///   - passphrase: An optional passphrase. Default is the empty string.
   ///   - language: The language to use. Default is english.
   public static func deterministicSeedString(
     from mnemonic: String,
+    iterations: Int = 2_048,
     passphrase: String = "",
     language _: MnemonicLanguageType = .english
   ) -> String? {
@@ -70,7 +72,7 @@ public enum Mnemonic {
     let saltBytes = saltData.bytes
     do {
       let bytes =
-        try PKCS5.PBKDF2(password: passwordBytes, salt: saltBytes, iterations: 2_048, variant: .sha512).calculate()
+        try PKCS5.PBKDF2(password: passwordBytes, salt: saltBytes, iterations: iterations, variant: .sha512).calculate()
       return bytes.toHexString()
     } catch {
       return nil
