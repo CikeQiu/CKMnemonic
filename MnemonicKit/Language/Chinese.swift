@@ -3,7 +3,7 @@
 import Foundation
 
 extension String {
-  static let chineseMnemonics = [
+  static let chineseMnemonics: [String] = [
     "的",
     "一",
     "是",

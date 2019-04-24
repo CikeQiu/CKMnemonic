@@ -15,9 +15,7 @@ class MnemonicTests: XCTestCase {
   /// Passphrase
   private let passphrase = "TREZOR"
 
-  /**
-   * Test that MnemonicKit can generate mnemonic strings from hex representations.
-   */
+  /// Test that MnemonicKit can generate mnemonic strings from hex representations.
   func testGenerateMnemonicFromHex() {
     guard let vectors = MnemonicTests.dictionaryFromTestInputFile(),
       let testCases = vectors[englishTestCases] as? [[String]] else {
@@ -34,9 +32,7 @@ class MnemonicTests: XCTestCase {
     }
   }
 
-  /**
-   * Test that MnemonicKit can generate deterministic seed strings strings without a passphrase.
-   */
+  /// Test that MnemonicKit can generate deterministic seed strings strings without a passphrase.
   func testGenerateDeterministicSeedStringWithPassphrase() {
     guard let vectors = MnemonicTests.dictionaryFromTestInputFile(),
       let testCases = vectors[englishTestCases] as? [[String]] else {
@@ -72,19 +68,19 @@ class MnemonicTests: XCTestCase {
     }
   }
 
-  /** Test mnemonic generation in english. */
+  /// Test mnemonic generation in english.
   public func testGenerateMnemonic() {
     let mnemonic = Mnemonic.generateMnemonic(strength: 32)
     XCTAssertNotNil(mnemonic)
   }
 
-  /** Prove that functions work in chinese as well. */
+  /// Prove that functions work in chinese as well.
   public func testGenerateMnemonicChinese() {
     let chineseMnemonic = Mnemonic.generateMnemonic(strength: 32, language: .chinese)
     XCTAssertNotNil(chineseMnemonic)
   }
 
-  /** Test input strengths for mnemonic generation. */
+  /// Test input strengths for mnemonic generation.
   public func testMnemonicGenerationStrength() {
     let mnemonic32 = Mnemonic.generateMnemonic(strength: 32)
     let mnemonic64 = Mnemonic.generateMnemonic(strength: 32)
@@ -95,7 +91,7 @@ class MnemonicTests: XCTestCase {
     XCTAssertNotNil(mnemonic16)
   }
 
-  /** Test valid chinese and english mnemonics are determined to be valid. */
+  /// Test valid chinese and english mnemonics are determined to be valid.
   public func testValidEnglishAndChineseMnemonics() {
     let englishMnemonic =
         "pear peasant pelican pen pear peasant pelican pen pear peasant pelican pen pear peasant pelican pen"
@@ -105,7 +101,7 @@ class MnemonicTests: XCTestCase {
     XCTAssertTrue(Mnemonic.validate(mnemonic: chineseMnemonic))
   }
 
-  /** Test invalid chinese and english mnemonics are determined to be invalid. */
+  /// Test invalid chinese and english mnemonics are determined to be invalid.
   public func testInvalidEnglishAndChineseMnemonics() {
     let englishMnemonic = "slacktivist snacktivity snuggie"
     let chineseMnemonic = "亂 語"
@@ -114,31 +110,31 @@ class MnemonicTests: XCTestCase {
     XCTAssertFalse(Mnemonic.validate(mnemonic: chineseMnemonic))
   }
 
-  /** Test the empty string is determined to be an invalid mnemonic. */
+  /// Test the empty string is determined to be an invalid mnemonic.
   public func testEmptyStringValidation() {
     XCTAssertFalse(Mnemonic.validate(mnemonic: ""))
   }
 
-  /** Test that strings in an unknown language are determined to be invalid. */
+  /// Test that strings in an unknown language are determined to be invalid.
   public func testUnknownLanguageValidation() {
     let spanishMnemonic =
         "pera campesina pelican pen pera campesina pelican pen pera campesina pelican pen pera campesina pelican pen"
     XCTAssertFalse(Mnemonic.validate(mnemonic: spanishMnemonic))
   }
 
-  /** Test that strings of mixed case are determined to be valid. */
+  /// Test that strings of mixed case are determined to be valid.
   public func testMixedCaseValidation() {
     let mixedCaseMnemonic = "pear PEASANT PeLiCaN pen"
     XCTAssertTrue(Mnemonic.validate(mnemonic: mixedCaseMnemonic))
   }
 
-  /** Test mixed language mnemonics. */
+  /// Test mixed language mnemonics.
   public func testMixedLanguageMnemonicValidation() {
     let mixedLanguageMnemonic = "pear peasant pelican pen 路 级 少 图"
     XCTAssertFalse(Mnemonic.validate(mnemonic: mixedLanguageMnemonic))
   }
 
-  /** Test that strings padded with whitespace are determined to be valid. */
+  /// Test that strings padded with whitespace are determined to be valid.
   public func testWhitespacePaddedValidation() {
     let whitespacePaddedMnemonic = "    pear peasant pelican pen\t\t\n"
     XCTAssertTrue(Mnemonic.validate(mnemonic: whitespacePaddedMnemonic))
