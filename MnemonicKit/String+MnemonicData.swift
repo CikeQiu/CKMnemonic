@@ -3,7 +3,7 @@
 import Foundation
 
 public extension String {
-  public func mnemonicData() -> Data {
+  func mnemonicData() -> Data {
     let length = self.count
     let dataLength = length / 2
     var dataToReturn = Data(capacity: dataLength)

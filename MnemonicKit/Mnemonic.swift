@@ -18,13 +18,12 @@ public enum MnemonicLanguageType {
   }
 }
 
-public class Mnemonic {
-  /**
-   * Generate a mnemonic from the given hex string in the given language.
-   *
-   * Parameter hexString: The hex string to generate a mnemonic from.
-   * Parameter language: The language to use. Default is english.
-   */
+public enum Mnemonic {
+  /// Generate a mnemonic from the given hex string in the given language.
+  ///
+  /// - Parameters:
+  ///   - hexString: The hex string to generate a mnemonic from.
+  ///   - language: The language to use. Default is english.
   public static func mnemonicString(from hexString: String, language: MnemonicLanguageType = .english) -> String? {
     let seedData = hexString.mnemonicData()
     let hashData = seedData.sha256()
@@ -51,15 +50,16 @@ public class Mnemonic {
     return mnemonic.joined(separator: " ")
   }
 
-  /**
-   * Generate a deterministic seed string from the given inputs.
-   *
-   * Parameter mnemonic: The mnemonic to use.
-   * Parameter passphrase: An optional passphrase. Default is the empty string.
-   * Parameter language: The language to use. Default is english.
-   */
+  /// Generate a deterministic seed string from the given inputs.
+  ///
+  /// - Parameters:
+  ///   - mnemonic: The mnemonic to use.
+  ///   - iterations: The iterations to perform in the PBKDF2 algorithm. Default is 2048.
+  ///   - passphrase: An optional passphrase. Default is the empty string.
+  ///   - language: The language to use. Default is english.
   public static func deterministicSeedString(
     from mnemonic: String,
+    iterations: Int = 2_048,
     passphrase: String = "",
     language _: MnemonicLanguageType = .english
   ) -> String? {
@@ -72,19 +72,18 @@ public class Mnemonic {
     let saltBytes = saltData.bytes
     do {
       let bytes =
-        try PKCS5.PBKDF2(password: passwordBytes, salt: saltBytes, iterations: 2_048, variant: .sha512).calculate()
+        try PKCS5.PBKDF2(password: passwordBytes, salt: saltBytes, iterations: iterations, variant: .sha512).calculate()
       return bytes.toHexString()
     } catch {
       return nil
     }
   }
 
-  /**
-   * Generate a mnemonic of the given strength and given language.
-   *
-   * Parameter strength: The strength to use. This must be a multiple of 32.
-   * Parameter language: The language to use. Default is english.
-   */
+  /// Generate a mnemonic of the given strength and given language.
+  ///
+  /// - Parameters:
+  ///   - strength: The strength to use. This must be a multiple of 32.
+  ///   - language: The language to use. Default is english.
   public static func generateMnemonic(strength: Int, language: MnemonicLanguageType = .english)
     -> String? {
     guard strength % 32 == 0 else {
@@ -102,9 +101,7 @@ public class Mnemonic {
     return mnemonicString(from: hexString, language: language)
   }
 
-  /**
-   * Validate that the given string is a valid mnemonic.
-   */
+  /// Validate that the given string is a valid mnemonic.
   public static func validate(mnemonic: String) -> Bool {
     let normalizedMnemonic = mnemonic.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
     let mnemonicComponents = normalizedMnemonic.components(separatedBy: " ")
@@ -133,9 +130,7 @@ public class Mnemonic {
     }
   }
 
-  /**
-   * Change a string into data.
-   */
+  /// Change a string into data.
   private static func normalized(string: String) -> Data? {
     guard let data = string.data(using: .utf8, allowLossyConversion: true),
       let dataString = String(data: data, encoding: .utf8),
@@ -143,11 +138,5 @@ public class Mnemonic {
       return nil
     }
     return normalizedData
-  }
-
-  /** Please do not instantiate this static utility class. */
-  @available(*, unavailable)
-  public init() {
-    fatalError()
   }
 }
