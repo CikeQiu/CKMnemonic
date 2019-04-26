@@ -9,9 +9,9 @@ before_install:
 - gem install slather
 - brew update
 - brew outdated carthage || brew upgrade carthage
-- carthage bootstrap --platform iOS --cache-builds
+- travis_wait 120 carthage bootstrap --platform iOS --cache-builds
 before_deploy:
-- carthage build --no-skip-current --platform iOS --cache-builds
+- travis_wait 120 carthage build --no-skip-current --platform iOS --cache-builds
 - carthage archive $FRAMEWORK_NAME
 after_deploy:
 - pod trunk push --skip-import-validation --skip-tests --allow-warnings
