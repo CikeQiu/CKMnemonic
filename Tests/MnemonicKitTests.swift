@@ -49,7 +49,7 @@ class MnemonicTests: XCTestCase {
     }
   }
 
-  private static func dictionaryFromTestInputFile() -> [String: Any]? {
+  static func dictionaryFromTestInputFile() -> [String: Any]? {
     let testBundle = Bundle(for: self)
     guard let url = testBundle.url(forResource: "vectors", withExtension: "json") else {
       return nil
@@ -69,19 +69,19 @@ class MnemonicTests: XCTestCase {
   }
 
   /// Test mnemonic generation in english.
-  public func testGenerateMnemonic() {
+  func testGenerateMnemonic() {
     let mnemonic = Mnemonic.generateMnemonic(strength: 32)
     XCTAssertNotNil(mnemonic)
   }
 
   /// Prove that functions work in chinese as well.
-  public func testGenerateMnemonicChinese() {
+  func testGenerateMnemonicChinese() {
     let chineseMnemonic = Mnemonic.generateMnemonic(strength: 32, language: .chinese)
     XCTAssertNotNil(chineseMnemonic)
   }
 
   /// Test input strengths for mnemonic generation.
-  public func testMnemonicGenerationStrength() {
+  func testMnemonicGenerationStrength() {
     let mnemonic32 = Mnemonic.generateMnemonic(strength: 32)
     let mnemonic64 = Mnemonic.generateMnemonic(strength: 32)
     XCTAssertNotNil(mnemonic32)
@@ -92,7 +92,7 @@ class MnemonicTests: XCTestCase {
   }
 
   /// Test valid chinese and english mnemonics are determined to be valid.
-  public func testValidEnglishAndChineseMnemonics() {
+  func testValidEnglishAndChineseMnemonics() {
     let englishMnemonic =
         "pear peasant pelican pen pear peasant pelican pen pear peasant pelican pen pear peasant pelican pen"
     let chineseMnemonic = "路 级 少 图 路 级 少 图 路 级 少 图 路 级 少 图"
@@ -102,7 +102,7 @@ class MnemonicTests: XCTestCase {
   }
 
   /// Test invalid chinese and english mnemonics are determined to be invalid.
-  public func testInvalidEnglishAndChineseMnemonics() {
+  func testInvalidEnglishAndChineseMnemonics() {
     let englishMnemonic = "slacktivist snacktivity snuggie"
     let chineseMnemonic = "亂 語"
 
@@ -111,32 +111,46 @@ class MnemonicTests: XCTestCase {
   }
 
   /// Test the empty string is determined to be an invalid mnemonic.
-  public func testEmptyStringValidation() {
+  func testEmptyStringValidation() {
     XCTAssertFalse(Mnemonic.validate(mnemonic: ""))
   }
 
   /// Test that strings in an unknown language are determined to be invalid.
-  public func testUnknownLanguageValidation() {
+  func testUnknownLanguageValidation() {
     let spanishMnemonic =
         "pera campesina pelican pen pera campesina pelican pen pera campesina pelican pen pera campesina pelican pen"
     XCTAssertFalse(Mnemonic.validate(mnemonic: spanishMnemonic))
   }
 
   /// Test that strings of mixed case are determined to be valid.
-  public func testMixedCaseValidation() {
+  func testMixedCaseValidation() {
     let mixedCaseMnemonic = "pear PEASANT PeLiCaN pen"
     XCTAssertTrue(Mnemonic.validate(mnemonic: mixedCaseMnemonic))
   }
 
   /// Test mixed language mnemonics.
-  public func testMixedLanguageMnemonicValidation() {
+  func testMixedLanguageMnemonicValidation() {
     let mixedLanguageMnemonic = "pear peasant pelican pen 路 级 少 图"
     XCTAssertFalse(Mnemonic.validate(mnemonic: mixedLanguageMnemonic))
   }
 
   /// Test that strings padded with whitespace are determined to be valid.
-  public func testWhitespacePaddedValidation() {
+  func testWhitespacePaddedValidation() {
     let whitespacePaddedMnemonic = "    pear peasant pelican pen\t\t\n"
     XCTAssertTrue(Mnemonic.validate(mnemonic: whitespacePaddedMnemonic))
+  }
+
+  /// Test an valid mnemonic generates a seed string.
+  func testDeterministicSeedStringValidMnemonic() {
+    let invalidMnemonic =
+      "pear peasant pelican pen pear peasant pelican pen pear peasant pelican pen pear peasant pelican pen"
+    XCTAssertNotNil(Mnemonic.deterministicSeedString(from: invalidMnemonic))
+  }
+
+  /// Test an invalid mnemonic does not generate a seed string.
+  func testDeterministicSeedStringInvalidMnemonic() {
+    let invalidMnemonic =
+      "mnemonickit mnemonickit mnemonickit mnemonickit mnemonickit mnemonickit mnemonickit mnemonickit mnemonickit"
+    XCTAssertNil(Mnemonic.deterministicSeedString(from: invalidMnemonic))
   }
 }

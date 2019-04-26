@@ -63,7 +63,8 @@ public enum Mnemonic {
     passphrase: String = "",
     language _: MnemonicLanguageType = .english
   ) -> String? {
-    guard let normalizedData = self.normalized(string: mnemonic),
+    guard self.validate(mnemonic: mnemonic),
+      let normalizedData = self.normalized(string: mnemonic),
       let saltData = normalized(string: "mnemonic" + passphrase) else {
       return nil
     }
@@ -95,7 +96,7 @@ public enum Mnemonic {
     guard SecRandomCopyBytes(kSecRandomDefault, count, UnsafeMutablePointer<UInt8>(mutating: bytes)) != -1 else {
       return nil
     }
-    let data = Data(bytes: bytes)
+    let data = Data(bytes)
     let hexString = data.toHexString()
 
     return mnemonicString(from: hexString, language: language)
