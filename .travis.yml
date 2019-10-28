@@ -19,7 +19,7 @@ after_deploy:
 script:
 # CocoaPods
 - xcodegen generate
-- pod lib lint
+- travis_wait 120 pod lib lint
 # Carthage
 - rm -rf MnemonicKit.xcodeproj
 - xcodegen generate
