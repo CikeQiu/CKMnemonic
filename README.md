@@ -7,12 +7,12 @@
 
 An implementation of BIP39 in Swift. MnemonicKit supports both English and Chinese mnemonics.
 
-This library is a fork of [CKMnemonic](https://github.com/CikeQiu/CKMnemonic). This fork provides several conveniences over the original library, namely: 
+This library is a fork of [CKMnemonic](https://github.com/CikeQiu/CKMnemonic). This fork provides several conveniences over the original library, namely:
 - Converting throwing APIs to non-throwing nullable APIs
 - Additional helper methods
 - Code clarity and documentation
 - Additional Testing
-- Support on OSX 
+- Support on OSX
 
 ## Installation
 
@@ -66,7 +66,14 @@ If you use Carthage to build your dependencies, make sure you have added `Crypto
 
 ## Contributions
 
-I am happy to accept pull requests. If anyone is able to reach the original authors of CKMnemonic, I am happy to merge this library upstream with them.
+I am happy to accept pull requests.
+
+To get set up:
+```shell
+$ brew install xcodegen # if you don't already have it
+$ xcodegen generate # Generate an XCode project from Project.yml
+$ open MnemonicKit.xcodeproj
+```
 
 ## License
 

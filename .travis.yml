@@ -9,14 +9,22 @@ before_install:
 - gem install slather
 - brew update
 - brew outdated carthage || brew upgrade carthage
-- travis_wait 120 carthage bootstrap --platform iOS --cache-builds
+- brew outdated cocoapods || brew upgrade cocoapods
+- brew install xcodegen
 before_deploy:
 - travis_wait 120 carthage build --no-skip-current --platform iOS --cache-builds
 - carthage archive $FRAMEWORK_NAME
 after_deploy:
 - travis_wait 120 pod trunk push --skip-import-validation --skip-tests --allow-warnings
 script:
-- set -o pipefail && xcodebuild test -scheme MnemonicKit -destination 'platform=iOS
+# CocoaPods
+- xcodegen generate
+- travis_wait 120 pod lib lint
+# Carthage
+- rm -rf MnemonicKit.xcodeproj
+- xcodegen generate
+- travis_wait 120 carthage bootstrap --platform iOS --cache-builds
+- set -o pipefail && xcodebuild test -scheme MnemonicKit_iOS -destination 'platform=iOS
   Simulator,name=iPhone XS,OS=12.2' ONLY_ACTIVE_ARCH=YES | xcpretty
 after_success:
 - slather
