@@ -24,7 +24,7 @@ script:
 - rm -rf MnemonicKit.xcodeproj
 - xcodegen generate
 - travis_wait 120 carthage bootstrap --platform iOS --cache-builds
-- set -o pipefail && xcodebuild test -scheme MnemonicKit -destination 'platform=iOS
+- set -o pipefail && xcodebuild test -scheme MnemonicKit_iOS -destination 'platform=iOS
   Simulator,name=iPhone XS,OS=12.2' ONLY_ACTIVE_ARCH=YES | xcpretty
 after_success:
 - slather
