@@ -2,5 +2,4 @@
 
 coverage_service: cobertura_xml
 xcodeproj: MnemonicKit.xcodeproj
-scheme: MnemonicKitTests
-workspace: MnemonicKit.xcworkspace
+scheme: MnemonicKit_iOS
