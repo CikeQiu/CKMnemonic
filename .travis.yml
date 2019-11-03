@@ -26,17 +26,14 @@ jobs:
         - set -o pipefail && xcodebuild test -scheme MnemonicKit_iOS -destination 'platform=iOS Simulator,name=iPhone XS,OS=12.2' ONLY_ACTIVE_ARCH=YES | xcpretty
         - slather
         - bash <(curl -s https://codecov.io/bash)
-    - stage: Release - CocoaPods
+    - stage: Release - If Tagged Commit
       script:
-        - echo "Building CocoaPods Release If Tag is Present"
+        - echo "Checking for release tag"
       before_deploy:
-        - pod trunk push --skip-import-validation --skip-tests --allow-warnings
-    - stage: Release - Carthage
-      script:
-        - echo "Building Carthage Release If Tag is Present"
-      before_deploy:
+        - brew outdated cocoapods || brew upgrade cocoapods      
         - brew outdated carthage || brew upgrade carthage
         - brew install xcodegen
+        - pod trunk push --skip-import-validation --skip-tests --allow-warnings
         - xcodegen generate
         - carthage build --no-skip-current --platform iOS,mac --cache-builds
         - carthage archive $FRAMEWORK_NAME
