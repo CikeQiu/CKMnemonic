@@ -17,8 +17,6 @@
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.10"
 
-  s.prepare_command = "xcodegen generate -s project.yml"
-
   s.dependency "CryptoSwift", "~> 0.14.0"
 
   s.test_spec "Tests" do |test_spec|
