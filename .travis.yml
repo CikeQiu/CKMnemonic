@@ -16,7 +16,7 @@ jobs:
       install:
         - brew outdated cocoapods || brew upgrade cocoapods
       script:
-        - travis wait 500 pod lib lint
+        - travis_wait 500 pod lib lint
     - stage: Build - Carthage And Code Coverage
       install:
         - brew outdated carthage || brew upgrade carthage
@@ -46,7 +46,7 @@ jobs:
 
         - echo "Deploying CocoaPods"
         - brew outdated cocoapods || brew upgrade cocoapods
-        - travis wait 500 pod trunk push --skip-import-validation --skip-tests --allow-warnings
+        - travis_wait 500 pod trunk push --skip-import-validation --skip-tests --allow-warnings
 
         - echo "Deploying Carthage"
         - brew outdated carthage || brew upgrade carthage
@@ -59,8 +59,8 @@ jobs:
         - rm -rf MnemonicKit.xcodeproj
         - xcodegen generate
 
-        - travis wait 500 carthage build --no-skip-current --platform iOS,mac --cache-builds
-        - travis wait 500 carthage archive $FRAMEWORK_NAME
+        - travis_wait 500 carthage build --no-skip-current --platform iOS,mac --cache-builds
+        - travis_wait 500 carthage archive $FRAMEWORK_NAME
       deploy:
         provider: releases
         api_key:
