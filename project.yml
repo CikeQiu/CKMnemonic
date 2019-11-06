@@ -7,6 +7,8 @@ targets:
   MnemonicKit:
     type: framework
     platform: [iOS, macOS]
+    deploymentTarget:
+      iOS: 10.0
     sources: [MnemonicKit]
     scheme:
       testTargets:
