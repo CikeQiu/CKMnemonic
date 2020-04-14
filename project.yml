@@ -12,7 +12,7 @@ targets:
     sources: [MnemonicKit]
     scheme:
       testTargets:
-        - MnemonicKitTests_$platform
+        - MnemonicKitTests_${platform}
       gatherCoverageData: true
     postCompileScripts:
       - script: swiftlint autocorrect --config .swiftlint.yml
@@ -24,4 +24,4 @@ targets:
     platform: [iOS, macOS]
     sources: [Tests]
     dependencies:
-      - target: MnemonicKit_$platform
+      - target: MnemonicKit_${platform}

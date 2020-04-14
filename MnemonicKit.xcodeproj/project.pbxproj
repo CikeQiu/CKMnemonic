@@ -81,12 +81,12 @@
 		12B9024EB02AB18E1F44789A /* Mnemonic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
 		1645FE576891F45DC72864F6 /* MnemonicKitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MnemonicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6F81AB601CF04F3F1E52E3 /* English.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = English.swift; sourceTree = "<group>"; };
-		23F75813C686C37B78DE459E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F75813C686C37B78DE459E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		256E6CB62D82160ACBA1512E /* String+MnemonicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MnemonicData.swift"; sourceTree = "<group>"; };
-		65B1627123A1131289B4110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B1627123A1131289B4110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7DCB97C4881969FDB72C61DB /* MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1EBAC8ABDF9E72ABA1B642 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = "<group>"; };
-		C3E5287598681E0527694214 /* vectors.json */ = {isa = PBXFileReference; path = vectors.json; sourceTree = "<group>"; };
+		C3E5287598681E0527694214 /* vectors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vectors.json; sourceTree = "<group>"; };
 		D2D9394FFD7755F40E53D60E /* Data+BitArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+BitArray.swift"; sourceTree = "<group>"; };
 		DC7EE929BD11BA8AB38F9C19 /* MnemonicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MnemonicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA32888ED203FE1DA16BFF1 /* MnemonicKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MnemonicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -297,13 +297,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = F5079FB8BED8C51BDEEB8C7C /* Build configuration list for PBXProject "MnemonicKit" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				Base,
 				en,
 			);
 			mainGroup = A44468790B8FFF397004AD5A;
@@ -751,7 +752,7 @@
 				5EBFFA0D3DC3BC69DCC7B348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		73E41074CEDAECD9E168B6DD /* Build configuration list for PBXNativeTarget "MnemonicKit_iOS" */ = {
 			isa = XCConfigurationList;
@@ -760,7 +761,7 @@
 				502686BD02E44AFEF1774FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		8D81EB8096D3E6550D6B8607 /* Build configuration list for PBXNativeTarget "MnemonicKitTests_iOS" */ = {
 			isa = XCConfigurationList;
@@ -769,7 +770,7 @@
 				6639A0D9B2C6E852582873D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		9F8727B9B5CF1651B5236875 /* Build configuration list for PBXNativeTarget "MnemonicKitTests_macOS" */ = {
 			isa = XCConfigurationList;
@@ -778,7 +779,7 @@
 				7DAB3B5B81521AB12902B597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		F5079FB8BED8C51BDEEB8C7C /* Build configuration list for PBXProject "MnemonicKit" */ = {
 			isa = XCConfigurationList;
