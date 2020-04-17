@@ -91,12 +91,12 @@ public enum Mnemonic {
       return nil
     }
 
+    // Securely generate random bytes.
+    // See: https://developer.apple.com/documentation/security/1399291-secrandomcopybytes
     let count = strength / 8
-    var bytes = Data(count: count)
-    let result = try? bytes.withUnsafeMutableBytes { (mutableBytes: UnsafeMutablePointer<UInt8>) throws -> Int32 in
-      SecRandomCopyBytes(kSecRandomDefault, 32, mutableBytes)
-    }
-    guard result != -1 else {
+    var bytes = [UInt8](repeating: 0, count: count)
+    let status = SecRandomCopyBytes(kSecRandomDefault, bytes.count, &bytes)
+    guard status == errSecSuccess else {
       return nil
     }
 
