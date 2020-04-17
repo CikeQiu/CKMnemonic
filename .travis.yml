@@ -1,4 +1,4 @@
-osx_image: xcode10.2
+osx_image: xcode11.3
 language: swift
 cache:
   bundler: true
@@ -16,7 +16,7 @@ jobs:
       install:
         - brew outdated cocoapods || brew upgrade cocoapods
       script:
-        - travis_wait 500 pod lib lint
+        - pod lib lint --verbose --allow-warnings --platforms=ios
     - stage: Build - Carthage And Code Coverage
       install:
         - brew outdated carthage || brew upgrade carthage
