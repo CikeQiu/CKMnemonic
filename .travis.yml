@@ -17,7 +17,6 @@ jobs:
         - brew outdated cocoapods || brew upgrade cocoapods
       script:
         - pod lib lint --verbose --allow-warnings --platforms=ios
-#        - travis_wait 500 pod lib lint --allow-warnings
     - stage: Build - Carthage And Code Coverage
       install:
         - brew outdated carthage || brew upgrade carthage
